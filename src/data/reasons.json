@@ -1,0 +1,27 @@
+[
+    {
+        "src":"/images/reasons/Reason1.png",
+        "title":"Poor user experience",
+        "desc":"Breaks customer trust and leads to lost confidence."
+    },
+    {
+        "src":"/images/reasons/Reason5.png",
+        "title":"Slow Load times",
+        "desc":"Breaks customer trust and leads to lost confidence."
+    },
+    {
+        "src":"/images/reasons/Reason4.png",
+        "title":"Poor mobile experience body",
+        "desc":"Breaks customer trust and leads to lost confidence."
+    },
+    {
+        "src":"/images/reasons/Reason3.png",
+        "title":"Complicated checkout process",
+        "desc":"Breaks customer trust and leads to lost confidence."
+    },
+    {
+        "src":"/images/reasons/Reason2.png",
+        "title":"Unclear display of USPs",
+        "desc":"Breaks customer trust and leads to lost confidence."
+    }
+]
