@@ -16,12 +16,6 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/shopify-dev-page`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
   ];
 
   const serviceRoutes = Object.values(servicesBySlug).map((service) => ({

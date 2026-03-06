@@ -5,7 +5,7 @@ import { ShoppingBag, Code2, Smartphone, Zap, Monitor } from "lucide-react";
 const shopifyService = {
   slug: "shopify-development",
   icon: ShoppingBag,
-  title: "Shopify & Shopify Plus Development",
+  title: "Shopify Stores Built to Drive Sales",
   tagline: "E-commerce Engineering",
   heroHeadline: "Shopify Stores That Print Revenue, Not Just Look Pretty",
   heroSubheadline:
@@ -237,7 +237,7 @@ const shopifyService = {
     "Advanced product customization",
   ],
   description:
-    "Custom Shopify experiences engineered for conversion. From complex product catalogs to seamless checkout flows, we build stores that drive revenue.",
+    "We design and develop high-converting Shopify and Shopify Plus stores that turn visitors into customers. From store architecture to checkout optimization, every element is engineered to maximize conversions and revenue.",
 };
 
 // ─── Custom Software ──────────────────────────────────────────────────────────
@@ -245,7 +245,7 @@ const shopifyService = {
 const customSoftwareService = {
   slug: "custom-software",
   icon: Code2,
-  title: "Custom Software Engineering",
+  title: "Custom Software for Business Growth",
   tagline: "Software Engineering",
   heroHeadline: "Software Built Around Your Business, Not the Other Way Around",
   heroSubheadline:
@@ -460,7 +460,7 @@ const customSoftwareService = {
     "Scalable architecture",
   ],
   description:
-    "Bespoke software systems tailored to your unique business processes. Built to eliminate bottlenecks and scale with your growth.",
+    "We build tailored software systems designed around your business operations. Our custom solutions streamline processes, remove bottlenecks, and create scalable infrastructure that supports long-term growth.",
 };
 
 // ─── Mobile & Web Apps ────────────────────────────────────────────────────────
@@ -468,7 +468,7 @@ const customSoftwareService = {
 const mobileAppService = {
   slug: "app-development",
   icon: Smartphone,
-  title: "Mobile & Web App Development",
+  title: "Mobile Apps & High-Performance Websites",
   tagline: "App Engineering",
   heroHeadline: "Apps Your Users Open Every Day — Built to Perform at Scale",
   heroSubheadline:
@@ -685,7 +685,7 @@ const mobileAppService = {
     "Lightning-fast performance",
   ],
   description:
-    "High-performance applications that users love. Modern, fast, and built with the latest technologies for maximum engagement.",
+    "Modern mobile applications and powerful websites built for speed, scalability, and exceptional user experience. We develop digital products that engage users and support your business expansion.",
 };
 
 // ─── Automation ───────────────────────────────────────────────────────────────
@@ -693,7 +693,7 @@ const mobileAppService = {
 const automationService = {
   slug: "automation",
   icon: Zap,
-  title: "Workflow & Process Automation",
+  title: "AI-Powered Business Automation",
   tagline: "Business Automation",
   heroHeadline: "Reclaim 200+ Hours a Month With Intelligent Automation",
   heroSubheadline:
@@ -905,7 +905,7 @@ const automationService = {
   ],
   outcomes: ["Time savings", "Error reduction", "Improved efficiency"],
   description:
-    "Intelligent automation solutions that free your team from repetitive tasks. Connect your tools and streamline operations.",
+    "Transform manual processes into intelligent automated workflows. We integrate your tools and implement AI-driven automation systems that save time, reduce operational costs, and improve productivity.",
 };
 
 // ─── Mobile & Web Development (combined) ─────────────────────────────────────
