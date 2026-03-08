@@ -1,8 +1,16 @@
-import { TrendingUp, ArrowRight } from 'lucide-react';
-import { allServices } from '@/data/services';
-import Link from 'next/link';
+import { TrendingUp, ArrowRight } from "lucide-react";
+import { allServices } from "@/data/services";
+import Link from "next/link";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { useRouter } from "next/navigation";
 
 export default function Services() {
+  const isMobile = useIsMobile();
+  const router = useRouter();
+  const handleClick = (slug) => {
+    isMobile && router.push(`/services/${slug}`);
+  };
+
   return (
     <section id="services" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -11,8 +19,8 @@ export default function Services() {
             Engineering Excellence
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We engineer technology that removes bottlenecks, streamlines operations,
-            and drives measurable revenue growth.
+            We engineer technology that removes bottlenecks, streamlines
+            operations, and drives measurable revenue growth.
           </p>
         </div>
 
@@ -22,7 +30,8 @@ export default function Services() {
             return (
               <div
                 key={service.slug}
-                className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-sky-400 transition-all duration-300 hover:shadow-2xl"
+                className="group cursor-pointer sm:cursor-default relative bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-sky-400 transition-all duration-300 hover:shadow-2xl"
+                onClick={() => handleClick(service.slug)}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-sky-50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
 
@@ -32,9 +41,11 @@ export default function Services() {
                   </div>
 
                   <div className="space-y-3">
-                    <h3 className="text-2xl font-bold text-black group-hover:text-sky-600 transition-colors">
-                      {service.title}
-                    </h3>
+                    <Link href={`/services/${service.slug}`}>
+                      <h3 className="text-2xl font-bold text-black group-hover:text-sky-600 transition-colors">
+                        {service.title}
+                      </h3>
+                    </Link>
                     <p className="text-gray-600 leading-relaxed">
                       {service.description}
                     </p>
@@ -43,11 +54,16 @@ export default function Services() {
                   <div className="pt-4 border-t border-gray-100">
                     <div className="flex items-center gap-2 mb-3">
                       <TrendingUp size={16} className="text-sky-500" />
-                      <span className="text-sm font-semibold text-gray-700">Key Outcomes:</span>
+                      <span className="text-sm font-semibold text-gray-700">
+                        Key Outcomes:
+                      </span>
                     </div>
                     <ul className="space-y-2 mb-5">
                       {service.outcomes.map((outcome, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                        <li
+                          key={idx}
+                          className="flex items-center gap-2 text-sm text-gray-600"
+                        >
                           <div className="w-1.5 h-1.5 bg-sky-500 rounded-full" />
                           {outcome}
                         </li>
@@ -58,7 +74,10 @@ export default function Services() {
                       className="inline-flex items-center gap-2 text-sm font-semibold text-sky-600 hover:text-sky-800 transition-colors group/link"
                     >
                       Learn More
-                      <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
+                      <ArrowRight
+                        size={16}
+                        className="group-hover/link:translate-x-1 transition-transform"
+                      />
                     </Link>
                   </div>
                 </div>

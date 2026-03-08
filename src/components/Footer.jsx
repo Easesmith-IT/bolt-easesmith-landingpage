@@ -61,9 +61,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#cta" className="hover:text-black transition-colors">
-                  Contact
-                </a>
+                <Link
+                  href="/contact-us"
+                  className={cn(
+                    pathname === "/contact-us" && "text-sky-600 underline",
+                  )}
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
