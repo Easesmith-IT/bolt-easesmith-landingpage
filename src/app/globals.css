@@ -134,4 +134,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+    .stroke-text {
+      -webkit-text-stroke: 2px #d1d5db;
+      /* gray-300 */
+      color: white;
+    }
 }
