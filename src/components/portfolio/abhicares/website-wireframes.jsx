@@ -1,0 +1,22 @@
+import Image from "next/image";
+import React from "react";
+
+const WebsiteWireframes = () => {
+  return (
+    <div className="py-10 container mx-auto px-5 relative space-y-6">
+      <h2 class="text-xl md:text-4xl xl:text-5xl font-bold border-l-4 md:border-l-8 py-1 sm:py-2 px-3 border-[#4481D1] text-[#1B1515]">
+        Website HI-Fi Wireframes
+      </h2>
+
+      <Image
+        src="/portfolio/abhicares/website-wireframes-img.png"
+        alt="image"
+        width={440}
+        height={320}
+        className="w-full mx-auto"
+      />
+    </div>
+  );
+};
+
+export default WebsiteWireframes;

@@ -1,0 +1,22 @@
+import Image from "next/image";
+import React from "react";
+
+const MobileWireframes = () => {
+  return (
+    <div className="py-5 md:py-10 container mx-auto px-5 relative space-y-6">
+      <h2 class="text-xl md:text-4xl xl:text-5xl font-bold border-l-4 md:border-l-8 py-1 sm:py-2 px-3 border-[#4481D1] text-[#1B1515]">
+        Mobile HI-Fi Wireframes
+      </h2>
+
+      <Image
+        src="/portfolio/abhicares/mobile-wireframes-img.png"
+        alt="image"
+        width={440}
+        height={320}
+        className="object-contain max-w-[1000px] w-full mx-auto"
+      />
+    </div>
+  );
+};
+
+export default MobileWireframes;
