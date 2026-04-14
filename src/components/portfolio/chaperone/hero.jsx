@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden">
+    <section className="relative w-full md:min-h-screen overflow-hidden">
       <Navbar />
 
       {/* LEFT PLANT */}
