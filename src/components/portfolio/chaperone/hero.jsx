@@ -13,7 +13,7 @@ export default function Hero() {
         alt="plant"
         width={140}
         height={220}
-        className="absolute left-0 top-[20%] object-contain"
+        className="absolute -left-10 sm:left-0 top-[20%] object-contain"
       />
 
       {/* RIGHT PLANT */}
@@ -22,11 +22,11 @@ export default function Hero() {
         alt="plant"
         width={180}
         height={260}
-        className="absolute right-0 bottom-[20%] object-contain"
+        className="absolute -right-20 sm:right-0 top-[20%] object-contain"
       />
 
-      <div className="flex justify-end">
-        <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5">
+      <div className="justify-end container mx-auto hidden sm:flex">
+        <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
           Live Link →
         </Button>
       </div>
@@ -34,7 +34,7 @@ export default function Hero() {
       {/* CENTER CONTENT */}
       <div className="flex justify-center items-center mt-16 relative">
         {/* DESKTOP */}
-        <div className="relative z-10 w-[300px] md:w-[450px]">
+        <div className="relative z-10 w-[200px] md:w-[450px]">
           <Image
             src="/portfolio/chaperone/desktop.png"
             alt="desktop"
@@ -45,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* TABLET */}
-        <div className="absolute right-[20%] bottom-[-10px] md:right-[30%] md:bottom-[-20px] z-20 w-[180px] md:w-[250px]">
+        <div className="absolute right-[10%] bottom-[-10px] md:right-[30%] md:bottom-[-20px] z-20 w-[120px] md:w-[250px]">
           <Image
             src="/portfolio/chaperone/tablet.png"
             alt="tablet"
@@ -58,9 +58,15 @@ export default function Hero() {
 
       {/* WATERMARK TEXT */}
       <div className="w-full flex justify-center">
-        <h1 className="text-[60px] md:text-[140px] font-semibold text-white stroke-text tracking-wide">
+        <h1 className="text-4xl mt-10 xl:mt-0 lg:text-[60px] xl:text-[140px] font-semibold text-white stroke-text tracking-wide">
           Website Design
         </h1>
+      </div>
+
+      <div className="flex sm:hidden justify-end container mx-auto mt-10 px-5">
+        <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
+          Live Link →
+        </Button>
       </div>
     </section>
   );

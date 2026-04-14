@@ -4,13 +4,13 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container mx-auto mt-10">
-      <H2 className="font-extrabold text-[40px] mt-6">1. About</H2>
+    <div className="container mx-auto mt-10 px-5">
+      <H2 className="font-extrabold text-xl md:text-[40px] mt-6">1. About</H2>
 
       <div className="relative mt-10">
         <div className="max-w-3xl rounded-2xl rounded-tr-none border border-green-200 bg-[#eef3ef] p-6 md:p-8">
           {/* Title */}
-          <h2 className="text-xl md:text-2xl font-bold text-gray-800 tracking-wide">
+          <h2 className="text-base md:text-2xl font-bold text-gray-800 tracking-wide">
             OVERVIEW
           </h2>
 
@@ -29,25 +29,26 @@ const About = () => {
           alt="desktop"
           width={150}
           height={250}
-          className="absolute bottom-1 -right-21"
+          className="absolute bottom-1 hidden sm:inline -right-26"
         />
       </div>
-      <div className="relative p-10 flex justify-end">
+
+      <div className="relative mt-10 md:mt-0 md:p-10 md:flex md:justify-end">
         <Image
           src="/portfolio/chaperone/about-left.png"
           alt="about left"
           width={200}
           height={100}
-          className="absolute -top-9 -left-21"
+          className="absolute hidden md:inline -top-9 -left-26"
         />
-        <div className="max-w-3xl rounded-2xl rounded-tr-none border border-green-200 bg-[#eef3ef] p-6 md:p-8">
+        <div className="max-w-3xl w-full rounded-2xl rounded-tr-none border border-green-200 bg-[#eef3ef] p-6 md:p-8">
           {/* Title */}
-          <h2 className="text-xl md:text-2xl font-bold text-gray-800 tracking-wide">
+          <h2 className="text-base md:text-2xl font-bold text-gray-800 tracking-wide">
             PROBLEM
           </h2>
 
           {/* Description */}
-          <p className="mt-4 text-gray-600 leading-relaxed text-sm md:text-lg">
+          <p className="mt-4 text-gray-600 leading-relaxed w-full text-sm md:text-lg">
             The client's existing website was outdated, difficult to navigate,
             and did not effectively showcase their expertise in plant design.
             They needed a redesign that would modernize the site, improve user
@@ -55,9 +56,10 @@ const About = () => {
           </p>
         </div>
       </div>
+
       <div className="w-full mt-10 rounded-2xl rounded-tr-none border border-green-200 bg-[#eef3ef] p-6 md:p-8">
         {/* Title */}
-        <h2 className="text-xl md:text-2xl font-bold text-gray-800 tracking-wide">
+        <h2 className="text-base md:text-2xl font-bold text-gray-800 tracking-wide">
           SOLUTION
         </h2>
 

@@ -1,5 +1,6 @@
 import About from './about'
 import Color from './color'
+import Designs from './designs'
 import Hero from './hero'
 import Typography from './typography'
 import Wireframes from './wire-frames'
@@ -12,6 +13,7 @@ const ChaperoneClient = () => {
       <Color />
       <Typography />
       <Wireframes />
+      <Designs />
     </div>
   )
 }
