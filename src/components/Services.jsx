@@ -25,7 +25,7 @@ export default function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {allServices.map((service) => {
+          {allServices?.map((service) => {
             const ServiceIcon = service.icon;
             return (
               <div

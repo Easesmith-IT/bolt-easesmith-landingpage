@@ -24,7 +24,7 @@ export default function Home() {
         <Services />
         <WhyChooseUs />
         <Process />
-        <CaseStudies />
+        {/* <CaseStudies /> TODO: temrary fix */}
         <Testimonials />
         <FinalCTA />
       </div>
