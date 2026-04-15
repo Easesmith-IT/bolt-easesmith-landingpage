@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,15 +16,11 @@ const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-
-// export const metadata = {
-//   title: "Easesmith",
-//   description:
-//     "Elite technology engineering for businesses that demand excellence.",
-//   icons: {
-//     icon: "/images/easesmith.svg",
-//   },
-// };
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata = {
   metadataBase: new URL("https://www.easesmith.com"),
@@ -80,7 +76,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} antialiased`}
       >
         {children}
 

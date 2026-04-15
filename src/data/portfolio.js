@@ -2,7 +2,7 @@ export const caseStudies = [
   {
     id: 1,
     name: "Chaperone",
-    industry: "Dashboard Design",
+    type: "Dashboard Design",
     img: "/portfolio/chaperone/chaperone-card.png",
     tagline:
       "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
@@ -11,20 +11,39 @@ export const caseStudies = [
   {
     id: 2,
     name: "Abhicares",
-    industry: "Mobile App",
+    type: "Mobile App",
     img: "/portfolio/abhicares/abhicares-card.png",
     tagline:
       "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
     url: "/portfolio/abhicares",
   },
   {
-    id: 2,
+    id: 3,
     name: "Corporate Rasta Consulting",
-    industry: "Mobile App",
+    type: "Mobile App",
     img: "/portfolio/crc/crc-card.png",
     tagline:
       "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
     url: "/portfolio/corporate-rasta-consulting",
+  },
+  {
+    id: 4,
+    name: "Corporate Rasta Consulting",
+    type: "Dashboard Design",
+    img: "/portfolio/crc-dashboard/crc-dashboard-card.png",
+    tagline:
+      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+    url: "/portfolio/corporate-rasta-consulting-dashboard",
+  },
+  {
+    id: 5,
+    name: "Bhoomie Reality",
+    type: "Wordpress Website",
+    // img: "/portfolio/bhoomie-reality/bhoomie-reality-card.png",
+    img: "",
+    tagline:
+      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+    url: "/portfolio/bhoomie-reality",
   },
   // {
   //   id: 2,

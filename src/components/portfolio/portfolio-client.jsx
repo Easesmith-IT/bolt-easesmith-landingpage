@@ -22,6 +22,7 @@ import {
   Mail,
   Quote,
   ExternalLink,
+  ImageOff,
 } from "lucide-react";
 import Link from "next/link";
 import { caseStudies, categories, stats, testimonials } from "@/data/portfolio";
@@ -37,7 +38,7 @@ import { useRouter } from "next/navigation";
 export default function PortfolioClient() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [selectedStudy, setSelectedStudy] = useState(null);
-  const router = useRouter()
+  const router = useRouter();
 
   const filtered =
     activeFilter === "All"
@@ -145,15 +146,23 @@ export default function PortfolioClient() {
 
                 <div
                   onClick={() => router.push(study.url)}
-                  className="flex justify-center items-center py-7"
+                  className="flex justify-center items-center"
                 >
-                  <Image
-                    src={study.img}
-                    alt="Portfolio Card"
-                    width={232}
-                    height={173}
-                    className="mx-auto"
-                  />
+                  {study.img ? (
+                    <div className="py-7">
+                      <Image
+                        src={study.img}
+                        alt="Portfolio Card"
+                        width={232}
+                        height={173}
+                        className="mx-auto"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-full bg-gray-50 h-60 flex justify-center items-center">
+                      <ImageOff className="size-25 text-gray-400" />
+                    </div>
+                  )}
                 </div>
 
                 {/* Content */}
@@ -168,7 +177,7 @@ export default function PortfolioClient() {
                         {study.name}
                       </h2>
                       <p className="text-sm text-gray-500 mt-0.5">
-                        {study.industry}
+                        {study.type}
                       </p>
                     </div>
                     <button

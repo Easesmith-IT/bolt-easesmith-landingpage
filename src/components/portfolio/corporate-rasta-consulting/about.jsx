@@ -3,17 +3,17 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="mt-20 container mx-auto">
-      <h3 className="text-5xl font-semibold bg-[linear-gradient(177.41deg,#000000_9.14%,#949494_60.32%,#FFFFFF_97.38%)] bg-clip-text text-transparent">
+    <div className="max-sm:mt-8 sm:mt-0 lg:mt-20 xl:mt-5 container mx-auto px-5">
+      <h3 className="text-xl md:text-4xl xl:text-5xl font-semibold bg-[linear-gradient(177.41deg,#000000_9.14%,#949494_60.32%,#FFFFFF_97.38%)] bg-clip-text text-transparent">
         About
       </h3>
 
       <div className="flex gap-10">
         <div>
-          <h4 className="text-3xl font-bold mt-5 bg-[linear-gradient(177.41deg,#000000_9.14%,#949494_60.32%,#FFFFFF_97.38%)] bg-clip-text text-transparent">
+          <h4 className="text-base md:text-xl xl:text-3xl font-bold mt-5 bg-[linear-gradient(177.41deg,#000000_9.14%,#949494_60.32%,#FFFFFF_97.38%)] bg-clip-text text-transparent">
             Project Overview
           </h4>
-          <p className="font-poppins text-xl mt-5">
+          <p className="font-poppins text-sm md:text-lg lg:text-xl mt-5">
             The design of this legal counseling firm's website is meticulously
             developed to simplify the journey of individuals in search of
             reliable legal advice. Grounded in extensive user research, our team
@@ -29,7 +29,7 @@ const About = () => {
           alt="overview-img"
           width={300}
           height={300}
-          className="object-contain -mr-10 shrink-0"
+          className="object-contain hidden lg:inline shrink-0"
         />
       </div>
       <div className="flex gap-10">
@@ -38,14 +38,14 @@ const About = () => {
           alt="problem-solving"
           width={300}
           height={300}
-          className="object-contain -mr-10 shrink-0"
+          className="object-contain hidden lg:inline shrink-0"
         />
 
         <div>
-          <h4 className="text-3xl font-bold mt-5 bg-[linear-gradient(177.41deg,#000000_9.14%,#949494_60.32%,#FFFFFF_97.38%)] bg-clip-text text-transparent">
+          <h4 className="text-base md:text-xl xl:text-3xl font-bold mt-5 bg-[linear-gradient(177.41deg,#000000_9.14%,#949494_60.32%,#FFFFFF_97.38%)] bg-clip-text text-transparent">
             Problem statement
           </h4>
-          <p className="font-poppins text-xl mt-5">
+          <p className="font-poppins text-sm md:text-lg lg:text-xl mt-5">
             "Despite the critical need for accessible legal guidance, many
             individuals find themselves overwhelmed by the complexity of
             navigating legal websites. The current digital landscape often
@@ -62,10 +62,10 @@ const About = () => {
       </div>
       <div className="flex gap-10">
         <div>
-          <h4 className="text-3xl font-bold mt-5 bg-[linear-gradient(177.41deg,#000000_9.14%,#949494_60.32%,#FFFFFF_97.38%)] bg-clip-text text-transparent">
+          <h4 className="text-base md:text-xl xl:text-3xl font-bold mt-5 bg-[linear-gradient(177.41deg,#000000_9.14%,#949494_60.32%,#FFFFFF_97.38%)] bg-clip-text text-transparent">
             Solutions
           </h4>
-          <p className="font-poppins text-xl mt-5">
+          <p className="font-poppins text-sm md:text-lg lg:text-xl mt-5">
             To effectively tackle the complexities and accessibility issues of
             traditional legal websites, our solution is a meticulously designed
             platform that prioritizes intuitive navigation and user-centric
@@ -85,7 +85,7 @@ const About = () => {
           alt="business-solution"
           width={300}
           height={300}
-          className="object-contain -mr-10 shrink-0"
+          className="object-contain hidden lg:inline shrink-0"
         />
       </div>
     </div>
