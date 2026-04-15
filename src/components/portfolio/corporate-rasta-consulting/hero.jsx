@@ -23,8 +23,13 @@ const Hero = () => {
             </h1>
           </div>
           <div className="absolute -right-10 lg:right-0 top-0 justify-end container mx-auto hidden md:flex">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
-              Live Link →
+            <Button
+              asChild
+              className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5"
+            >
+              <a target="_blank" href="https://corporateraastaconsulting.com">
+                Live Link →
+              </a>
             </Button>
           </div>
         </div>

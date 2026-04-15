@@ -9,7 +9,9 @@ const Hero = () => {
       <Navbar />
       <div className="justify-end container mx-auto hidden sm:flex">
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link →
+          <a target="_blank" href="https://abhicares.com">
+            Live Link →
+          </a>
         </Button>
       </div>
 
@@ -19,6 +21,7 @@ const Hero = () => {
           alt="image"
           width={240}
           height={240}
+          priority
           className="object-contain w-20 sm:w-60"
         />
 
