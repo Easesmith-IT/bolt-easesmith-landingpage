@@ -8,7 +8,7 @@ const Hero = () => {
     <div>
       <Navbar />
 
-      <div className="max-[440px]:h-[30vh] max-sm:h-[40vh] h-[70vh] sm:min-h-[80vh] lg:min-h-[60vh]">
+      <div className="max-sm:h-[30vh] h-[70vh] sm:min-h-[80vh] lg:min-h-[60vh]">
         <div className="flex justify-center gap-5 container mx-auto md:mt-10 relative ">
           <div className="bg-[#CDD3E44D] p-2.5 rounded-2xl flex gap-2 items-center">
             <Image
