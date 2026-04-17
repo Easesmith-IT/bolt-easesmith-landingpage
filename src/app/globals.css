@@ -7,6 +7,7 @@
 @theme {
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
+  --font-josefin_sans: var(--font-josefin_sans);
 }
 
 @theme inline {
@@ -136,18 +137,20 @@ body {
     @apply border-border outline-ring/50;
   }
 
-     button:not([disabled]),
-     [role="button"]:not([disabled]) {
-       cursor: pointer;
-     }
+
 
   body {
     @apply bg-background text-foreground;
   }
 
-    .stroke-text {
-      -webkit-text-stroke: 2px #d1d5db;
-      /* gray-300 */
-      color: white;
-    }
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+
+  .stroke-text {
+    -webkit-text-stroke: 2px #d1d5db;
+    /* gray-300 */
+    color: white;
+  }
 }

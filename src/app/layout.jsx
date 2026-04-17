@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Inter, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Josefin_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,10 +16,17 @@ const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const josefin_sans = Josefin_Sans({
+  subsets: ["latin"],
+  variable: "--font-josefin_sans",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -76,7 +83,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} ${josefin_sans.variable} antialiased`}
       >
         {children}
 

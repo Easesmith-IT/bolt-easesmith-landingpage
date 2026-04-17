@@ -45,6 +45,24 @@ export const caseStudies = [
       "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
     url: "/portfolio/bhoomie-reality",
   },
+  {
+    id: 6,
+    name: "Tech Tutor - an Edtech app",
+    type: "Mobile App",
+    img: "/portfolio/tech-tutor/tech-tutor-card.png",
+    tagline:
+      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+    url: "/portfolio/tech-tutor",
+  },
+  {
+    id: 7,
+    name: "SportX",
+    type: "Mobile App",
+    img: "/portfolio/sportx/sportx-card.svg",
+    tagline:
+      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+    url: "/portfolio/sportx",
+  },
   // {
   //   id: 2,
   //   name: "TechScale SaaS Platform",
