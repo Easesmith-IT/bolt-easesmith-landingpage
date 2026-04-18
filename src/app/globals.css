@@ -8,6 +8,7 @@
   --font-poppins: var(--font-poppins);
   --font-inter: var(--font-inter);
   --font-josefin_sans: var(--font-josefin_sans);
+  --font-outfit: var(--font-outfit);
 }
 
 @theme inline {
