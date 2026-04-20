@@ -35,6 +35,7 @@ const ProjectOverview = () => {
           alt="about"
           width={400}
           height={400}
+          unoptimized
         />
       </div>
 
@@ -44,6 +45,7 @@ const ProjectOverview = () => {
           alt="solution"
           width={400}
           height={400}
+          unoptimized
         />
         <div>
           <h3 className="font-bold text-lg sm:text-2xl md:text-3xl">

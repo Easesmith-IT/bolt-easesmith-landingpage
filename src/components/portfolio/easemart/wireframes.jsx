@@ -21,6 +21,7 @@ const Wireframes = () => {
         width={400}
         height={600}
         className="mt-5 sm:mt-10 w-full"
+        unoptimized
       />
     </div>
   );

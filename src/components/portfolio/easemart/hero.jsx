@@ -22,13 +22,14 @@ const Hero = () => {
       </header>
 
       <div className="flex gap-5 justify-between items-center">
-        <div className='ml-4 lg:ml-0'>
+        <div className="ml-4 lg:ml-0">
           <Image
             src="/portfolio/easemart/easemart-logo.svg"
             alt="Hero"
             width={81}
             height={75}
             className="mx-auto w-8 sm:w-20"
+            unoptimized
           />
           <h1 className="text-[#85C125] text-3xl md:text-7xl text-center">
             Easemart
@@ -43,6 +44,7 @@ const Hero = () => {
             width={400}
             height={275}
             className="mx-auto"
+            unoptimized
           />
         </div>
         <div className="relative">
@@ -52,6 +54,7 @@ const Hero = () => {
             width={900}
             height={675}
             className="mx-auto hidden sm:inline sm:-mt-15"
+            unoptimized
           />
           <Image
             src="/portfolio/easemart/shopping_bag.svg"
@@ -59,6 +62,7 @@ const Hero = () => {
             width={100}
             height={100}
             className="absolute hidden lg:inline right-[20%] bottom-20"
+            unoptimized
           />
           <Image
             src="/portfolio/easemart/shopping_cart.svg"
@@ -66,6 +70,7 @@ const Hero = () => {
             width={100}
             height={100}
             className="absolute hidden lg:inline left-[10%] bottom-20"
+            unoptimized
           />
           <Image
             src="/portfolio/easemart/shopping_basket.svg"
@@ -73,6 +78,7 @@ const Hero = () => {
             width={100}
             height={100}
             className="absolute hidden lg:inline right-[20%] top-20"
+            unoptimized
           />
         </div>
       </div>
@@ -82,6 +88,7 @@ const Hero = () => {
         width={900}
         height={275}
         className="mx-auto lg:-mt-10 relative z-2"
+        unoptimized
       />
     </div>
   );

@@ -26,6 +26,7 @@ const UiScreens = () => {
             width={800}
             height={400}
             className="mx-auto mt-5 sm:mt-10"
+            unoptimized
           />
           {/* <Image
           src="/portfolio/easemart/other-blob.png"
@@ -45,6 +46,7 @@ const UiScreens = () => {
             width={800}
             height={400}
             className="mx-auto mt-5 sm:mt-10"
+            unoptimized
           />
         </div>
         <div className="mt-10 md:mt-20">
@@ -55,6 +57,7 @@ const UiScreens = () => {
             width={800}
             height={400}
             className="mx-auto mt-5 sm:mt-10 w-full"
+            unoptimized
           />
         </div>
         <div className="mt-10 md:mt-20 relative">
@@ -65,6 +68,7 @@ const UiScreens = () => {
             width={250}
             height={400}
             className="mx-auto mt-5 sm:mt-10"
+            unoptimized
           />
           <Image
             src="/portfolio/easemart/home-phone-left.svg"
@@ -72,6 +76,7 @@ const UiScreens = () => {
             width={400}
             height={400}
             className="absolute top-0 -z-1 -left-25"
+            unoptimized
           />
           <Image
             src="/portfolio/easemart/home-phone-right.svg"
@@ -79,6 +84,7 @@ const UiScreens = () => {
             width={400}
             height={400}
             className="absolute bottom-0 -z-1 -right-25"
+            unoptimized
           />
         </div>
         <div className="mt-10 md:mt-20">
@@ -89,6 +95,7 @@ const UiScreens = () => {
             width={800}
             height={400}
             className="mx-auto mt-5 sm:mt-10"
+            unoptimized
           />
         </div>
         <div className="mt-10 md:mt-20">
@@ -99,6 +106,7 @@ const UiScreens = () => {
             width={900}
             height={400}
             className="mx-auto mt-5 sm:mt-10"
+            unoptimized
           />
         </div>
         <div className="mt-10 md:mt-20">
@@ -109,6 +117,7 @@ const UiScreens = () => {
             width={1000}
             height={400}
             className="mx-auto mt-5 sm:mt-10"
+            unoptimized
           />
         </div>
       </div>
