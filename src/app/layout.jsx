@@ -1,8 +1,11 @@
 import {
+  Aclonica,
+  Epilogue,
   Geist,
   Geist_Mono,
   Inter,
   Josefin_Sans,
+  Open_Sans,
   Outfit,
   Poppins,
 } from "next/font/google";
@@ -35,10 +38,29 @@ const josefin_sans = Josefin_Sans({
   variable: "--font-josefin_sans",
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
+
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
   weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
+
+const aclonica = Aclonica({
+  subsets: ["latin"],
+  variable: "--font-aclonica",
+  weight: ["400"],
+});
+
+const open_sans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open_sans",
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const epilogue = Epilogue({
+  subsets: ["latin"],
+  variable: "--font-epilogue",
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata = {
@@ -95,7 +117,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} ${josefin_sans.variable} ${outfit.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} ${josefin_sans.variable} ${outfit.variable} ${aclonica.variable} ${open_sans.variable} ${epilogue.variable} antialiased`}
       >
         {children}
 

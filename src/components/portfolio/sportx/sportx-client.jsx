@@ -10,9 +10,9 @@ import UIScreens from "./ui-screens";
 const SportxClient = () => {
   return (
     <div>
-      <Hero /> {/* remain responsive */}
-      <ProjectOverview /> {/* remain responsive */}
-      <ColorTypography /> {/* remain responsive */}
+      <Hero />
+      <ProjectOverview />
+      <ColorTypography />
       <UserPersona />
       <InformationArchitecture />
       <Wireframes />

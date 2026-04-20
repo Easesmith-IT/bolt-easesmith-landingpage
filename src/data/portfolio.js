@@ -63,6 +63,15 @@ export const caseStudies = [
       "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
     url: "/portfolio/sportx",
   },
+  {
+    id: 8,
+    name: "Easemart",
+    type: "Dashboard Design",
+    img: "/portfolio/easemart/easemart-card.svg",
+    tagline:
+      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+    url: "/portfolio/easemart",
+  },
   // {
   //   id: 2,
   //   name: "TechScale SaaS Platform",

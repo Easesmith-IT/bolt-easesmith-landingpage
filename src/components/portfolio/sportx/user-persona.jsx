@@ -5,7 +5,7 @@ const UserPersona = () => {
   return (
     <div className="mt-10 font-outfit gap-4 sm:gap-0 py-5 md:py-10 px-5 container mx-auto grid grid-cols-2">
       <div>
-        <div className="relative w-[20%] ml-10 sm:ml-0 sm:w-[25%] h-25 md:h-50 flex items-center justify-center">
+        <div className="relative w-[35%] sm:w-[20%] ml-10 sm:ml-0 sm:w-[25%] h-25 md:h-50 flex items-center justify-center">
           <p className="absolute text-[100px] md:text-[220px] font-extrabold text-[#FFF3B0] leading-none select-none">
             03
           </p>

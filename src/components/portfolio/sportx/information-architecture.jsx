@@ -3,8 +3,8 @@ import React from "react";
 
 const InformationArchitecture = () => {
   return (
-    <div className="font-outfit py-5 md:py-10 px-5 container mx-auto">
-      <div className="relative w-[25%] h-25 md:h-50 flex items-center justify-center">
+    <div className="font-outfit py-5 md:py-10 px-5 container mx-auto overflow-hidden">
+      <div className="relative w-[35%] sm:w-[25%] h-25 md:h-50 flex items-center justify-center">
         <p className="absolute text-[100px] md:text-[220px] font-extrabold text-[#FFF3B0] leading-none select-none">
           04
         </p>

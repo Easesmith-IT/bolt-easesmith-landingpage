@@ -6,7 +6,7 @@ const UIScreens = () => {
   return (
     <div className="overflow-x-hidden relative">
       <div className="font-outfit py-5 md:py-10 px-5 container mx-auto">
-        <div className="relative w-[25%] h-25 md:h-50 flex items-center justify-center">
+        <div className="relative w-[35%] sm:w-[25%] h-25 md:h-50 flex items-center justify-center">
           <p className="absolute text-[100px] md:text-[220px] font-extrabold text-[#FFF3B0] leading-none select-none">
             06
           </p>
@@ -40,7 +40,7 @@ const UIScreens = () => {
           />
         </div>
         <div className="mt-10 md:mt-20">
-          <h3 className="text-sm md:text-3xltext-3xl text-center font-bold">
+          <h3 className="text-sm md:text-3xl text-center font-bold">
             Sign up and Login Screens
           </h3>
           <Image

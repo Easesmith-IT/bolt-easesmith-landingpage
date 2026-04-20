@@ -4,8 +4,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative  h-screen">
-      <header className="w-full flex flex-col-reverse gap-5 items-center sm:flex-row sm:items-center sm:justify-between px-6 md:px-10 py-6">
+    <div className="relative sm:min-h-screen overflow-hidden">
+      <header className="w-full flex flex-col gap-5 items-center sm:flex-row sm:items-center sm:justify-between px-6 md:px-10 py-6">
         <Image
           src="/portfolio/chaperone/easesmith-logo.png"
           alt="Easesmith Logo"
@@ -65,9 +65,9 @@ const Hero = () => {
       />
 
       <div className="flex gap-5 items-start justify-between">
-        <div className="ml-20 mt-20">
-          <h1 className="text-9xl font-semibold">SportX</h1>
-          <p className="text-4xl font-medium mt-8">A Mobile App</p>
+        <div className="ml-5 sm:ml-20 mt-10 lg:mt-20">
+          <h1 className="text-5xl md:text-9xl font-semibold">SportX</h1>
+          <p className="text-2xl md:text-4xl font-medium mt-4 sm:mt-8">A Mobile App</p>
         </div>
         <div>
           {/* <div className="size-120 border border-[#F3F4F6] rounded-full flex justify-center items-center">
@@ -80,26 +80,26 @@ const Hero = () => {
             src="/portfolio/sportx/mobile.png"
             alt="mobile"
             width={350}
-            height={320}
-            className="mr-20"
+            height={120}
+            className="lg:mr-[10%]"
           />
         </div>
       </div>
 
-      <div className="flex items-end absolute left-[15%] bottom-0">
+      <div className="hidden sm:flex items-end absolute left-[5%] sm:left-[10%] lg:left-[15%] bottom-0">
         <Image
           src="/portfolio/sportx/phone1.png"
           alt="Hero"
           width={300}
           height={220}
-          className="-mr-[6%] relative z-2"
+          className="-mr-[6%] relative z-2 w-[150px] md:w-[200px] lg:w-[300px]"
         />
         <Image
           src="/portfolio/sportx/phone2.png"
           alt="Hero"
           width={300}
           height={320}
-          className=""
+          className="w-[150px] md:w-[200px] lg:w-[300px]"
         />
       </div>
     </div>

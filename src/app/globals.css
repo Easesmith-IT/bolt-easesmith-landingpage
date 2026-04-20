@@ -9,6 +9,9 @@
   --font-inter: var(--font-inter);
   --font-josefin_sans: var(--font-josefin_sans);
   --font-outfit: var(--font-outfit);
+  --font-aclonica: var(--font-aclonica);
+  --font-open_sans: var(--font-open_sans);
+  --font-epilogue: var(--font-epilogue);
 }
 
 @theme inline {
