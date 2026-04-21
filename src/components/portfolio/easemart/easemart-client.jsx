@@ -1,12 +1,14 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import React from 'react'
 import Hero from './hero'
 import ProjectOverview from './project-overview'
 import ColorTypography from './color-typography'
 import UserPersona from './user-persona'
-import Wireframes from './wireframes'
-import UiScreens from './ui-screens'
+
+const Wireframes = dynamic(() => import("./wireframes"));
+const UiScreens = dynamic(() => import("./ui-screens"));
 
 const EasemartClient = () => {
   return (

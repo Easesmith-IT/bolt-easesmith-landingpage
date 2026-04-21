@@ -1,6 +1,33 @@
-import Image from "next/image";
 import React from "react";
 import { motion } from "motion/react";
+
+const PortfolioSvg = ({
+  src,
+  alt,
+  width,
+  height,
+  className = "",
+  sizes = "100vw",
+  loading = "lazy",
+  fetchPriority = "low",
+}) => {
+  return (
+    // Local SVG artwork is served as-is, so a native img is intentional here.
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      loading={loading}
+      decoding="async"
+      fetchPriority={fetchPriority}
+      sizes={sizes}
+      className={className}
+      style={{ height: "auto" }}
+    />
+  );
+};
 
 const UiScreens = () => {
   return (
@@ -55,13 +82,13 @@ const UiScreens = () => {
             transition={{ duration: 0.8 }}
             animate={{ y: [0, -10, 0] }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/onboarding.svg"
               alt="onboarding"
               width={800}
               height={400}
-              className="mx-auto mt-5 sm:mt-10"
-              unoptimized
+              className="mx-auto mt-5 sm:mt-10 w-full max-w-[800px]"
+              sizes="(max-width: 640px) 100vw, 800px"
             />
           </motion.div>
         </motion.div>
@@ -90,13 +117,13 @@ const UiScreens = () => {
             transition={{ duration: 0.8 }}
             animate={{ y: [0, -10, 0] }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/login.svg"
               alt="login"
               width={800}
               height={400}
-              className="mx-auto mt-5 sm:mt-10"
-              unoptimized
+              className="mx-auto mt-5 sm:mt-10 w-full max-w-[800px]"
+              sizes="(max-width: 640px) 100vw, 800px"
             />
           </motion.div>
         </motion.div>
@@ -125,13 +152,13 @@ const UiScreens = () => {
             transition={{ duration: 0.8 }}
             animate={{ y: [0, -10, 0] }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/review.svg"
               alt="review"
               width={800}
               height={400}
-              className="mx-auto mt-5 sm:mt-10 w-full"
-              unoptimized
+              className="mx-auto mt-5 sm:mt-10 w-full max-w-[800px]"
+              sizes="(max-width: 640px) 100vw, 800px"
             />
           </motion.div>
         </motion.div>
@@ -160,13 +187,13 @@ const UiScreens = () => {
             transition={{ duration: 0.8 }}
             animate={{ y: [0, -10, 0] }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/home.svg"
               alt="home"
               width={250}
               height={400}
-              className="mx-auto mt-5 sm:mt-10"
-              unoptimized
+              className="mx-auto mt-5 sm:mt-10 w-full max-w-[250px]"
+              sizes="250px"
             />
           </motion.div>
 
@@ -176,12 +203,13 @@ const UiScreens = () => {
             animate={{ y: [0, -20, 0], rotate: [0, 2, -2, 0] }}
             transition={{ duration: 8, repeat: Infinity }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/home-phone-left.svg"
               alt="home"
               width={400}
               height={400}
-              unoptimized
+              className="w-full max-w-[400px]"
+              sizes="400px"
             />
           </motion.div>
 
@@ -190,12 +218,13 @@ const UiScreens = () => {
             animate={{ y: [0, -20, 0], rotate: [0, -2, 2, 0] }}
             transition={{ duration: 8, repeat: Infinity }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/home-phone-right.svg"
               alt="home"
               width={400}
               height={400}
-              unoptimized
+              className="w-full max-w-[400px]"
+              sizes="400px"
             />
           </motion.div>
         </motion.div>
@@ -218,13 +247,13 @@ const UiScreens = () => {
             transition={{ duration: 0.8 }}
             animate={{ y: [0, -10, 0] }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/delivery.svg"
               alt="delivery"
               width={800}
               height={400}
-              className="mx-auto mt-5 sm:mt-10"
-              unoptimized
+              className="mx-auto mt-5 sm:mt-10 w-full max-w-[800px]"
+              sizes="(max-width: 640px) 100vw, 800px"
             />
           </motion.div>
         </motion.div>
@@ -247,13 +276,13 @@ const UiScreens = () => {
             transition={{ duration: 0.8 }}
             animate={{ y: [0, -10, 0] }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/payment.svg"
               alt="payment"
               width={900}
               height={400}
-              className="mx-auto mt-5 sm:mt-10"
-              unoptimized
+              className="mx-auto mt-5 sm:mt-10 w-full max-w-[900px]"
+              sizes="(max-width: 640px) 100vw, 900px"
             />
           </motion.div>
         </motion.div>
@@ -276,13 +305,13 @@ const UiScreens = () => {
             transition={{ duration: 0.8 }}
             animate={{ y: [0, -10, 0] }}
           >
-            <Image
+            <PortfolioSvg
               src="/portfolio/easemart/other.svg"
               alt="other"
               width={1000}
               height={400}
-              className="mx-auto mt-5 sm:mt-10"
-              unoptimized
+              className="mx-auto mt-5 sm:mt-10 w-full max-w-[1000px]"
+              sizes="(max-width: 640px) 100vw, 1000px"
             />
           </motion.div>
         </motion.div>
