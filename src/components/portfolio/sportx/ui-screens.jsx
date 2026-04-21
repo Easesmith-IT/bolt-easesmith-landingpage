@@ -1,115 +1,251 @@
-import { div } from "motion/react-client";
 import Image from "next/image";
-import React from "react";
+import { motion } from "motion/react";
 
 const UIScreens = () => {
   return (
-    <div className="overflow-x-hidden relative">
+    <div className="overflow-hidden relative">
       <div className="font-outfit py-5 md:py-10 px-5 container mx-auto">
+        {/* Heading */}
         <div className="relative w-[35%] sm:w-[25%] h-25 md:h-50 flex items-center justify-center">
-          <p className="absolute text-[100px] md:text-[220px] font-extrabold text-[#FFF3B0] leading-none select-none">
+          <motion.p
+            className="absolute text-[100px] md:text-[220px] font-extrabold text-[#FFF3B0] leading-none select-none"
+            initial={{ opacity: 0, scale: 0.7 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             06
-          </p>
+          </motion.p>
 
-          <div className="relative text-center">
+          <motion.div
+            className="relative text-center"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-base md:text-3xl font-extrabold text-black leading-tight">
               <span className="underline md:decoration-4 md:underline-offset-4">
                 UI Screens
               </span>
             </h2>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="md:mt-8">
-          <h3 className="text-sm md:text-3xl text-center font-bold">
+        {/* ================= ONBOARDING ================= */}
+        <motion.div
+          className="md:mt-8 relative"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center font-bold"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             Onboarding Screens
-          </h3>
-          <Image
-            src="/portfolio/sportx/onboarding-img.svg"
-            alt="onboarding"
-            width={800}
-            height={400}
-            className="mx-auto mt-10"
-          />
-          <Image
-            src="/portfolio/sportx/other-blob.png"
-            alt="tips"
-            width={600}
-            height={400}
-            className="absolute w-full top-[8%] md:top-[2%] left-0 right-0 -z-1"
-          />
-        </div>
-        <div className="mt-10 md:mt-20">
-          <h3 className="text-sm md:text-3xl text-center font-bold">
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/sportx/onboarding-img.svg"
+              alt="onboarding"
+              width={800}
+              height={400}
+              className="mx-auto mt-10"
+            />
+          </motion.div>
+
+          {/* Blob */}
+          <motion.div
+            className="absolute inset-x-0 top-[5%] -z-10 overflow-hidden flex justify-center"
+            animate={{ y: [0, -20, 0], rotate: [0, 2, -2, 0] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Image
+              src="/portfolio/sportx/other-blob.png"
+              alt="blob"
+              width={1200}
+              height={600}
+              className="w-[120%] max-w-none"
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* ================= LOGIN ================= */}
+        <motion.div
+          className="mt-10 md:mt-20"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center font-bold"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             Sign up and Login Screens
-          </h3>
-          <Image
-            src="/portfolio/sportx/login.svg"
-            alt="login"
-            width={800}
-            height={400}
-            className="mx-auto mt-10"
-          />
-        </div>
-        <div className="mt-10 md:mt-20 relative">
-          <h3 className="text-sm md:text-3xltext-3xl text-center font-bold">
-            Home screens
-          </h3>
-          <Image
-            src="/portfolio/sportx/home.svg"
-            alt="home"
-            width={800}
-            height={400}
-            className="mx-auto mt-10"
-          />
+          </motion.h3>
 
-          {/* <Image
-            src="/portfolio/sportx/home-blob.png"
-            alt="tips"
-            width={800}
-            height={400}
-            className="absolute -top-[80%] -right-[20%] -z-1"
-          /> */}
-        </div>
-        <div className="mt-10 md:mt-20 relative">
-          <h3 className="text-sm md:text-3xltext-3xl text-center font-bold">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/sportx/login.svg"
+              alt="login"
+              width={800}
+              height={400}
+              className="mx-auto mt-10"
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* ================= HOME ================= */}
+        <motion.div
+          className="mt-10 md:mt-20 relative"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center font-bold"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
+            Home Screens
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/sportx/home.svg"
+              alt="home"
+              width={800}
+              height={400}
+              className="mx-auto mt-10"
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* ================= TIPS ================= */}
+        <motion.div
+          className="mt-10 md:mt-20 relative"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center font-bold"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             Tips Screens
-          </h3>
-          <Image
-            src="/portfolio/sportx/tips.svg"
-            alt="tips"
-            width={800}
-            height={400}
-            className="mx-auto mt-10"
-          />
+          </motion.h3>
 
-          <Image
-            src="/portfolio/sportx/other-blob.png"
-            alt="tips"
-            width={600}
-            height={400}
-            className="absolute -top-[30%] -z-1"
-          />
-        </div>
-        <div className="mt-10 md:mt-20 relative">
-          <h3 className="text-sm md:text-3xltext-3xl text-center font-bold">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/sportx/tips.svg"
+              alt="tips"
+              width={800}
+              height={400}
+              className="mx-auto mt-10"
+            />
+          </motion.div>
+
+          {/* Blob */}
+          <motion.div
+            className="absolute inset-x-0 -top-[20%] -z-10 overflow-hidden flex justify-center"
+            animate={{ y: [0, -20, 0], rotate: [0, 2, -2, 0] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Image
+              src="/portfolio/sportx/other-blob.png"
+              alt="blob"
+              width={1200}
+              height={600}
+              className="w-[120%] max-w-none"
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* ================= OTHER ================= */}
+        <motion.div
+          className="mt-10 md:mt-20 relative"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center font-bold"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             Other Screens
-          </h3>
-          <Image
-            src="/portfolio/sportx/other.svg"
-            alt="tips"
-            width={800}
-            height={400}
-            className="w-full mt-10"
-          />
-          <Image
-            src="/portfolio/sportx/other-blob.png"
-            alt="tips"
-            width={800}
-            height={400}
-            className="w-full absolute -top-[10%] -z-1"
-          />
-        </div>
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/sportx/other.svg"
+              alt="other"
+              width={800}
+              height={400}
+              className="w-full mt-10"
+            />
+          </motion.div>
+
+          {/* Blob */}
+          <motion.div
+            className="absolute inset-x-0 -top-[10%] -z-10 overflow-hidden flex justify-center"
+            animate={{ y: [0, -20, 0], rotate: [0, 2, -2, 0] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Image
+              src="/portfolio/sportx/other-blob.png"
+              alt="blob"
+              width={1200}
+              height={600}
+              className="w-[120%] max-w-none"
+            />
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

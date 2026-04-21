@@ -1,128 +1,294 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import { motion } from "motion/react";
 
 const UiScreens = () => {
   return (
     <div className="overflow-hidden">
       <div className="py-5 md:py-10 px-5 container mx-auto font-aclonica">
+        {/* HEADER */}
         <div className="flex gap-1 items-center">
-          <div className="size-10 sm:size-18 md:size-24 border-2 md:border-4 border-black rounded-full flex justify-center items-center">
+          <motion.div
+            className="size-10 sm:size-18 md:size-24 border-2 md:border-4 border-black rounded-full flex justify-center items-center"
+            initial={{ opacity: 0, scale: 0.7 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <h2 className="font-extrabold font-open_sans text-xl sm:text-3xl md:text-5xl">
               5
             </h2>
-          </div>
-          <h1 className="font-bold text-xl sm:text-3xl md:text-4xl">
+          </motion.div>
+
+          <motion.h1
+            className="font-bold text-xl sm:text-3xl md:text-4xl"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             UI Screens
-          </h1>
+          </motion.h1>
         </div>
 
-        <div className="mt-4 md:mt-8">
-          <h3 className="text-sm md:text-3xl text-center">
+        {/* Onboarding */}
+        <motion.div
+          className="mt-4 md:mt-8"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             Onboarding Screens
-          </h3>
-          <Image
-            src="/portfolio/easemart/onboarding.svg"
-            alt="onboarding"
-            width={800}
-            height={400}
-            className="mx-auto mt-5 sm:mt-10"
-            unoptimized
-          />
-          {/* <Image
-          src="/portfolio/easemart/other-blob.png"
-          alt="tips"
-          width={600}
-          height={400}
-          className="absolute w-full top-[8%] md:top-[2%] left-0 right-0 -z-1"
-        /> */}
-        </div>
-        <div className="mt-10 md:mt-20">
-          <h3 className="text-sm md:text-3xl text-center">
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/easemart/onboarding.svg"
+              alt="onboarding"
+              width={800}
+              height={400}
+              className="mx-auto mt-5 sm:mt-10"
+              unoptimized
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* Login */}
+        <motion.div
+          className="mt-10 md:mt-20"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
             Login & Signup Screens
-          </h3>
-          <Image
-            src="/portfolio/easemart/login.svg"
-            alt="login"
-            width={800}
-            height={400}
-            className="mx-auto mt-5 sm:mt-10"
-            unoptimized
-          />
-        </div>
-        <div className="mt-10 md:mt-20">
-          <h3 className="text-sm md:text-3xl text-center">Review Screens</h3>
-          <Image
-            src="/portfolio/easemart/review.svg"
-            alt="review"
-            width={800}
-            height={400}
-            className="mx-auto mt-5 sm:mt-10 w-full"
-            unoptimized
-          />
-        </div>
-        <div className="mt-10 md:mt-20 relative">
-          <h3 className="text-sm md:text-3xl text-center">Home Screen</h3>
-          <Image
-            src="/portfolio/easemart/home.svg"
-            alt="home"
-            width={250}
-            height={400}
-            className="mx-auto mt-5 sm:mt-10"
-            unoptimized
-          />
-          <Image
-            src="/portfolio/easemart/home-phone-left.svg"
-            alt="home"
-            width={400}
-            height={400}
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/easemart/login.svg"
+              alt="login"
+              width={800}
+              height={400}
+              className="mx-auto mt-5 sm:mt-10"
+              unoptimized
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* Review */}
+        <motion.div
+          className="mt-10 md:mt-20"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
+            Review Screens
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/easemart/review.svg"
+              alt="review"
+              width={800}
+              height={400}
+              className="mx-auto mt-5 sm:mt-10 w-full"
+              unoptimized
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* Home */}
+        <motion.div
+          className="mt-10 md:mt-20 relative"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-sm md:text-3xl text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+          >
+            Home Screen
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/easemart/home.svg"
+              alt="home"
+              width={250}
+              height={400}
+              className="mx-auto mt-5 sm:mt-10"
+              unoptimized
+            />
+          </motion.div>
+
+          {/* SIDE FLOATING PHONES */}
+          <motion.div
             className="absolute top-0 -z-1 -left-25"
-            unoptimized
-          />
-          <Image
-            src="/portfolio/easemart/home-phone-right.svg"
-            alt="home"
-            width={400}
-            height={400}
+            animate={{ y: [0, -20, 0], rotate: [0, 2, -2, 0] }}
+            transition={{ duration: 8, repeat: Infinity }}
+          >
+            <Image
+              src="/portfolio/easemart/home-phone-left.svg"
+              alt="home"
+              width={400}
+              height={400}
+              unoptimized
+            />
+          </motion.div>
+
+          <motion.div
             className="absolute bottom-0 -z-1 -right-25"
-            unoptimized
-          />
-        </div>
-        <div className="mt-10 md:mt-20">
-          <h3 className="text-sm md:text-3xl text-center">Delivery Screens</h3>
-          <Image
-            src="/portfolio/easemart/delivery.svg"
-            alt="delivery"
-            width={800}
-            height={400}
-            className="mx-auto mt-5 sm:mt-10"
-            unoptimized
-          />
-        </div>
-        <div className="mt-10 md:mt-20">
-          <h3 className="text-sm md:text-3xl text-center">Payment screens</h3>
-          <Image
-            src="/portfolio/easemart/payment.svg"
-            alt="payment"
-            width={900}
-            height={400}
-            className="mx-auto mt-5 sm:mt-10"
-            unoptimized
-          />
-        </div>
-        <div className="mt-10 md:mt-20">
-          <h3 className="text-sm md:text-3xl text-center">Other Screens</h3>
-          <Image
-            src="/portfolio/easemart/other.svg"
-            alt="other"
-            width={1000}
-            height={400}
-            className="mx-auto mt-5 sm:mt-10"
-            unoptimized
-          />
-        </div>
+            animate={{ y: [0, -20, 0], rotate: [0, -2, 2, 0] }}
+            transition={{ duration: 8, repeat: Infinity }}
+          >
+            <Image
+              src="/portfolio/easemart/home-phone-right.svg"
+              alt="home"
+              width={400}
+              height={400}
+              unoptimized
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* Delivery */}
+        <motion.div
+          className="mt-10 md:mt-20"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3 className="text-sm md:text-3xl text-center">
+            Delivery Screens
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/easemart/delivery.svg"
+              alt="delivery"
+              width={800}
+              height={400}
+              className="mx-auto mt-5 sm:mt-10"
+              unoptimized
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* Payment */}
+        <motion.div
+          className="mt-10 md:mt-20"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3 className="text-sm md:text-3xl text-center">
+            Payment screens
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/easemart/payment.svg"
+              alt="payment"
+              width={900}
+              height={400}
+              className="mx-auto mt-5 sm:mt-10"
+              unoptimized
+            />
+          </motion.div>
+        </motion.div>
+
+        {/* Other */}
+        <motion.div
+          className="mt-10 md:mt-20"
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3 className="text-sm md:text-3xl text-center">
+            Other Screens
+          </motion.h3>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            animate={{ y: [0, -10, 0] }}
+          >
+            <Image
+              src="/portfolio/easemart/other.svg"
+              alt="other"
+              width={1000}
+              height={400}
+              className="mx-auto mt-5 sm:mt-10"
+              unoptimized
+            />
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
-}
+};
 
-export default UiScreens
+export default UiScreens;

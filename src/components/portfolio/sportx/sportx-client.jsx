@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Hero from "./hero";
 import ProjectOverview from "./project-overview";
@@ -9,7 +11,7 @@ import UIScreens from "./ui-screens";
 
 const SportxClient = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <ProjectOverview />
       <ColorTypography />

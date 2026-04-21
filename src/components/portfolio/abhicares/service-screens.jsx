@@ -1,20 +1,37 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
 
 const ServiceScreens = () => {
   return (
     <div className="py-10 container mx-auto px-5 relative space-y-6">
-      <h2 class="text-xl md:text-4xl xl:text-5xl font-bold border-l-4 md:border-l-8 py-1 sm:py-2 px-3 border-[#4481D1] text-[#1B1515]">
+      {/* Heading */}
+      <motion.h2
+        initial={{ opacity: 0, x: -40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="text-xl md:text-4xl xl:text-5xl font-bold border-l-4 md:border-l-8 py-1 sm:py-2 px-3 border-[#4481D1] text-[#1B1515]"
+      >
         Service Screen
-      </h2>
+      </motion.h2>
 
-      <Image
-        src="/portfolio/abhicares/service-screen-img.jpg"
-        alt="image"
-        width={580}
-        height={320}
-        className="w-full"
-      />
+      {/* Image */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9, y: 50 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.02 }}
+      >
+        <Image
+          src="/portfolio/abhicares/service-screen-img.jpg"
+          alt="image"
+          width={580}
+          height={320}
+          className="w-full"
+        />
+      </motion.div>
     </div>
   );
 };

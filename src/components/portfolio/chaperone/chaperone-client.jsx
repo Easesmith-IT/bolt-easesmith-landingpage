@@ -1,3 +1,5 @@
+"use client";
+
 import About from './about'
 import Color from './color'
 import Designs from './designs'
@@ -7,7 +9,7 @@ import Wireframes from './wire-frames'
 
 const ChaperoneClient = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Hero />
       <About />
       <Color />

@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import Hero from './hero';
 import About from './about';
@@ -8,7 +10,7 @@ import DashboardScreens from './dashboard-screens';
 
 const CorporateRaastaClient = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Hero />
       <About />
       <StyleGuide />

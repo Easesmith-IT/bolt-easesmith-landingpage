@@ -1,119 +1,175 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "motion/react";
 
 const UserPersona = () => {
   return (
     <div className="relative">
-      <Image
-        src="/portfolio/easemart/persona-bg.svg"
-        alt="persona-bg"
-        width={310}
-        height={350}
-        className="absolute left-0 top-0 -z-1 w-40 sm:w-80"
-      />
+      {/* BACKGROUND */}
+      <motion.div
+        className="absolute left-0 top-0 -z-1"
+        animate={{ y: [0, -15, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <Image
+          src="/portfolio/easemart/persona-bg.svg"
+          alt="persona-bg"
+          width={310}
+          height={350}
+          className="w-40 sm:w-80"
+        />
+      </motion.div>
+
       <div className="py-5 md:py-10 px-5 container mx-auto font-aclonica">
+        {/* HEADER */}
         <div className="flex gap-1 items-center">
-          <div className="size-10 sm:size-18 md:size-24 border-2 md:border-4 border-white text-white rounded-full flex justify-center items-center">
+          <motion.div
+            className="size-10 sm:size-18 md:size-24 border-2 md:border-4 border-white text-white rounded-full flex justify-center items-center"
+            initial={{ opacity: 0, scale: 0.7 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
             <h2 className="font-extrabold font-open_sans text-xl sm:text-3xl md:text-5xl">
               3
             </h2>
-          </div>
-          <h1 className="font-bold text-xl sm:text-3xl md:text-4xl">
+          </motion.div>
+
+          <motion.h1
+            className="font-bold text-xl sm:text-3xl md:text-4xl"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <span className="text-white">User</span> Persona
-          </h1>
+          </motion.h1>
         </div>
 
         <div className="flex flex-col md:flex-row gap-10">
+          {/* LEFT SIDE */}
           <div>
-            <Image
-              src="/portfolio/easemart/user.svg"
-              alt="user"
-              width={310}
-              height={350}
-              className=""
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src="/portfolio/easemart/user.svg"
+                alt="user"
+                width={310}
+                height={350}
+              />
+            </motion.div>
 
-            <div className="bg-[#85C125] p-4 -mt-10 relative z-1 sm:w-80">
+            {/* CARD */}
+            <motion.div
+              className="bg-[#85C125] p-4 -mt-10 relative z-1 sm:w-80"
+              initial={{ opacity: 0, y: 60, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.03 }}
+            >
               <h3 className="text-xl sm:text-2xl text-white text-center">
                 Priya Singh
               </h3>
+
               <div className="font-epilogue text-xs sm:text-base text-white mt-2">
                 <p>Demographics:</p>
                 <ul className="list-disc ml-4 mt-1">
-                  <li>Age: 32 </li>
-                  <li>Location: Bengaluru, India</li>
-                  <li>Occupation: Software Engineer</li>
-                  <li>Education: Master’s in Computer Science</li>
-                  <li>Family Status: Married with one child</li>
+                  {[
+                    "Age: 32",
+                    "Location: Bengaluru, India",
+                    "Occupation: Software Engineer",
+                    "Education: Master’s in Computer Science",
+                    "Family Status: Married with one child",
+                  ].map((item, i) => (
+                    <motion.li
+                      key={i}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.1 }}
+                      viewport={{ once: true }}
+                    >
+                      {item}
+                    </motion.li>
+                  ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="font-epilogue text-xs sm:text-base">
-            <div>
-              <h4 className="text-[#5D871A] font-medium">Behaviors:</h4>
-              <ul className="list-disc ml-4 mt-1">
-                <li>Priya shops for groceries online at least twice a week.</li>
-                <li>
-                  She seeks quick delivery options due to her hectic work-life
-                  balance.
-                </li>
-                <li>Prefers a user-friendly interface with easy navigation.</li>
-                <li>
-                  Looks for apps that offer real-time updates and transparency
-                  in pricing.
-                </li>
-              </ul>
-            </div>
-            <div className="bg-[#e8e7e7] mt-4 p-2">
-              <div>
-                <h4 className="text-[#5D871A] font-medium">
-                  Needs and Goals:{" "}
-                </h4>
+
+          {/* RIGHT SIDE */}
+          <motion.div
+            className="font-epilogue text-xs sm:text-base"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: {},
+              visible: {
+                transition: { staggerChildren: 0.15 },
+              },
+            }}
+          >
+            {[
+              {
+                title: "Behaviors:",
+                content: [
+                  "Priya shops for groceries online at least twice a week.",
+                  "She seeks quick delivery options due to her hectic work-life balance.",
+                  "Prefers a user-friendly interface with easy navigation.",
+                  "Looks for apps that offer real-time updates and transparency in pricing.",
+                ],
+              },
+              {
+                title: "Needs and Goals:",
+                content: [
+                  "Needs a reliable service for spontaneous shopping.",
+                  "Wants to minimize time spent shopping.",
+                  "Prefers healthy and organic food options.",
+                  "Seeks personalized recommendations.",
+                ],
+                box: true,
+              },
+              {
+                title: "Pain Points:",
+                content: [
+                  "Frustrated with long delivery times.",
+                  "Dislikes out-of-stock issues.",
+                  "Annoyed by complicated checkout.",
+                ],
+                box: true,
+              },
+              {
+                title: "Technology Usage:",
+                content: [
+                  "Comfortable with Android & iOS.",
+                  "Uses mobile payments.",
+                  "Engages with social media-driven apps.",
+                ],
+              },
+            ].map((section, i) => (
+              <motion.div
+                key={i}
+                className={section.box ? "bg-[#e8e7e7] mt-4 p-2" : "mt-4"}
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.4 }}
+              >
+                <h4 className="text-[#5D871A] font-medium">{section.title}</h4>
                 <ul className="list-disc ml-4 mt-1">
-                  <li>
-                    Priya needs a reliable service that can accommodate her
-                    spontaneous shopping habits.
-                  </li>
-                  <li>
-                    She aims to minimize time spent on grocery shopping without
-                    compromising on quality.
-                  </li>
-                  <li>
-                    Wants an app that provides healthy and organic food options
-                    for her family.
-                  </li>
-                  <li>
-                    Seeks personalized recommendations and offers based on her
-                    shopping history.
-                  </li>
+                  {section.content.map((item, j) => (
+                    <li key={j}>{item}</li>
+                  ))}
                 </ul>
-              </div>
-              <div>
-                <h4 className="text-[#5D871A] font-medium">Pain Points: </h4>
-                <ul className="list-disc ml-4 mt-1">
-                  <li>Frustrated with apps that have long delivery times.</li>
-                  <li>
-                    Dislikes services that frequently run out of stock on
-                    essential items.
-                  </li>
-                  <li>
-                    Annoyed by complicated checkout processes and hidden fees.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="mt-4">
-              <h4 className="text-[#5D871A] font-medium">Technology Usage:</h4>
-              <ul className="list-disc ml-4 mt-1">
-                <li>Comfortable with both Android and iOS platforms.</li>
-                <li>Uses mobile payment services for transactions.</li>
-                <li>
-                  Engages with apps that have a strong social media presence.
-                </li>
-              </ul>
-            </div>
-          </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </div>

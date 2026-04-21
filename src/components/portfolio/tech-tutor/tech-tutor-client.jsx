@@ -1,17 +1,18 @@
-import React from 'react'
-import Hero from './hero'
-import About from './about'
-import StyleGuide from './style-guide'
-import Typography from './typography'
-import Wireframe from './wireframe'
-import OnboardingScreens from './onboarding-screens'
-import LoginScreens from './login-screen'
-import HomeScreen from './home-screen'
-import OtherScreens from './other-screens'
+"use client";
+
+import About from "./about";
+import Hero from "./hero";
+import HomeScreen from "./home-screen";
+import LoginScreens from "./login-screen";
+import OnboardingScreens from "./onboarding-screens";
+import OtherScreens from "./other-screens";
+import StyleGuide from "./style-guide";
+import Typography from "./typography";
+import Wireframe from "./wireframe";
 
 const TechTutorClient = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <About />
       <StyleGuide />
@@ -23,6 +24,6 @@ const TechTutorClient = () => {
       <OtherScreens />
     </div>
   );
-}
+};
 
-export default TechTutorClient
+export default TechTutorClient;

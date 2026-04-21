@@ -1,18 +1,19 @@
-import Image from "next/image";
-import Hero from "./hero";
-import ProjectOverview from "./project-overview";
+"use client";
+
 import ColorTypography from "./color-typography";
-import MobileWireframes from "./mobile-wireframes";
-import MobileScreens from "./mobile-screens";
-import WebsiteWireframes from "./website-wireframes";
-import LoginSignupScreens from "./login-signup-screens";
+import Hero from "./hero";
 import HomeScreens from "./home-screens";
-import ServiceScreens from "./service-screens";
+import LoginSignupScreens from "./login-signup-screens";
+import MobileScreens from "./mobile-screens";
+import MobileWireframes from "./mobile-wireframes";
 import OtherScreens from "./other-screens";
+import ProjectOverview from "./project-overview";
+import ServiceScreens from "./service-screens";
+import WebsiteWireframes from "./website-wireframes";
 
 const AbhicaresClient = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <ProjectOverview />
       <ColorTypography />

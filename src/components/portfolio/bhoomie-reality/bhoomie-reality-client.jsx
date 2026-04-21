@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import Hero from './hero'
 import About from './about'
@@ -6,7 +8,7 @@ import Screens from './screens'
 
 const BhoomieRealityClient = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Hero />
         <About />
         <Typography />
