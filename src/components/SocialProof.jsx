@@ -29,7 +29,7 @@ const clients = [
     name: "Founders Unfold",
     logo:
       "/images/client logos/founders-unfold-high-resolution-logo-transparent.png",
-    darkCard: true,
+    monochrome: true,
   },
   {
     name: "Bhoomie Realty",
@@ -81,7 +81,7 @@ export default function SocialProof() {
 
           <div className="flex w-fit items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/80 px-4 py-3 shadow-sm backdrop-blur">
             <span className="text-2xl font-bold tracking-tight text-slate-950">
-              10+
+              50+
             </span>
             <span className="max-w-24 text-xs font-medium leading-4 text-slate-500">
               client partnerships
@@ -93,19 +93,11 @@ export default function SocialProof() {
           {clients.map((client) => (
             <div
               key={client.name}
-              className={`group relative flex min-h-28 items-center justify-center overflow-hidden rounded-2xl border p-5 transition-all duration-300 hover:-translate-y-1 sm:min-h-32 sm:p-6 ${
-                client.darkCard
-                  ? "border-slate-800 bg-slate-900 shadow-[0_16px_40px_-24px_rgba(15,23,42,0.8)] hover:border-slate-700 hover:shadow-[0_20px_45px_-22px_rgba(15,23,42,0.9)]"
-                  : "border-slate-200/80 bg-white/90 shadow-[0_14px_35px_-24px_rgba(15,23,42,0.35)] hover:border-sky-200 hover:shadow-[0_20px_45px_-22px_rgba(14,165,233,0.3)]"
-              }`}
+              className="group relative flex min-h-28 items-center justify-center overflow-hidden rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_14px_35px_-24px_rgba(15,23,42,0.35)] transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_20px_45px_-22px_rgba(14,165,233,0.3)] sm:min-h-32 sm:p-6"
             >
               <div
                 aria-hidden="true"
-                className={`absolute inset-x-8 top-0 h-px ${
-                  client.darkCard
-                    ? "bg-gradient-to-r from-transparent via-white/30 to-transparent"
-                    : "bg-gradient-to-r from-transparent via-sky-300/70 to-transparent"
-                }`}
+                className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-sky-300/70 to-transparent"
               />
               <div className="relative h-14 w-full sm:h-16">
                 <Image
@@ -113,7 +105,11 @@ export default function SocialProof() {
                   alt={`${client.name} logo`}
                   fill
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                  className="object-contain transition-transform duration-300 group-hover:scale-[1.04]"
+                  className={`object-contain transition-transform duration-300 group-hover:scale-[1.04] ${
+                    client.monochrome
+                      ? "brightness-0 opacity-80"
+                      : ""
+                  }`}
                 />
               </div>
             </div>
