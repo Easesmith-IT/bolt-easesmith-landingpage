@@ -47,7 +47,7 @@ const UiScreens = () => {
             </h2>
           </motion.div>
 
-          <motion.h1
+          <motion.h2
             className="font-bold text-xl sm:text-3xl md:text-4xl"
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -55,7 +55,7 @@ const UiScreens = () => {
             viewport={{ once: true }}
           >
             UI Screens
-          </motion.h1>
+          </motion.h2>
         </div>
 
         {/* Onboarding */}

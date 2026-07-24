@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import BhoomieRealityClient from "@/components/portfolio/bhoomie-reality/bhoomie-reality-client";
+import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
 
 export const metadata = {
@@ -20,14 +21,14 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "/portfolio/bhoomie-realty",
+    canonical: "/portfolio/bhoomie-reality",
   },
 
   openGraph: {
     title: "Bhoomie Realty — Real Estate Website UI/UX Case Study | Easesmith",
     description:
       "A complete UI/UX case study of a real estate platform — featuring property listings, responsive design, intuitive navigation, and engaging user experience.",
-    url: "https://www.easesmith.com/portfolio/bhoomie-realty",
+    url: "https://www.easesmith.com/portfolio/bhoomie-reality",
     siteName: "Easesmith",
     type: "website",
     images: [
@@ -68,12 +69,13 @@ const BhoomieReality = () => {
             url: "https://www.easesmith.com/portfolio",
           },
           {
-            name: "Corporate Raasta Dashboard",
-            url: "https://www.easesmith.com/portfolio/corporate-raasta-dashboard",
+            name: "Bhoomie Realty",
+            url: "https://www.easesmith.com/portfolio/bhoomie-reality",
           },
         ]}
       />
 
+      <CaseStudySummary url="/portfolio/bhoomie-reality" />
       <BhoomieRealityClient />
     </>
   );

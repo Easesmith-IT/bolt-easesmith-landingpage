@@ -18,7 +18,7 @@ export const ContactUsClient = () => {
   };
 
   const phone = "+91 8925687688";
-  const email = "Info@easesmith.com";
+  const email = "info@easesmith.com";
   const whatsapp = "918925687688";
   const calendly = "https://calendly.com/mavyakunal/business-call";
 

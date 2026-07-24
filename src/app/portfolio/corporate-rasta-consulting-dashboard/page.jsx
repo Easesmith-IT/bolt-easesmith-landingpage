@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CorporateRaastaClientDashboard from "@/components/portfolio/corporate-rasta-consulting-dashboard.jsx/corporate-raasta-client-dashboard";
+import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
 export const metadata = {
   title: "Corporate Raasta Dashboard — UI/UX Case Study",
@@ -18,14 +19,14 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "/portfolio/corporate-raasta-dashboard",
+    canonical: "/portfolio/corporate-rasta-consulting-dashboard",
   },
 
   openGraph: {
     title: "Corporate Raasta Dashboard — UI/UX Case Study | Easesmith",
     description:
       "Discover the design of a modern legal dashboard — featuring case tracking, request management, chat system, document handling, and intuitive workflows.",
-    url: "https://www.easesmith.com/portfolio/corporate-raasta-dashboard",
+    url: "https://www.easesmith.com/portfolio/corporate-rasta-consulting-dashboard",
     siteName: "Easesmith",
     type: "website",
     images: [
@@ -67,11 +68,12 @@ const CorporateRaastaDashboardPage = () => {
           },
           {
             name: "Corporate Raasta Dashboard",
-            url: "https://www.easesmith.com/portfolio/corporate-raasta-dashboard",
+            url: "https://www.easesmith.com/portfolio/corporate-rasta-consulting-dashboard",
           },
         ]}
       />
 
+      <CaseStudySummary url="/portfolio/corporate-rasta-consulting-dashboard" />
       <CorporateRaastaClientDashboard />
     </>
   );

@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import AbhicaresClient from "@/components/portfolio/abhicares/abhicares-client";
+import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
 export const metadata = {
   title: "AbhiCares — UI/UX Case Study",
@@ -64,6 +65,7 @@ const AbhicaresPage = () => {
           },
         ]}
       />
+      <CaseStudySummary url="/portfolio/abhicares" />
       <AbhicaresClient />
     </>
   );

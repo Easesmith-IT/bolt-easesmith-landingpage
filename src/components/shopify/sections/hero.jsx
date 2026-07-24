@@ -18,11 +18,11 @@ export const Hero = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <h1 className="md:text-2xl font-bold leading-5">
-              <span className="text-(--color-easesmith) underline">
-                INCREASE
+            <h1 className="text-3xl font-black leading-tight md:text-5xl">
+              <span className="text-(--color-easesmith)">
+                SHOPIFY CONVERSION OPTIMIZATION
               </span>{" "}
-              <span className="text-(--color-para)">YOUR REVENUE</span>
+              <span className="text-(--color-para)">FOR F&amp;B BRANDS</span>
             </h1>
             <br />
             <h2 className="text-(--color-easesmith) font-black text-4xl md:text-5xl leading-2 md:leading-8">

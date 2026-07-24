@@ -26,9 +26,9 @@ const Hero = () => {
               height={50}
               className="object-contain size-5 md:size-10 lg:size-12"
             />
-            <h1 className="text-base md:text-2xl lg:text-4xl font-semibold bg-[linear-gradient(170.76deg,#5FB5EB_12.17%,#949494_44.9%,#86C256_68.6%)] bg-clip-text text-transparent [-webkit-background-clip:text]">
+            <h2 className="text-base md:text-2xl lg:text-4xl font-semibold bg-[linear-gradient(170.76deg,#5FB5EB_12.17%,#949494_44.9%,#86C256_68.6%)] bg-clip-text text-transparent [-webkit-background-clip:text]">
               Corporate Raasta Consulting
-            </h1>
+            </h2>
           </motion.div>
 
           {/* CTA BUTTON */}

@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import TechTutorClient from "@/components/portfolio/tech-tutor/tech-tutor-client";
+import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
 export const metadata = {
   title: "Tech Tutor — EdTech App UI/UX Case Study",
@@ -72,6 +73,7 @@ const TechTutorPage = () => {
         ]}
       />
 
+      <CaseStudySummary url="/portfolio/tech-tutor" />
       <TechTutorClient />
     </>
   );

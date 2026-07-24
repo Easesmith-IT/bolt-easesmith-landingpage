@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import SportxClient from "@/components/portfolio/sportx/sportx-client";
+import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
 export const metadata = {
   title: "SportX — Sports Mobile App UI/UX Case Study",
@@ -72,6 +73,7 @@ const SportXPage = () => {
         ]}
       />
 
+      <CaseStudySummary url="/portfolio/sportx" />
       <SportxClient />
     </>
   );

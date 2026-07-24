@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import SocialProof from "@/components/SocialProof";
 import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import CaseStudies from "@/components/CaseStudies";
 
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         <Services />
         <WhyChooseUs />
         <Process />
-        {/* <CaseStudies /> TODO: temrary fix */}
+        <CaseStudies />
         <Testimonials />
         <FinalCTA />
       </div>

@@ -19,14 +19,14 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "/contact",
+    canonical: "/contact-us",
   },
 
   openGraph: {
     title: "Contact Easesmith",
     description:
       "Reach out to Easesmith for web development, automation, and software engineering solutions. Book a strategy call or contact our team today.",
-    url: "https://www.easesmith.com/contact",
+    url: "https://www.easesmith.com/contact-us",
     siteName: "Easesmith",
     type: "website",
     images: [

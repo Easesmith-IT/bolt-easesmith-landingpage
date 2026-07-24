@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ChaperoneClient from "@/components/portfolio/chaperone/chaperone-client";
+import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
 export const metadata = {
   title: "Chaperone — UI/UX Case Study",
@@ -59,6 +60,7 @@ const ChaperonePage = () => {
           },
         ]}
       />
+      <CaseStudySummary url="/portfolio/chaperone" />
       <ChaperoneClient />
     </>
   );

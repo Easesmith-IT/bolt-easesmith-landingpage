@@ -71,14 +71,14 @@ const Hero = () => {
       {/* MAIN CONTENT */}
       <div className="flex gap-5 items-start justify-between">
         <div className="ml-5 sm:ml-20 mt-10 lg:mt-20">
-          <motion.h1
+          <motion.h2
             className="text-5xl md:text-9xl font-semibold"
             initial={{ opacity: 0, x: -60 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
           >
             SportX
-          </motion.h1>
+          </motion.h2>
 
           <motion.p
             className="text-2xl md:text-4xl font-medium mt-4 sm:mt-8"

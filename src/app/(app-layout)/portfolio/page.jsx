@@ -2,9 +2,9 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import PortfolioClient from "@/components/portfolio/portfolio-client";
 
 export const metadata = {
-  title: "Portfolio",
+  title: "Web, Mobile App & UI/UX Design Case Studies",
   description:
-    "Explore the Easesmith portfolio showcasing projects, case studies, and innovative digital solutions. Discover our expertise in web development, design, and technology.",
+    "Explore Easesmith case studies for responsive websites, mobile apps, dashboards, service platforms, and UI/UX design projects.",
   keywords: [
     "Easesmith portfolio",
     "Easesmith projects",
@@ -22,7 +22,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Portfolio",
+    title: "Web, Mobile App & UI/UX Design Case Studies",
     description:
       "Explore real-world projects and case studies built by Easesmith. Discover modern web development, automation, and software engineering solutions.",
     url: "https://www.easesmith.com/portfolio",

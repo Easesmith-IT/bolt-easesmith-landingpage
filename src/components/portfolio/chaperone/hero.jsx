@@ -87,14 +87,14 @@ export default function Hero() {
       </div>
 
       {/* WATERMARK TEXT */}
-      <motion.h1
+      <motion.h2
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
         className="text-4xl text-center mt-10 xl:mt-0 lg:text-[60px] xl:text-[140px] font-semibold text-white stroke-text tracking-wide"
       >
         Website Design
-      </motion.h1>
+      </motion.h2>
 
       <motion.div
         initial={{ opacity: 0, y: -20 }}

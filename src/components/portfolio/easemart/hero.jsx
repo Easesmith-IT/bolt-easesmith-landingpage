@@ -41,14 +41,14 @@ const Hero = () => {
             />
           </motion.div>
 
-          <motion.h1
+          <motion.h2
             className="text-[#85C125] text-3xl md:text-7xl text-center"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Easemart
-          </motion.h1>
+          </motion.h2>
 
           <motion.p
             className="text-[#85C125] text-xs sm:text-xl md:text-3xl text-center whitespace-nowrap"

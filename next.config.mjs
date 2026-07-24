@@ -1,6 +1,61 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
+  skipTrailingSlashRedirect: true,
+  async redirects() {
+    return [
+      {
+        source: "/contact",
+        destination: "/contact-us",
+        statusCode: 301,
+      },
+      {
+        source: "/portfolio/bhoomie-realty",
+        destination: "/portfolio/bhoomie-reality",
+        statusCode: 301,
+      },
+      {
+        source: "/portfolio/corporate-raasta-consulting",
+        destination: "/portfolio/corporate-rasta-consulting",
+        statusCode: 301,
+      },
+      {
+        source: "/portfolio/corporate-raasta-dashboard",
+        destination: "/portfolio/corporate-rasta-consulting-dashboard",
+        statusCode: 301,
+      },
+      {
+        source: "/index.html",
+        destination: "/",
+        statusCode: 301,
+      },
+      {
+        source: "/all-services",
+        destination: "/services",
+        statusCode: 301,
+      },
+      {
+        source: "/corporate-raasta-consulting",
+        destination: "/portfolio/corporate-rasta-consulting",
+        statusCode: 301,
+      },
+      {
+        source: "/services/E-commerce-development",
+        destination: "/services/shopify-development",
+        statusCode: 301,
+      },
+      {
+        source: "/services/E-commerce%20development",
+        destination: "/services/shopify-development",
+        statusCode: 301,
+      },
+      {
+        source: "/services/custom-software-development",
+        destination: "/services/custom-software",
+        statusCode: 301,
+      },
+    ];
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     qualities: [75, 90],

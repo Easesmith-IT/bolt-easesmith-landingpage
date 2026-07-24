@@ -2,74 +2,186 @@ export const caseStudies = [
   {
     id: 1,
     name: "Chaperone",
-    type: "Dashboard Design",
+    client: "Chaperone",
+    category: "Websites",
+    type: "Plant Brand Website Design",
     img: "/portfolio/chaperone/chaperone-card.png",
     tagline:
-      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+      "A nature-led storefront redesign with clearer plant discovery, simpler navigation, and a consistent experience across desktop and tablet.",
     url: "/portfolio/chaperone",
+    challenge:
+      "The previous website was difficult to navigate and did not communicate the plant brand consistently across devices.",
+    approach:
+      "We reorganized the content hierarchy, created responsive wireframes, and developed a reusable color and typography system before producing high-fidelity screens.",
+    outcome:
+      "The final design provides a clearer browsing path, consistent responsive layouts, and production-ready desktop and tablet screen designs.",
+    deliverables: [
+      "Responsive website UX",
+      "Wireframes",
+      "Visual design system",
+      "High-fidelity screens",
+    ],
   },
   {
     id: 2,
-    name: "Abhicares",
-    type: "Mobile App",
+    name: "AbhiCares",
+    client: "AbhiCares",
+    category: "Mobile Apps",
+    type: "Home Services App & Web Platform",
     img: "/portfolio/abhicares/abhicares-card.png",
     tagline:
-      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+      "A one-stop services platform for Darbhanga where customers can book verified professionals for home cleaning, repairs, beauty, and more.",
     url: "/portfolio/abhicares",
+    challenge:
+      "The platform needed to present multiple service categories without overwhelming customers, while building enough trust for users to book a professional online.",
+    approach:
+      "We mapped the customer journey, designed mobile and web wireframes, and created booking, authentication, service-detail, and account-management flows.",
+    outcome:
+      "The case study documents a connected mobile and desktop experience with reusable components and clear paths from discovery to booking.",
+    deliverables: [
+      "User flows",
+      "Mobile app UX",
+      "Web dashboard UX",
+      "High-fidelity UI",
+    ],
   },
   {
     id: 3,
-    name: "Corporate Rasta Consulting",
-    type: "Mobile App",
+    name: "Corporate Raasta Consulting",
+    client: "Corporate Raasta Consulting",
+    category: "Websites",
+    type: "Legal Services Website",
     img: "/portfolio/crc/crc-card.png",
     tagline:
-      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+      "An accessible legal-counselling platform that combines clear service journeys, educational resources, and personalized guidance.",
     url: "/portfolio/corporate-rasta-consulting",
+    challenge:
+      "Legal service information was difficult for prospective clients to compare and understand, creating friction before an enquiry.",
+    approach:
+      "We structured services around client needs, simplified the information architecture, and designed responsive pages supported by wireframes and a consistent visual system.",
+    outcome:
+      "The resulting website design presents services more clearly and gives prospective clients a direct route to the appropriate consultation.",
+    deliverables: [
+      "Information architecture",
+      "Responsive web design",
+      "Wireframes",
+      "Service-page UI",
+    ],
   },
   {
     id: 4,
-    name: "Corporate Rasta Consulting",
-    type: "Dashboard Design",
+    name: "Corporate Raasta Legal Dashboard",
+    client: "Corporate Raasta Consulting",
+    category: "Dashboards",
+    type: "Legal Case Management Dashboard",
     img: "/portfolio/crc-dashboard/crc-dashboard-card.png",
     tagline:
-      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+      "A legal operations workspace bringing case progress, client requests, documents, reports, and team communication into one view.",
     url: "/portfolio/corporate-rasta-consulting-dashboard",
+    challenge:
+      "Case information, documents, client requests, and conversations needed one consistent workspace instead of fragmented manual processes.",
+    approach:
+      "We mapped the main legal workflows, organized role-specific dashboard views, and designed interfaces for requests, cases, chat, documents, and status reporting.",
+    outcome:
+      "The final dashboard design consolidates core legal operations into a documented set of responsive, high-fidelity product screens.",
+    deliverables: [
+      "Workflow mapping",
+      "Dashboard UX",
+      "Case-management UI",
+      "High-fidelity screens",
+    ],
   },
   {
     id: 5,
-    name: "Bhoomie Reality",
-    type: "Wordpress Website",
+    name: "Bhoomie Realty",
+    client: "Bhoomie Realty",
+    category: "Websites",
+    type: "Real Estate Website",
     img: "/portfolio/bhoomie-reality/hero.png",
     tagline:
-      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+      "A responsive property-search website that gives buyers and renters an up-to-date, visual way to explore the agency’s listings.",
     url: "/portfolio/bhoomie-reality",
+    challenge:
+      "The real-estate agency needed a dedicated digital platform for presenting listings and engaging potential buyers beyond offline channels.",
+    approach:
+      "We planned the property-browsing journey, organized listing information, and designed responsive page layouts for discovery and enquiry.",
+    outcome:
+      "The project produced a modern real-estate website concept with clearer property presentation and consistent desktop and mobile experiences.",
+    deliverables: [
+      "Property discovery UX",
+      "Responsive web design",
+      "Listing-page UI",
+      "Mobile layouts",
+    ],
   },
   {
     id: 6,
-    name: "Tech Tutor - an Edtech app",
-    type: "Mobile App",
+    name: "Tech Tutor",
+    client: "Tech Tutor",
+    category: "Mobile Apps",
+    type: "EdTech Mobile App",
     img: "/portfolio/tech-tutor/tech-tutor-card.png",
     tagline:
-      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+      "A learning app connecting students with nearby coaching institutes, live classes, study materials, and adaptive learning paths.",
     url: "/portfolio/tech-tutor",
+    challenge:
+      "Traditional learning flows did not adapt well to different student needs or make progress easy to understand on mobile devices.",
+    approach:
+      "We translated the learning journey into onboarding, authentication, home, lesson, and progress flows supported by wireframes and a reusable style guide.",
+    outcome:
+      "The case study delivers a complete mobile learning experience from initial onboarding through lesson discovery and ongoing study.",
+    deliverables: [
+      "Learning journey",
+      "Mobile wireframes",
+      "Onboarding UX",
+      "High-fidelity app UI",
+    ],
   },
   {
     id: 7,
     name: "SportX",
-    type: "Mobile App",
+    client: "SportX",
+    category: "Mobile Apps",
+    type: "Cricket & Sports Mobile App",
     img: "/portfolio/sportx/sportx-card.webp",
     tagline:
-      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+      "A cricket companion for real-time scores, player statistics, tournament standings, personalized alerts, and an ad-free viewing option.",
     url: "/portfolio/sportx",
+    challenge:
+      "Sports fans needed a faster way to move between live information, teams, match details, and related content on a small screen.",
+    approach:
+      "We developed the information architecture, user persona, wireframes, and visual system before designing the primary mobile app screens.",
+    outcome:
+      "The final concept brings core cricket content into a coherent mobile navigation model supported by documented UX decisions.",
+    deliverables: [
+      "Information architecture",
+      "User persona",
+      "Mobile wireframes",
+      "Sports app UI",
+    ],
   },
   {
     id: 8,
     name: "Easemart",
-    type: "Dashboard Design",
+    client: "Easemart",
+    category: "Mobile Apps",
+    type: "Quick-Commerce Grocery App",
     img: "/portfolio/easemart/easemart-card.svg",
     tagline:
-      "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
+      "A quick-commerce grocery app pairing minute-level delivery with live inventory, real-time deals, and a frictionless mobile checkout.",
     url: "/portfolio/easemart",
+    challenge:
+      "The shopping experience needed to keep a large grocery catalog understandable while minimizing friction between discovery and checkout.",
+    approach:
+      "We mapped the shopping journey, created a user persona and wireframes, then designed onboarding, catalog, cart, payment, and delivery states.",
+    outcome:
+      "The resulting mobile app concept documents an end-to-end grocery ordering flow with consistent components and clear transaction states.",
+    deliverables: [
+      "E-commerce user flow",
+      "Mobile wireframes",
+      "Checkout UX",
+      "High-fidelity app UI",
+    ],
   },
   // {
   //   id: 2,
@@ -362,10 +474,9 @@ export const caseStudies = [
 
 export const categories = [
   "All",
-  "Shopify",
-  "Custom Software",
+  "Websites",
   "Mobile Apps",
-  "Automation",
+  "Dashboards",
 ];
 
 export const stats = [

@@ -1,40 +1,36 @@
 import { servicesBySlug } from "@/data/services";
 
+const LAST_SIGNIFICANT_UPDATE = "2026-07-24";
+
 export default function sitemap() {
   const baseUrl = "https://www.easesmith.com";
 
   const staticRoutes = [
     {
-      url: `${baseUrl}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
+      url: baseUrl,
+      lastModified: LAST_SIGNIFICANT_UPDATE,
+    },
+    {
+      url: `${baseUrl}/services`,
+      lastModified: LAST_SIGNIFICANT_UPDATE,
     },
     {
       url: `${baseUrl}/portfolio`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
+      lastModified: LAST_SIGNIFICANT_UPDATE,
     },
     {
       url: `${baseUrl}/contact-us`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.6,
+      lastModified: LAST_SIGNIFICANT_UPDATE,
     },
     {
       url: `${baseUrl}/shopify-dev-page`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
+      lastModified: LAST_SIGNIFICANT_UPDATE,
     },
   ];
 
   const serviceRoutes = Object.values(servicesBySlug).map((service) => ({
     url: `${baseUrl}/services/${service.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.9,
+    lastModified: LAST_SIGNIFICANT_UPDATE,
   }));
 
   const portfolioRoutes = [
@@ -48,9 +44,7 @@ export default function sitemap() {
     "tech-tutor",
   ].map((slug) => ({
     url: `${baseUrl}/portfolio/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.7,
+    lastModified: LAST_SIGNIFICANT_UPDATE,
   }));
 
   return [...staticRoutes, ...serviceRoutes, ...portfolioRoutes];

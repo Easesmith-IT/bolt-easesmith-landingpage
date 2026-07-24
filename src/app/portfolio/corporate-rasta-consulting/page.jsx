@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CorporateRaastaClient from "@/components/portfolio/corporate-rasta-consulting/corporate-raasta-client";
+import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
 export const metadata = {
   title: "Corporate Raasta Consulting — UI/UX Case Study",
@@ -16,7 +17,7 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "/portfolio/corporate-raasta-consulting",
+    canonical: "/portfolio/corporate-rasta-consulting",
   },
 
   openGraph: {
@@ -70,6 +71,7 @@ const CorporateRaastaPage = () => {
         ]}
       />
 
+      <CaseStudySummary url="/portfolio/corporate-rasta-consulting" />
       <CorporateRaastaClient />
     </>
   );

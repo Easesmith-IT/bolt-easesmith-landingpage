@@ -20,10 +20,10 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black tracking-tight leading-tight">
-            We Build Systems
+            AI Automation, Software
             <br />
             <span className="bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-              That Scale Revenue
+              & Shopify Development
             </span>
           </h1>
 

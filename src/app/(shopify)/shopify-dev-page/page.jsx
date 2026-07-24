@@ -2,10 +2,10 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ShopifyClient from "@/components/shopify/shopify-client";
 
 export const metadata = {
-  title: "Shopify Development",
+  title: "Shopify Conversion Optimization for F&B Brands",
 
   description:
-    "Expert Shopify and Shopify Plus development services by Easesmith. We build high-conversion Shopify stores with custom themes, fast performance, and scalable e-commerce solutions.",
+    "Shopify conversion optimization and storefront design for established food and beverage brands, covering mobile UX, speed, product pages, and checkout.",
 
   keywords: [
     "Shopify development",
@@ -23,9 +23,9 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Shopify Development",
+    title: "Shopify Conversion Optimization for F&B Brands",
     description:
-      "High-performance Shopify and Shopify Plus stores engineered for conversions. Custom themes, integrations, and scalable e-commerce solutions.",
+      "Conversion-focused Shopify storefront design for food and beverage brands, including mobile UX, performance, product pages, and checkout.",
     url: "https://www.easesmith.com/shopify-dev-page",
     siteName: "Easesmith",
     type: "website",
@@ -40,9 +40,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Shopify Development",
+    title: "Shopify Conversion Optimization for F&B Brands",
     description:
-      "Custom Shopify stores engineered for performance, speed, and conversion.",
+      "Shopify storefront optimization for established food and beverage brands.",
     images: ["/logo-easesmith.png"],
   },
 

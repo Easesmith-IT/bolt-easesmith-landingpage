@@ -176,7 +176,11 @@ function FAQItem({ question, answer }) {
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
-export default function ServiceDetailClient({ service, relatedServices }) {
+export default function ServiceDetailClient({
+  service,
+  relatedServices,
+  relatedCaseStudies,
+}) {
   const ServiceIcon = serviceIcons[service.icon];
 
   return (
@@ -191,7 +195,7 @@ export default function ServiceDetailClient({ service, relatedServices }) {
             name: service.title,
             description: service.heroSubheadline,
             provider: { "@type": "Organization", name: "Easesmith" },
-            url: `https://easesmith.com/services/${service.slug}`,
+            url: `https://www.easesmith.com/services/${service.slug}`,
           }),
         }}
       />
@@ -207,7 +211,7 @@ export default function ServiceDetailClient({ service, relatedServices }) {
           <Calendar size={16} /> Book Free Call
         </a>
         <a
-          href="https://wa.me/1234567890"
+          href="https://wa.me/918925687688"
           target="_blank"
           rel="noreferrer"
           className="flex-1 py-3 bg-green-500 text-white rounded-xl font-semibold text-sm text-center flex items-center justify-center gap-1.5"
@@ -231,7 +235,7 @@ export default function ServiceDetailClient({ service, relatedServices }) {
             </Link>
             <ChevronRight size={14} />
             <Link
-              href="/#services"
+              href="/services"
               className="hover:text-black transition-colors"
             >
               Services
@@ -721,7 +725,7 @@ export default function ServiceDetailClient({ service, relatedServices }) {
               />
             </a>
             <a
-              href="https://wa.me/1234567890"
+              href="https://wa.me/918925687688"
               target="_blank"
               rel="noreferrer"
               className="px-8 py-4 bg-green-500 hover:bg-green-400 text-white rounded-xl font-semibold transition-all flex items-center justify-center gap-2"
@@ -741,6 +745,40 @@ export default function ServiceDetailClient({ service, relatedServices }) {
                 <p className="text-2xl font-bold text-sky-400">{s.val}</p>
                 <p className="text-sm text-gray-500 mt-1">{s.label}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Relevant case studies ── */}
+      <section className="border-y border-gray-200 bg-gray-50 py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight text-black">
+              Relevant Product and Website Case Studies
+            </h2>
+            <p className="mt-3 leading-7 text-gray-600">
+              Review the challenges, design process, and documented deliverables
+              from related Easesmith engagements.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {relatedCaseStudies.map((study) => (
+              <Link
+                key={study.url}
+                href={study.url}
+                className="rounded-2xl border border-gray-200 bg-white p-6 transition hover:border-sky-300 hover:shadow-md"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-sky-700">
+                  {study.type}
+                </p>
+                <h3 className="mt-2 text-lg font-bold text-black">
+                  {study.name}
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-gray-600">
+                  {study.tagline}
+                </p>
+              </Link>
             ))}
           </div>
         </div>

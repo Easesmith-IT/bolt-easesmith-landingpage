@@ -15,14 +15,17 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="relative inline-block font-josefin_sans"
         >
-          <h1 className="text-2xl sm:text-4xl md:text-[42px] font-semibold tracking-tight leading-none">
+          <h2 className="text-2xl sm:text-4xl md:text-[42px] font-semibold tracking-tight leading-none">
             <span className="text-[#1358C4]">Case</span>{" "}
             <span className="text-black">Study</span>
-          </h1>
+          </h2>
 
-          <h1 className="text-2xl sm:text-4xl md:text-[42px] text-[#C1BEBE] font-semibold tracking-tight leading-none absolute left-0 top-2 sm:top-3 -z-[1]">
+          <div
+            aria-hidden="true"
+            className="text-2xl sm:text-4xl md:text-[42px] text-[#C1BEBE] font-semibold tracking-tight leading-none absolute left-0 top-2 sm:top-3 -z-[1]"
+          >
             Case Study
-          </h1>
+          </div>
         </motion.div>
 
       </header>

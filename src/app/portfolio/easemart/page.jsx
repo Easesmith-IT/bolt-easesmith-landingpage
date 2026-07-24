@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import EasemartClient from "@/components/portfolio/easemart/easemart-client";
+import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 import React from "react";
 
 export const metadata = {
@@ -82,6 +83,7 @@ const Easemart = () => {
         ]}
       />
 
+      <CaseStudySummary url="/portfolio/easemart" />
       <EasemartClient />
     </>
   );

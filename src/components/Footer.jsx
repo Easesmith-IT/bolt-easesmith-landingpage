@@ -1,4 +1,5 @@
 import { allServices } from "@/data/services";
+import { caseStudies } from "@/data/portfolio";
 import {
   ArrowUpRight,
   CalendarDays,
@@ -97,6 +98,28 @@ export default function Footer() {
                 ))}
               </ul>
             </details>
+
+            <details className="group">
+              <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between py-3 text-sm font-semibold text-white [&::-webkit-details-marker]:hidden">
+                Case studies
+                <ChevronDown
+                  size={17}
+                  className="text-slate-500 transition-transform group-open:rotate-180"
+                />
+              </summary>
+              <ul className="space-y-3 pb-5">
+                {caseStudies.map((study) => (
+                  <li key={study.url}>
+                    <Link
+                      href={study.url}
+                      className="block py-0.5 text-sm text-slate-400 transition-colors hover:text-sky-300"
+                    >
+                      {study.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
           </div>
 
           <div className="mt-7">
@@ -105,24 +128,24 @@ export default function Footer() {
             </h3>
             <div className="grid gap-2 sm:grid-cols-2">
               <a
-                href="mailto:info@easemith.com"
+                href="mailto:info@easesmith.com"
                 className="flex min-h-12 items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-3.5 text-sm text-slate-300 transition-colors hover:border-sky-400/30 hover:text-sky-300"
               >
                 <Mail size={17} className="shrink-0 text-sky-300" />
-                info@easemith.com
+                info@easesmith.com
               </a>
               <a
-                href="tel:+91892568788"
+                href="tel:+918925687688"
                 className="flex min-h-12 items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-3.5 text-sm text-slate-300 transition-colors hover:border-sky-400/30 hover:text-sky-300"
               >
                 <Phone size={17} className="shrink-0 text-sky-300" />
-                +91 892568788
+                +91 89256 87688
               </a>
             </div>
           </div>
         </div>
 
-        <div className="hidden grid-cols-[1.35fr_1fr_0.75fr_1fr] gap-10 border-b border-white/10 pb-16 lg:grid">
+        <div className="hidden grid-cols-[1.35fr_0.9fr_0.9fr_0.75fr_1fr] gap-8 border-b border-white/10 pb-16 lg:grid">
           <div className="max-w-md">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-sky-300">
               <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
@@ -170,6 +193,24 @@ export default function Footer() {
             </ul>
           </nav>
 
+          <nav aria-label="Footer case studies">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+              Case studies
+            </h3>
+            <ul className="space-y-3">
+              {caseStudies.map((study) => (
+                <li key={study.url}>
+                  <Link
+                    href={study.url}
+                    className="text-sm leading-6 text-slate-300 transition-colors hover:text-sky-300"
+                  >
+                    {study.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
           <nav aria-label="Footer company links">
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
               Company
@@ -193,22 +234,22 @@ export default function Footer() {
               Start a conversation
             </h3>
             <a
-              href="mailto:info@easemith.com"
+              href="mailto:info@easesmith.com"
               className="group flex items-center gap-3 text-sm text-slate-300 transition-colors hover:text-sky-300"
             >
               <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/[0.05] text-sky-300">
                 <Mail size={16} />
               </span>
-              info@easemith.com
+              info@easesmith.com
             </a>
             <a
-              href="tel:+91892568788"
+              href="tel:+918925687688"
               className="group mt-3 flex items-center gap-3 text-sm text-slate-300 transition-colors hover:text-sky-300"
             >
               <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/[0.05] text-sky-300">
                 <Phone size={16} />
               </span>
-              +91 892568788
+              +91 89256 87688
             </a>
             <p className="mt-5 text-sm leading-6 text-slate-500">
               Tell us what you are building. We usually respond within one

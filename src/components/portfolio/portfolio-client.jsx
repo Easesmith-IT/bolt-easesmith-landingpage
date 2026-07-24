@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import SiteNavbar from "@/components/SiteNavbar";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -26,10 +25,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { caseStudies, categories, stats, testimonials } from "@/data/portfolio";
-import { ProjectThumbnail } from "@/components/ProjectThumbnail";
-import { Modal } from "@/components/Modal";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
@@ -37,9 +33,6 @@ import { useRouter } from "next/navigation";
 
 export default function PortfolioClient() {
   const [activeFilter, setActiveFilter] = useState("All");
-  const [selectedStudy, setSelectedStudy] = useState(null);
-  const router = useRouter();
-
   const filtered =
     activeFilter === "All"
       ? caseStudies
@@ -72,10 +65,10 @@ export default function PortfolioClient() {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black tracking-tight leading-tight mb-6">
-            Proven Work.
+            Web, App &amp; UI/UX
             <br />
             <span className="bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-              Measurable Impact.
+              Design Case Studies
             </span>
           </h1>
 
@@ -131,9 +124,9 @@ export default function PortfolioClient() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filtered.map((study) => (
-              <article
+              <Link
                 key={study.id}
-                onClick={() => router.push(study.url)}
+                href={study.url}
                 className="group bg-white border border-gray-200 rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_60px_-10px_rgba(14,165,233,0.18)] hover:border-sky-200"
                 aria-label={`Open ${study.name} case study`}
               >
@@ -144,10 +137,7 @@ export default function PortfolioClient() {
                   iconBg={study.iconBg}
                 /> */}
 
-                <div
-                  onClick={() => router.push(study.url)}
-                  className="flex justify-center items-center"
-                >
+                <div className="flex justify-center items-center">
                   {study.img ? (
                     <div className="py-7">
                       <Image
@@ -180,15 +170,14 @@ export default function PortfolioClient() {
                         {study.type}
                       </p>
                     </div>
-                    <button
-                      onClick={() => router.push(study.url)}
+                    <span
                       className="flex-shrink-0 w-9 h-9 bg-gray-50 group-hover:bg-sky-50 rounded-lg flex items-center justify-center transition-colors"
                     >
                       <ArrowUpRight
                         size={18}
                         className="text-gray-400 group-hover:text-sky-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"
                       />
-                    </button>
+                    </span>
                   </div>
 
                   {/* Key Result */}
@@ -234,17 +223,13 @@ export default function PortfolioClient() {
                     )}
                   </div> */}
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* ── 4. Modal ── */}
-      {selectedStudy && (
-        <Modal study={selectedStudy} onClose={() => setSelectedStudy(null)} />
-      )}
-
       {/* ── 5. Results Banner ── */}
       <section className="py-20 bg-black text-white relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

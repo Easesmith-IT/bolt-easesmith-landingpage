@@ -102,14 +102,14 @@ const Hero = () => {
 
       {/* HEADING */}
       <div className="w-full flex justify-center">
-        <motion.h1
+        <motion.h2
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-4xl mt-10 xl:mt-0 lg:text-[60px] xl:text-[120px] font-semibold text-[#D9D9D9]"
         >
           Case Study
-        </motion.h1>
+        </motion.h2>
       </div>
 
       {/* MOBILE BUTTON */}

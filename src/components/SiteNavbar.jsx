@@ -34,7 +34,6 @@ export default function SiteNavbar() {
   const pendingScrollTarget = useRef(null);
   const router = useRouter();
   const pathname = usePathname();
-  const isHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -94,19 +93,6 @@ export default function SiteNavbar() {
     };
   }, [mobileOpen]);
 
-  const handleSectionClick = (sectionId) => {
-    setMobileOpen(false);
-    if (isHome) {
-      const el = document.getElementById(sectionId);
-      if (el) {
-        pendingScrollTarget.current = sectionId;
-        return;
-      }
-    }
-    pendingScrollTarget.current = 0;
-    router.push(`/#${sectionId}`);
-  };
-
   const handleMobileLinkClick = (event, href) => {
     event.preventDefault();
     pendingScrollTarget.current = 0;
@@ -115,7 +101,7 @@ export default function SiteNavbar() {
   };
 
   const navLinks = [
-    { label: "Services", section: "services" },
+    { label: "Services", href: "/services" },
     // { label: "Process", section: "process" },
     // { label: "Work", section: "case-studies" },
     // { label: "Clients", section: "testimonials" },
@@ -123,7 +109,7 @@ export default function SiteNavbar() {
 
   const mobileLinks = [
     { label: "Home", href: "/", icon: Home },
-    { label: "Services", section: "services", icon: Layers3 },
+    { label: "Services", href: "/services", icon: Layers3 },
     { label: "Portfolio", href: "/portfolio", icon: BriefcaseBusiness },
     {
       label: "Shopify Development",
@@ -171,19 +157,18 @@ export default function SiteNavbar() {
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navLinks.map(({ label, section }) => (
-              <button
-                key={section}
-                onClick={() => handleSectionClick(section)}
+            {navLinks.map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
                 className={cn(
-                  "text-gray-700 hover:text-black transition-colors font-medium cursor-pointer",
-                  pathname.includes("services") &&
-                    section === "services" &&
+                  "text-gray-700 hover:text-black transition-colors font-medium",
+                  pathname.startsWith("/services") &&
                     "text-sky-600 underline",
                 )}
               >
                 {label}
-              </button>
+              </Link>
             ))}
             <Link
               href="/portfolio"
@@ -317,14 +302,14 @@ export default function SiteNavbar() {
               </a>
               <div className="mt-3 grid grid-cols-2 gap-3">
                 <a
-                  href="tel:+91892568788"
+                  href="tel:+918925687688"
                   className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-gray-200 text-xs font-semibold text-gray-700"
                 >
                   <Phone size={16} className="text-sky-600" />
                   Call us
                 </a>
                 <a
-                  href="mailto:info@easemith.com"
+                  href="mailto:info@easesmith.com"
                   className="flex min-h-12 items-center justify-center gap-2 rounded-xl border border-gray-200 text-xs font-semibold text-gray-700"
                 >
                   <Mail size={16} className="text-sky-600" />
