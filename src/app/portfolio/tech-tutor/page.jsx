@@ -2,7 +2,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import TechTutorClient from "@/components/portfolio/tech-tutor/tech-tutor-client";
 
 export const metadata = {
-  title: "Tech Tutor — EdTech App UI/UX Case Study | Easesmith",
+  title: "Tech Tutor — EdTech App UI/UX Case Study",
   description:
     "Explore the Tech Tutor EdTech app UI/UX case study — designed to enhance personalized learning through intuitive interfaces, engaging onboarding, and structured educational flows.",
 
@@ -30,7 +30,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/case-study/tech-tutor-cover.png", // 👈 replace with your uploaded image path
+        url: "/og/tech-tutor.png",
         width: 1200,
         height: 630,
         alt: "Tech Tutor EdTech App Case Study",
@@ -43,7 +43,7 @@ export const metadata = {
     title: "Tech Tutor — EdTech App UI/UX Case Study | Easesmith",
     description:
       "Full UI/UX case study of Tech Tutor — improving digital learning experiences with clean UX and engaging mobile UI.",
-    images: ["/case-study/tech-tutor-cover.png"], // 👈 same image
+    images: ["/og/tech-tutor.png"],
   },
 
   robots: {

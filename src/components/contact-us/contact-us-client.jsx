@@ -68,14 +68,14 @@ export const ContactUsClient = () => {
 
         <div className="relative max-w-5xl mx-auto text-center px-6">
           {/* <h1 className="text-5xl md:text-7xl font-bold text-black tracking-tight mb-6">
-            Let's Start
+            Let’s Start
             <br />
             <span className="bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
             A Conversation
             </span>
             </h1> */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black tracking-tight leading-tight mb-6">
-            Let's Start
+            Let’s Start
             <br />
             <span className="bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
               A Conversation
@@ -84,7 +84,7 @@ export const ContactUsClient = () => {
 
           <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-12">
             Whether you want to discuss a project, ask a question, or explore
-            collaboration — we're here to help.
+            collaboration — we’re here to help.
           </p>
 
           {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">

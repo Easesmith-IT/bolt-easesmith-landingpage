@@ -57,7 +57,7 @@ const UIScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <Image
-              src="/portfolio/sportx/onboarding-img.svg"
+              src="/portfolio/sportx/onboarding-img.webp"
               alt="onboarding"
               width={800}
               height={400}
@@ -106,7 +106,7 @@ const UIScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <Image
-              src="/portfolio/sportx/login.svg"
+              src="/portfolio/sportx/login.webp"
               alt="login"
               width={800}
               height={400}
@@ -140,7 +140,7 @@ const UIScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <Image
-              src="/portfolio/sportx/home.svg"
+              src="/portfolio/sportx/home.webp"
               alt="home"
               width={800}
               height={400}
@@ -174,7 +174,7 @@ const UIScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <Image
-              src="/portfolio/sportx/tips.svg"
+              src="/portfolio/sportx/tips.webp"
               alt="tips"
               width={800}
               height={400}
@@ -223,7 +223,7 @@ const UIScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <Image
-              src="/portfolio/sportx/other.svg"
+              src="/portfolio/sportx/other.webp"
               alt="other"
               width={800}
               height={400}

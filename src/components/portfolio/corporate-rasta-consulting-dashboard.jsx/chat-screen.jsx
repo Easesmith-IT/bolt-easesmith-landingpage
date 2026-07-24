@@ -43,7 +43,7 @@ const ChatScreens = () => {
         className="flex justify-center"
       >
         <Image
-          src="/portfolio/crc-dashboard/chat-img.svg"
+          src="/portfolio/crc-dashboard/chat-img.webp"
           alt="chat-screen"
           width={400}
           height={400}

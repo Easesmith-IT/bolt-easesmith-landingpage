@@ -1,13 +1,7 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
+import Link from "next/link";
 
 export default function Hero() {
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden pt-20">
       <div className="absolute inset-0 overflow-hidden">
@@ -52,12 +46,12 @@ export default function Hero() {
                 className="group-hover:translate-x-1 transition-transform"
               />
             </a>
-            <button
-              onClick={() => scrollToSection("case-studies")}
+            <Link
+              href="/portfolio"
               className="px-8 py-4 bg-white text-black border-2 border-black rounded-xl hover:bg-gray-50 transition-all font-semibold"
             >
               View Case Studies
-            </button>
+            </Link>
           </div>
 
           <div className="pt-16">

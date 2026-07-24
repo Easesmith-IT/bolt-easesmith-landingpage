@@ -58,7 +58,7 @@ export const caseStudies = [
     id: 7,
     name: "SportX",
     type: "Mobile App",
-    img: "/portfolio/sportx/sportx-card.svg",
+    img: "/portfolio/sportx/sportx-card.webp",
     tagline:
       "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
     url: "/portfolio/sportx",

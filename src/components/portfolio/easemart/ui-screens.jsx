@@ -83,7 +83,7 @@ const UiScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/onboarding.svg"
+              src="/portfolio/easemart/onboarding.webp"
               alt="onboarding"
               width={800}
               height={400}
@@ -118,7 +118,7 @@ const UiScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/login.svg"
+              src="/portfolio/easemart/login.webp"
               alt="login"
               width={800}
               height={400}
@@ -153,7 +153,7 @@ const UiScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/review.svg"
+              src="/portfolio/easemart/review.webp"
               alt="review"
               width={800}
               height={400}
@@ -188,7 +188,7 @@ const UiScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/home.svg"
+              src="/portfolio/easemart/home.webp"
               alt="home"
               width={250}
               height={400}
@@ -204,7 +204,7 @@ const UiScreens = () => {
             transition={{ duration: 8, repeat: Infinity }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/home-phone-left.svg"
+              src="/portfolio/easemart/home-phone-left.webp"
               alt="home"
               width={400}
               height={400}
@@ -219,7 +219,7 @@ const UiScreens = () => {
             transition={{ duration: 8, repeat: Infinity }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/home-phone-right.svg"
+              src="/portfolio/easemart/home-phone-right.webp"
               alt="home"
               width={400}
               height={400}
@@ -248,7 +248,7 @@ const UiScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/delivery.svg"
+              src="/portfolio/easemart/delivery.webp"
               alt="delivery"
               width={800}
               height={400}
@@ -277,7 +277,7 @@ const UiScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/payment.svg"
+              src="/portfolio/easemart/payment.webp"
               alt="payment"
               width={900}
               height={400}
@@ -306,7 +306,7 @@ const UiScreens = () => {
             animate={{ y: [0, -10, 0] }}
           >
             <PortfolioSvg
-              src="/portfolio/easemart/other.svg"
+              src="/portfolio/easemart/other.webp"
               alt="other"
               width={1000}
               height={400}

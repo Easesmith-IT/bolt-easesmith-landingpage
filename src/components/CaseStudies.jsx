@@ -1,3 +1,5 @@
+"use client";
+
 import { caseStudies } from '@/data/portfolio';
 import { ArrowUpRight, TrendingDown, TrendingUp } from 'lucide-react';
 import { ProjectThumbnail } from './ProjectThumbnail';

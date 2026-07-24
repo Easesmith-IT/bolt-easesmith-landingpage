@@ -35,7 +35,7 @@ const OnboardingScreens = () => {
         whileHover={{ scale: 1.03 }}
       >
         <Image
-          src="/portfolio/tech-tutor/onboarding.svg"
+          src="/portfolio/tech-tutor/onboarding.webp"
           alt="logo"
           width={800}
           height={400}

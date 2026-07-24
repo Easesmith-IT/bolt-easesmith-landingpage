@@ -15,7 +15,7 @@ const OtherScreens = () => {
         </div>
 
         <Image
-          src="/portfolio/tech-tutor/other.svg"
+          src="/portfolio/tech-tutor/other.webp"
           alt="logo"
           width={900}
           height={400}

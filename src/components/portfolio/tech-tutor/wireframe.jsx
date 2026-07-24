@@ -42,7 +42,7 @@ const Wireframe = () => {
           whileHover={{ scale: 1.03 }}
         >
           <Image
-            src="/portfolio/tech-tutor/wireframe-img.svg"
+            src="/portfolio/tech-tutor/wireframe-img.webp"
             alt="logo"
             width={800}
             height={400}

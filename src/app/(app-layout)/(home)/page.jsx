@@ -1,7 +1,4 @@
-"use client";
-
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
-import CaseStudies from "@/components/CaseStudies";
 import FinalCTA from "@/components/FinalCTA";
 import Hero from "@/components/Hero";
 import Process from "@/components/Process";

@@ -26,7 +26,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/logo-easesmith.png",
+        url: "/og/chaperone.png",
         width: 1200,
         height: 630,
         alt: "Chaperone Case Study",
@@ -38,7 +38,7 @@ export const metadata = {
     title: "Chaperone — UI/UX Case Study | Easesmith",
     description:
       "Full UI/UX case study for Chaperone — a nature-themed plant brand designed by Easesmith.",
-    images: ["/logo-easesmith.png"],
+    images: ["/og/chaperone.png"],
   },
   robots: {
     index: true,

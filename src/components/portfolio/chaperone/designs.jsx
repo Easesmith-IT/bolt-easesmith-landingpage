@@ -28,7 +28,7 @@ const Designs = () => {
         className="max-w-5xl mx-auto w-full h-auto mt-10"
       >
         <Image
-          src="/portfolio/chaperone/designs.png"
+          src="/portfolio/chaperone/designs.webp"
           alt="designs"
           width={600}
           height={450}

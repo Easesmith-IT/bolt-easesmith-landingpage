@@ -97,7 +97,7 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <Image
-              src="/portfolio/easemart/hero-right.svg"
+              src="/portfolio/easemart/hero-right.webp"
               alt="hero-right"
               width={900}
               height={675}
@@ -157,7 +157,7 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
       >
         <Image
-          src="/portfolio/easemart/mobiles-img.svg"
+          src="/portfolio/easemart/mobiles-img.webp"
           alt="mobiles-img"
           width={900}
           height={275}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 
@@ -21,18 +22,12 @@ export default function SiteNavbar() {
   const router = useRouter();
   const pathname = usePathname();
   const isHome = pathname === "/";
-  console.log("pathname", pathname);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
 
   const handleSectionClick = (sectionId) => {
     setMobileOpen(false);
@@ -68,10 +63,13 @@ export default function SiteNavbar() {
             aria-label="Easesmith home"
           >
             {/* Inline SVG — horizontal colored logo, exact brand colors */}
-            <img
+            <Image
               className="h-16 sm:h-20 w-44 sm:w-56 object-contain"
               src="/logo-easesmith.png"
               alt="Easesmith"
+              width={224}
+              height={80}
+              priority
             />
           </Link>
 
@@ -102,6 +100,7 @@ export default function SiteNavbar() {
             </Link>
             <Link
               href="/shopify-dev-page"
+              onClick={() => setMobileOpen(false)}
               className={cn(
                 "text-gray-700 hover:text-black transition-colors font-medium",
               )}
@@ -110,6 +109,7 @@ export default function SiteNavbar() {
             </Link>
             <Link
               href="/contact-us"
+              onClick={() => setMobileOpen(false)}
               className={cn(
                 "text-gray-700 hover:text-black transition-colors font-medium",
               )}

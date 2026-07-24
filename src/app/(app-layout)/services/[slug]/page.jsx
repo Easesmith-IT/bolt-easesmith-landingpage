@@ -1,7 +1,14 @@
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceDetailClient from "@/components/service/service-detail-client";
+import { notFound } from "next/navigation";
 
-import { servicesBySlug } from "@/data/services";
+import { allServices, servicesBySlug } from "@/data/services";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return allServices.map((service) => ({ slug: service.slug }));
+}
 
 export async function generateMetadata({ params }) {
   const { slug } = await params; 
@@ -61,11 +68,25 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const ServiceDetail = async ({params}) => {
-   const { slug } = await params; 
+const ServiceDetail = async ({ params }) => {
+  const { slug } = await params;
   const service = servicesBySlug[slug];
 
-    if (!service) return null;
+  if (!service) {
+    notFound();
+  }
+
+  const serviceData = { ...service, icon: service.slug };
+  const relatedServices = allServices
+    .filter((relatedService) => relatedService.slug !== service.slug)
+    .slice(0, 3)
+    .map((relatedService) => ({
+      slug: relatedService.slug,
+      title: relatedService.title,
+      description: relatedService.description,
+      icon: relatedService.slug,
+    }));
+
   return (
     <>
       <BreadcrumbSchema
@@ -79,7 +100,10 @@ const ServiceDetail = async ({params}) => {
         ]}
       />
 
-      <ServiceDetailClient />
+      <ServiceDetailClient
+        service={serviceData}
+        relatedServices={relatedServices}
+      />
     </>
   );
 };

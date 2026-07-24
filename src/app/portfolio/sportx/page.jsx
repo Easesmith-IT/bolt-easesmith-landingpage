@@ -2,7 +2,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import SportxClient from "@/components/portfolio/sportx/sportx-client";
 
 export const metadata = {
-  title: "SportX — Sports Mobile App UI/UX Case Study | Easesmith",
+  title: "SportX — Sports Mobile App UI/UX Case Study",
   description:
     "Explore the SportX mobile app UI/UX case study — designed to deliver real-time sports updates, intuitive navigation, and engaging user experiences for sports enthusiasts.",
 
@@ -30,7 +30,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/case-study/sportx-cover.png", // 👈 upload your SportX cover image here
+        url: "/og/sportx.png",
         width: 1200,
         height: 630,
         alt: "SportX Mobile App Case Study",
@@ -43,7 +43,7 @@ export const metadata = {
     title: "SportX — Sports Mobile App UI/UX Case Study | Easesmith",
     description:
       "Full UI/UX case study of SportX — enhancing sports tracking and engagement through intuitive design and clean mobile UI.",
-    images: ["/case-study/sportx-cover.png"], // 👈 same image
+    images: ["/og/sportx.png"],
   },
 
   robots: {

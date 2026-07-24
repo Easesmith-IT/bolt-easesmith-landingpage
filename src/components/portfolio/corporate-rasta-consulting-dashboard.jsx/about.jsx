@@ -106,7 +106,7 @@ const About = () => {
             challenges that impede productivity and client satisfaction. This
             case study explores the implementation of a legal dashboard designed
             to overcome these obstacles, streamline operations, and transform
-            the firm's approach to case management.
+            the firm’s approach to case management.
           </p>
         </motion.div>
 

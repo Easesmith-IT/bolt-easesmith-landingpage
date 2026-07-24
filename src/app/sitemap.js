@@ -22,6 +22,12 @@ export default function sitemap() {
       changeFrequency: "yearly",
       priority: 0.6,
     },
+    {
+      url: `${baseUrl}/shopify-dev-page`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
   ];
 
   const serviceRoutes = Object.values(servicesBySlug).map((service) => ({
@@ -31,5 +37,21 @@ export default function sitemap() {
     priority: 0.9,
   }));
 
-  return [...staticRoutes, ...serviceRoutes];
+  const portfolioRoutes = [
+    "abhicares",
+    "bhoomie-reality",
+    "chaperone",
+    "corporate-rasta-consulting",
+    "corporate-rasta-consulting-dashboard",
+    "easemart",
+    "sportx",
+    "tech-tutor",
+  ].map((slug) => ({
+    url: `${baseUrl}/portfolio/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...portfolioRoutes];
 }

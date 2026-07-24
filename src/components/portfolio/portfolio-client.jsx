@@ -254,7 +254,7 @@ export default function PortfolioClient() {
         <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-              The Numbers Don't Lie
+              The Numbers Don’t Lie
             </h2>
             <p className="text-gray-400 mt-4 text-lg">
               Aggregate results across all client engagements.
@@ -327,7 +327,7 @@ export default function PortfolioClient() {
                   ))}
                 </div>
                 <p className="text-gray-700 leading-relaxed mb-6 italic">
-                  "{t.quote}"
+                  “{t.quote}”
                 </p>
                 <div className="flex items-center gap-3 pt-4 border-t border-gray-100">
                   <div className="w-10 h-10 bg-sky-100 rounded-full flex items-center justify-center text-sky-700 font-bold">
@@ -368,7 +368,7 @@ export default function PortfolioClient() {
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-xl mx-auto leading-relaxed mb-10">
-            Let's build the systems your business needs to scale efficiently. No
+            Let’s build the systems your business needs to scale efficiently. No
             guesswork — just engineering excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">

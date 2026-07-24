@@ -56,7 +56,7 @@ const Wireframes = () => {
         className="max-w-5xl mx-auto w-full h-auto mt-10"
       >
         <Image
-          src="/portfolio/chaperone/wireframe.png"
+          src="/portfolio/chaperone/wireframe.webp"
           alt="wireframe"
           width={600}
           height={450}

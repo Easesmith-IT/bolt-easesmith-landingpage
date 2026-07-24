@@ -36,7 +36,7 @@ const HomeScreen = () => {
           whileHover={{ scale: 1.05 }}
         >
           <Image
-            src="/portfolio/tech-tutor/home-screen-img.svg"
+            src="/portfolio/tech-tutor/home-screen-img.webp"
             alt="logo"
             width={200}
             height={400}

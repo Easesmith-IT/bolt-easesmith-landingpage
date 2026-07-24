@@ -2,7 +2,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CorporateRaastaClientDashboard from "@/components/portfolio/corporate-rasta-consulting-dashboard.jsx/corporate-raasta-client-dashboard";
 
 export const metadata = {
-  title: "Corporate Raasta Dashboard — UI/UX Case Study | Easesmith",
+  title: "Corporate Raasta Dashboard — UI/UX Case Study",
   description:
     "Explore the Corporate Raasta Dashboard UI/UX case study — a centralized legal management system designed to streamline case tracking, client communication, document handling, and real-time decision-making.",
 
@@ -30,7 +30,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/case-study/corporate-raasta-dashboard-cover.png", // update if needed
+        url: "/og/corporate-rasta-consulting-dashboard.png",
         width: 1200,
         height: 630,
         alt: "Corporate Raasta Dashboard Case Study",
@@ -43,7 +43,7 @@ export const metadata = {
     title: "Corporate Raasta Dashboard — UI/UX Case Study | Easesmith",
     description:
       "A complete UI/UX case study of a legal dashboard system — simplifying workflows with real-time insights, automation, and clean interface design.",
-    images: ["/case-study/corporate-raasta-dashboard-cover.png"],
+    images: ["/og/corporate-rasta-consulting-dashboard.png"],
   },
 
   robots: {

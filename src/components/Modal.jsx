@@ -1,3 +1,5 @@
+"use client";
+
 import { CalendarIcon, FileTextIcon, QuoteIcon, XIcon } from "lucide-react";
 import { useEffect } from "react";
 

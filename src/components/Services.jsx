@@ -1,16 +1,8 @@
 import { TrendingUp, ArrowRight } from "lucide-react";
 import { allServices } from "@/data/services";
 import Link from "next/link";
-import { useIsMobile } from "@/hooks/use-mobile";
-import { useRouter } from "next/navigation";
 
 export default function Services() {
-  const isMobile = useIsMobile();
-  const router = useRouter();
-  const handleClick = (slug) => {
-    isMobile && router.push(`/services/${slug}`);
-  };
-
   return (
     <section id="services" className="py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -30,8 +22,7 @@ export default function Services() {
             return (
               <div
                 key={service.slug}
-                className="group cursor-pointer sm:cursor-default relative bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-sky-400 transition-all duration-300 hover:shadow-2xl"
-                onClick={() => handleClick(service.slug)}
+                className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-sky-400 transition-all duration-300 hover:shadow-2xl"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-sky-50 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
 

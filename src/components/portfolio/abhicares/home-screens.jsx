@@ -25,7 +25,7 @@ const HomeScreens = () => {
         whileHover={{ scale: 1.02 }}
       >
         <Image
-          src="/portfolio/abhicares/home-img.svg"
+          src="/portfolio/abhicares/home-img.webp"
           alt="image"
           width={580}
           height={320}

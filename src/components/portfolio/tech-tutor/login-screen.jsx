@@ -35,7 +35,7 @@ const LoginScreens = () => {
         whileHover={{ scale: 1.03 }}
       >
         <Image
-          src="/portfolio/tech-tutor/login-screen-img.svg"
+          src="/portfolio/tech-tutor/login-screen-img.webp"
           alt="logo"
           width={1000}
           height={400}

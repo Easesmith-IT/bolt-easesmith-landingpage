@@ -3,7 +3,7 @@ import BhoomieRealityClient from "@/components/portfolio/bhoomie-reality/bhoomie
 
 
 export const metadata = {
-  title: "Bhoomie Realty — Real Estate Website UI/UX Case Study | Easesmith",
+  title: "Bhoomie Realty — Real Estate Website UI/UX Case Study",
 
   description:
     "Explore the Bhoomie Realty UI/UX case study — a modern real estate website designed to showcase property listings, enhance user engagement, and provide seamless browsing across devices.",
@@ -32,7 +32,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/case-study/bhoomie-realty-cover.png", // update path if needed
+        url: "/og/bhoomie-reality.png",
         width: 1200,
         height: 630,
         alt: "Bhoomie Realty Case Study",
@@ -45,7 +45,7 @@ export const metadata = {
     title: "Bhoomie Realty — Real Estate Website UI/UX Case Study | Easesmith",
     description:
       "Discover the design of a modern real estate website — featuring property search, responsive layouts, and user-friendly interactions.",
-    images: ["/case-study/bhoomie-realty-cover.png"],
+    images: ["/og/bhoomie-reality.png"],
   },
 
   robots: {

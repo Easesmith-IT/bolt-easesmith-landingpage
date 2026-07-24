@@ -55,7 +55,7 @@ const About = () => {
             their needs. Our mission is to empower students with convenient,
             on-demand educational resources, fostering an environment where
             knowledge is accessible anytime, anywhere. By bridging the gap
-            between coaching centers and learners, we're creating a community
+            between coaching centers and learners, we’re creating a community
             that thrives on the shared pursuit of academic excellence.
           </p>
         </motion.div>
@@ -93,7 +93,7 @@ const About = () => {
             as limited access to quality teachers and materials, especially in
             rural or underfunded areas, further exacerbate educational
             disparities. The teacher-student ratio is frequently imbalanced,
-            resulting in inadequate attention to each student's learning
+            resulting in inadequate attention to each student’s learning
             progress.
           </p>
         </motion.div>

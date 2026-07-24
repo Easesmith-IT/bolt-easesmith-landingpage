@@ -1,23 +1,20 @@
-"use client";
-
 import { allServices } from "@/data/services";
-import { cn } from "@/lib/utils";
 import { Linkedin, Twitter, Github, Mail } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function Footer() {
-  const pathname = usePathname();
-
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           <div className="space-y-3">
-            <img
+            <Image
               className="h-16 sm:h-20 w-40 sm:w-56 object-contain"
               src="/logo-easesmith.png"
               alt="Easesmith"
+              width={224}
+              height={80}
             />
             <p className="text-gray-600 text-sm leading-relaxed">
               Elite technology engineering for businesses that demand
@@ -53,9 +50,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/portfolio"
-                  className={cn(
-                    pathname === "/portfolio" && "text-sky-600 underline",
-                  )}
+                  className="hover:text-black transition-colors"
                 >
                   Portfolio
                 </Link>
@@ -63,9 +58,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact-us"
-                  className={cn(
-                    pathname === "/contact-us" && "text-sky-600 underline",
-                  )}
+                  className="hover:text-black transition-colors"
                 >
                   Contact Us
                 </Link>

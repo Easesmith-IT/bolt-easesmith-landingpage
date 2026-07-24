@@ -40,7 +40,7 @@ const Wireframes = () => {
         animate={{ y: [0, -12, 0] }} // subtle floating
       >
         <Image
-          src="/portfolio/easemart/wireframes.svg"
+          src="/portfolio/easemart/wireframes.webp"
           alt="wireframes"
           width={400}
           height={600}

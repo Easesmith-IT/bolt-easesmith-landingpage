@@ -25,7 +25,7 @@ export default function FinalCTA() {
           </h2>
 
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed tracking-luxury">
-            Let's build the systems your business actually needs to scale. No
+            Let’s build the systems your business actually needs to scale. No
             fluff, no guesswork—just engineering excellence.
           </p>
 

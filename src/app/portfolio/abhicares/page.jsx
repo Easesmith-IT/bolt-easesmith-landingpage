@@ -29,7 +29,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/abhicares/cover.png", // 👉 replace with your actual image
+        url: "/og/abhicares.png",
         width: 1200,
         height: 630,
         alt: "AbhiCares Case Study",
@@ -42,7 +42,7 @@ export const metadata = {
     title: "AbhiCares — UI/UX Case Study | Easesmith",
     description:
       "Complete UI/UX case study for AbhiCares — a service-based platform designed by Easesmith.",
-    images: ["/abhicares/cover.png"], // 👉 replace if needed
+    images: ["/og/abhicares.png"],
   },
 
   robots: {

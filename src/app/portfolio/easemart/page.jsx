@@ -3,7 +3,7 @@ import EasemartClient from "@/components/portfolio/easemart/easemart-client";
 import React from "react";
 
 export const metadata = {
-  title: "Easemart — Grocery Delivery App UI/UX Case Study | Easesmith",
+  title: "Easemart — Grocery Delivery App UI/UX Case Study",
 
   description:
     "Explore the Easemart grocery delivery app UI/UX case study — designed to simplify online shopping with intuitive navigation, fast delivery tracking, and a seamless mobile experience.",
@@ -37,7 +37,7 @@ export const metadata = {
 
     images: [
       {
-        url: "https://www.easesmith.com/case-study/easemart-cover.png", // ✅ your uploaded image
+        url: "/og/easemart.png",
         width: 1200,
         height: 630,
         alt: "Easemart Mobile App Case Study",
@@ -53,7 +53,7 @@ export const metadata = {
     description:
       "Full UI/UX case study of Easemart — improving grocery shopping experience with clean UI, smart flows, and fast delivery tracking.",
 
-    images: ["https://www.easesmith.com/case-study/easemart-cover.png"],
+    images: ["/og/easemart.png"],
   },
 
   robots: {

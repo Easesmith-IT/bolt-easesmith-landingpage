@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   ArrowRight,
   ArrowLeft,
@@ -20,10 +20,20 @@ import {
   Github,
   Mail,
   ExternalLink,
+  ShoppingBag,
+  Code2,
+  Smartphone,
+  Monitor,
 } from "lucide-react";
-import { servicesBySlug, allServices } from "@/data/services";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+
+const serviceIcons = {
+  "shopify-development": ShoppingBag,
+  "custom-software": Code2,
+  "app-development": Smartphone,
+  automation: Zap,
+  "mobile-web-development": Monitor,
+};
 
 // ─── Store Mockup ─────────────────────────────────────────────────────────────
 
@@ -166,35 +176,8 @@ function FAQItem({ question, answer }) {
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
 
-export default function ServiceDetailClient() {
-  const { slug } = useParams();
-  const router = useRouter();
-  const service = slug ? servicesBySlug[slug] : null;
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug]);
-
-  if (!service) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-white">
-        <div className="text-center space-y-4">
-          <h1 className="text-3xl font-bold text-black">Service Not Found</h1>
-          <p className="text-gray-600">
-            The service you&apos;re looking for doesn&apos;t exist.
-          </p>
-          <button
-            onClick={() => router.push("/")}
-            className="px-6 py-3 bg-black text-white rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center gap-2 mx-auto"
-          >
-            <ArrowLeft size={18} /> Back to Home
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  const ServiceIcon = service.icon;
+export default function ServiceDetailClient({ service, relatedServices }) {
+  const ServiceIcon = serviceIcons[service.icon];
 
   return (
     <div className="min-h-screen bg-white">
@@ -768,11 +751,8 @@ export default function ServiceDetailClient() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-black mb-8">Other Services</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {allServices
-              .filter((s) => s.slug !== service.slug)
-              .slice(0, 3)
-              .map((s) => {
-                const Icon = s.icon;
+            {relatedServices.map((s) => {
+                const Icon = serviceIcons[s.icon];
                 return (
                   <Link
                     key={s.slug}
