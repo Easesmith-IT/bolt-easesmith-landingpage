@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import BhoomieRealityClient from "@/components/portfolio/bhoomie-reality/bhoomie-reality-client";
 import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
@@ -58,23 +57,6 @@ export const metadata = {
 const BhoomieReality = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          {
-            name: "Home",
-            url: "https://www.easesmith.com",
-          },
-          {
-            name: "Portfolio",
-            url: "https://www.easesmith.com/portfolio",
-          },
-          {
-            name: "Bhoomie Realty",
-            url: "https://www.easesmith.com/portfolio/bhoomie-reality",
-          },
-        ]}
-      />
-
       <CaseStudySummary url="/portfolio/bhoomie-reality" />
       <BhoomieRealityClient />
     </>

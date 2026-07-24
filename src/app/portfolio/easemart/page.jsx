@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import EasemartClient from "@/components/portfolio/easemart/easemart-client";
 import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 import React from "react";
@@ -66,23 +65,6 @@ export const metadata = {
 const Easemart = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          {
-            name: "Home",
-            url: "https://www.easesmith.com",
-          },
-          {
-            name: "Portfolio",
-            url: "https://www.easesmith.com/portfolio",
-          },
-          {
-            name: "Easemart",
-            url: "https://www.easesmith.com/portfolio/easemart",
-          },
-        ]}
-      />
-
       <CaseStudySummary url="/portfolio/easemart" />
       <EasemartClient />
     </>

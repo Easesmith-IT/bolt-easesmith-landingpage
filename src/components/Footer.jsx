@@ -4,6 +4,9 @@ import {
   ArrowUpRight,
   CalendarDays,
   ChevronDown,
+  Facebook,
+  Instagram,
+  Linkedin,
   Mail,
   Phone,
 } from "lucide-react";
@@ -14,6 +17,24 @@ const companyLinks = [
   { label: "Our Process", href: "/#process" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Contact Us", href: "/contact-us" },
+];
+
+const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://in.linkedin.com/company/easesmith",
+    icon: Linkedin,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/easesmiths/",
+    icon: Facebook,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/easesmith/",
+    icon: Instagram,
+  },
 ];
 
 export default function Footer() {
@@ -142,6 +163,27 @@ export default function Footer() {
                 +91 89256 87688
               </a>
             </div>
+            <nav
+              aria-label="Easesmith social profiles"
+              className="mt-4 flex flex-wrap gap-2"
+            >
+              {socialLinks.map((social) => {
+                const SocialIcon = social.icon;
+
+                return (
+                  <a
+                    key={social.href}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-3.5 text-sm font-medium text-slate-300 transition-colors hover:border-sky-400/30 hover:text-sky-300"
+                  >
+                    <SocialIcon size={17} aria-hidden="true" />
+                    {social.label}
+                  </a>
+                );
+              })}
+            </nav>
           </div>
         </div>
 
@@ -251,6 +293,28 @@ export default function Footer() {
               </span>
               +91 89256 87688
             </a>
+            <nav
+              aria-label="Easesmith social profiles"
+              className="mt-5 flex gap-2"
+            >
+              {socialLinks.map((social) => {
+                const SocialIcon = social.icon;
+
+                return (
+                  <a
+                    key={social.href}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Easesmith on ${social.label}`}
+                    title={social.label}
+                    className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/[0.05] text-slate-300 transition-colors hover:border-sky-400/30 hover:text-sky-300"
+                  >
+                    <SocialIcon size={18} aria-hidden="true" />
+                  </a>
+                );
+              })}
+            </nav>
             <p className="mt-5 text-sm leading-6 text-slate-500">
               Tell us what you are building. We usually respond within one
               business day.
@@ -267,25 +331,6 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-
-        <dl className="grid gap-3 border-b border-white/10 py-4 text-xs sm:grid-cols-2 lg:gap-4 lg:py-5">
-          <div className="flex flex-wrap gap-x-2 gap-y-1">
-            <dt className="font-semibold uppercase tracking-[0.12em] text-slate-500">
-              GST Number
-            </dt>
-            <dd className="font-medium tracking-wide text-slate-300">
-              09AAQCM9052K1ZP
-            </dd>
-          </div>
-          <div className="flex flex-wrap gap-x-2 gap-y-1 sm:justify-end">
-            <dt className="font-semibold uppercase tracking-[0.12em] text-slate-500">
-              CIN
-            </dt>
-            <dd className="font-medium tracking-wide text-slate-300">
-              U85499UP2023PTC182763
-            </dd>
-          </div>
-        </dl>
 
         <div className="flex flex-col gap-2 border-b border-white/10 py-4 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:gap-3 lg:py-6">
           <p>© {new Date().getFullYear()} Easesmith. All rights reserved.</p>

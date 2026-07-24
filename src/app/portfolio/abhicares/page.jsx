@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import AbhicaresClient from "@/components/portfolio/abhicares/abhicares-client";
 import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
@@ -55,16 +54,6 @@ export const metadata = {
 const AbhicaresPage = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.easesmith.com" },
-          { name: "Portfolio", url: "https://www.easesmith.com/portfolio" },
-          {
-            name: "AbhiCares",
-            url: "https://www.easesmith.com/portfolio/abhicares",
-          },
-        ]}
-      />
       <CaseStudySummary url="/portfolio/abhicares" />
       <AbhicaresClient />
     </>

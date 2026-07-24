@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ChaperoneClient from "@/components/portfolio/chaperone/chaperone-client";
 import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
@@ -50,16 +49,6 @@ export const metadata = {
 const ChaperonePage = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.easesmith.com" },
-          { name: "Portfolio", url: "https://www.easesmith.com/portfolio" },
-          {
-            name: "Chaperone",
-            url: "https://www.easesmith.com/portfolio/chaperone",
-          },
-        ]}
-      />
       <CaseStudySummary url="/portfolio/chaperone" />
       <ChaperoneClient />
     </>

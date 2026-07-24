@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ShopifyClient from "@/components/shopify/shopify-client";
 
 export const metadata = {
@@ -31,7 +30,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/logo-easesmith.png",
+        url: "/og/easesmith-social.png",
         width: 1200,
         height: 630,
       },
@@ -43,7 +42,7 @@ export const metadata = {
     title: "Shopify Conversion Optimization for F&B Brands",
     description:
       "Shopify storefront optimization for established food and beverage brands.",
-    images: ["/logo-easesmith.png"],
+    images: ["/og/easesmith-social.png"],
   },
 
   robots: {
@@ -55,15 +54,6 @@ export const metadata = {
 const Home = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.easesmith.com" },
-          {
-            name: "Shopify Development",
-            url: "https://www.easesmith.com/shopify-dev-page",
-          },
-        ]}
-      />
       <ShopifyClient />
     </>
   );

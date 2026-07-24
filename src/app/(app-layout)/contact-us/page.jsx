@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { ContactUsClient } from "@/components/contact-us/contact-us-client";
 
 export const metadata = {
@@ -31,7 +30,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/logo-easesmith.png",
+        url: "/og/easesmith-social.png",
         width: 1200,
         height: 630,
         alt: "Contact Easesmith",
@@ -45,7 +44,7 @@ export const metadata = {
     title: "Contact Easesmith",
     description:
       "Need help with a project or want to collaborate? Contact Easesmith and schedule a consultation today.",
-    images: ["/logo-easesmith.png"],
+    images: ["/og/easesmith-social.png"],
   },
 
   robots: {
@@ -57,12 +56,6 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.easesmith.com" },
-          { name: "Contact Us", url: "https://www.easesmith.com/contact-us" },
-        ]}
-      />
       <ContactUsClient />
     </>
   );

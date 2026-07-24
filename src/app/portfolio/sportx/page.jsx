@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import SportxClient from "@/components/portfolio/sportx/sportx-client";
 import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
@@ -56,23 +55,6 @@ export const metadata = {
 const SportXPage = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          {
-            name: "Home",
-            url: "https://www.easesmith.com",
-          },
-          {
-            name: "Portfolio",
-            url: "https://www.easesmith.com/portfolio",
-          },
-          {
-            name: "SportX",
-            url: "https://www.easesmith.com/portfolio/sportx",
-          },
-        ]}
-      />
-
       <CaseStudySummary url="/portfolio/sportx" />
       <SportxClient />
     </>

@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import ServiceDetailClient from "@/components/service/service-detail-client";
 import { notFound } from "next/navigation";
 
@@ -110,7 +109,7 @@ export async function generateMetadata({ params }) {
       type: "website",
       images: [
         {
-          url: "/logo-easesmith.png",
+          url: "/og/easesmith-social.png",
           width: 1200,
           height: 630,
         },
@@ -121,7 +120,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title: seo?.title ?? service.title,
       description: seo?.description ?? service.description,
-      images: ["/logo-easesmith.png"],
+      images: ["/og/easesmith-social.png"],
     },
 
     robots: {
@@ -160,17 +159,6 @@ const ServiceDetail = async ({ params }) => {
 
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.easesmith.com" },
-          { name: "Services", url: "https://www.easesmith.com/services" },
-          {
-            name: service.title,
-            url: `https://www.easesmith.com/services/${service.slug}`,
-          },
-        ]}
-      />
-
       <ServiceDetailClient
         service={serviceData}
         relatedServices={relatedServices}

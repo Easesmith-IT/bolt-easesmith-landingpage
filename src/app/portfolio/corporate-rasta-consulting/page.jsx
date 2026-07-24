@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CorporateRaastaClient from "@/components/portfolio/corporate-rasta-consulting/corporate-raasta-client";
 import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
@@ -24,7 +23,7 @@ export const metadata = {
     title: "Corporate Raasta Consulting — UI/UX Case Study | Easesmith",
     description:
       "Discover the complete UI/UX journey of Corporate Raasta Consulting — from research and problem definition to high-fidelity screens and dashboard design.",
-    url: "https://www.easesmith.com/portfolio/corporate-raasta-consulting",
+    url: "https://www.easesmith.com/portfolio/corporate-rasta-consulting",
     siteName: "Easesmith",
     type: "website",
     images: [
@@ -54,23 +53,6 @@ export const metadata = {
 const CorporateRaastaPage = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          {
-            name: "Home",
-            url: "https://www.easesmith.com",
-          },
-          {
-            name: "Portfolio",
-            url: "https://www.easesmith.com/portfolio",
-          },
-          {
-            name: "Corporate Raasta Consulting",
-            url: "https://www.easesmith.com/portfolio/corporate-raasta-consulting",
-          },
-        ]}
-      />
-
       <CaseStudySummary url="/portfolio/corporate-rasta-consulting" />
       <CorporateRaastaClient />
     </>

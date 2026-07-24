@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import CorporateRaastaClientDashboard from "@/components/portfolio/corporate-rasta-consulting-dashboard.jsx/corporate-raasta-client-dashboard";
 import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
@@ -56,23 +55,6 @@ export const metadata = {
 const CorporateRaastaDashboardPage = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          {
-            name: "Home",
-            url: "https://www.easesmith.com",
-          },
-          {
-            name: "Portfolio",
-            url: "https://www.easesmith.com/portfolio",
-          },
-          {
-            name: "Corporate Raasta Dashboard",
-            url: "https://www.easesmith.com/portfolio/corporate-rasta-consulting-dashboard",
-          },
-        ]}
-      />
-
       <CaseStudySummary url="/portfolio/corporate-rasta-consulting-dashboard" />
       <CorporateRaastaClientDashboard />
     </>

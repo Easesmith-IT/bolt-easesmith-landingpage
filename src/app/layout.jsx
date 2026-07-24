@@ -113,13 +113,27 @@ export const metadata = {
     siteName: "Easesmith",
     images: [
       {
-        url: "/logo-easesmith.png",
+        url: "/og/easesmith-social.png",
         width: 1200,
         height: 630,
+        alt: "Easesmith AI automation, custom software, and Shopify development",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Automation, Software & Shopify Development | Easesmith",
+    description:
+      "Easesmith delivers AI automation, custom software development, and high-performance Shopify solutions that streamline operations and accelerate business growth.",
+    images: [
+      {
+        url: "/og/easesmith-social.png",
+        alt: "Easesmith AI automation, custom software, and Shopify development",
+      },
+    ],
   },
 
   alternates: {
@@ -134,28 +148,6 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} ${josefin_sans.variable} ${outfit.variable} ${aclonica.variable} ${open_sans.variable} ${epilogue.variable} antialiased`}
       >
         {children}
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "Organization",
-                  name: "Easesmith",
-                  url: "https://www.easesmith.com",
-                  logo: "https://www.easesmith.com/logo-easesmith.png",
-                },
-                {
-                  "@type": "WebSite",
-                  name: "Easesmith",
-                  url: "https://www.easesmith.com",
-                },
-              ],
-            }),
-          }}
-        />
       </body>
     </html>
   );

@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import PortfolioClient from "@/components/portfolio/portfolio-client";
 
 export const metadata = {
@@ -30,7 +29,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/logo-easesmith.png",
+        url: "/og/easesmith-social.png",
         width: 1200,
         height: 630,
         alt: "Easesmith Portfolio",
@@ -44,7 +43,7 @@ export const metadata = {
     title: "Portfolio",
     description:
       "Explore the Easesmith portfolio of modern web development and software engineering projects.",
-    images: ["/logo-easesmith.png"],
+    images: ["/og/easesmith-social.png"],
   },
 
   robots: {
@@ -56,12 +55,6 @@ export const metadata = {
 const Portfolio = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.easesmith.com" },
-          { name: "Portfolio", url: "https://www.easesmith.com/portfolio" },
-        ]}
-      />
       <PortfolioClient />
     </>
   );

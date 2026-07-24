@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import TechTutorClient from "@/components/portfolio/tech-tutor/tech-tutor-client";
 import CaseStudySummary from "@/components/portfolio/CaseStudySummary";
 
@@ -56,23 +55,6 @@ export const metadata = {
 const TechTutorPage = () => {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          {
-            name: "Home",
-            url: "https://www.easesmith.com",
-          },
-          {
-            name: "Portfolio",
-            url: "https://www.easesmith.com/portfolio",
-          },
-          {
-            name: "Tech Tutor",
-            url: "https://www.easesmith.com/portfolio/tech-tutor",
-          },
-        ]}
-      />
-
       <CaseStudySummary url="/portfolio/tech-tutor" />
       <TechTutorClient />
     </>

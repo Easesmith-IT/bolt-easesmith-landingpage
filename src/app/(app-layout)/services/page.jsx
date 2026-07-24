@@ -1,4 +1,3 @@
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { allServices } from "@/data/services";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
@@ -17,20 +16,13 @@ export const metadata = {
     url: "https://www.easesmith.com/services",
     siteName: "Easesmith",
     type: "website",
-    images: ["/logo-easesmith.png"],
+    images: ["/og/easesmith-social.png"],
   },
 };
 
 export default function ServicesPage() {
   return (
     <>
-      <BreadcrumbSchema
-        items={[
-          { name: "Home", url: "https://www.easesmith.com" },
-          { name: "Services", url: "https://www.easesmith.com/services" },
-        ]}
-      />
-
       <section className="bg-white px-6 pb-24 pt-36 lg:px-8 lg:pt-44">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">

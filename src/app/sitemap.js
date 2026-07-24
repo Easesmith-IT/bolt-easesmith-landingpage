@@ -1,51 +1,30 @@
-import { servicesBySlug } from "@/data/services";
-
+const SITE_URL = "https://www.easesmith.com";
 const LAST_SIGNIFICANT_UPDATE = "2026-07-24";
 
+const INDEXABLE_ROUTES = [
+  "/",
+  "/services",
+  "/services/shopify-development",
+  "/services/custom-software",
+  "/services/app-development",
+  "/services/automation",
+  "/services/mobile-web-development",
+  "/portfolio",
+  "/portfolio/abhicares",
+  "/portfolio/bhoomie-reality",
+  "/portfolio/chaperone",
+  "/portfolio/corporate-rasta-consulting",
+  "/portfolio/corporate-rasta-consulting-dashboard",
+  "/portfolio/easemart",
+  "/portfolio/sportx",
+  "/portfolio/tech-tutor",
+  "/contact-us",
+  "/shopify-dev-page",
+];
+
 export default function sitemap() {
-  const baseUrl = "https://www.easesmith.com";
-
-  const staticRoutes = [
-    {
-      url: baseUrl,
-      lastModified: LAST_SIGNIFICANT_UPDATE,
-    },
-    {
-      url: `${baseUrl}/services`,
-      lastModified: LAST_SIGNIFICANT_UPDATE,
-    },
-    {
-      url: `${baseUrl}/portfolio`,
-      lastModified: LAST_SIGNIFICANT_UPDATE,
-    },
-    {
-      url: `${baseUrl}/contact-us`,
-      lastModified: LAST_SIGNIFICANT_UPDATE,
-    },
-    {
-      url: `${baseUrl}/shopify-dev-page`,
-      lastModified: LAST_SIGNIFICANT_UPDATE,
-    },
-  ];
-
-  const serviceRoutes = Object.values(servicesBySlug).map((service) => ({
-    url: `${baseUrl}/services/${service.slug}`,
+  return INDEXABLE_ROUTES.map((route) => ({
+    url: route === "/" ? SITE_URL : `${SITE_URL}${route}`,
     lastModified: LAST_SIGNIFICANT_UPDATE,
   }));
-
-  const portfolioRoutes = [
-    "abhicares",
-    "bhoomie-reality",
-    "chaperone",
-    "corporate-rasta-consulting",
-    "corporate-rasta-consulting-dashboard",
-    "easemart",
-    "sportx",
-    "tech-tutor",
-  ].map((slug) => ({
-    url: `${baseUrl}/portfolio/${slug}`,
-    lastModified: LAST_SIGNIFICANT_UPDATE,
-  }));
-
-  return [...staticRoutes, ...serviceRoutes, ...portfolioRoutes];
 }
