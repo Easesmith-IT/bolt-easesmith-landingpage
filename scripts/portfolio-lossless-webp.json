@@ -1,0 +1,552 @@
+{
+  "generatedAt": "2026-07-24T09:26:06.236Z",
+  "mode": "lossless-webp",
+  "pixelVerification": true,
+  "candidates": 98,
+  "accepted": 48,
+  "rejected": 50,
+  "updatedSourceFiles": 30,
+  "sourceBytes": 2676227,
+  "outputBytes": 1217244,
+  "savedBytes": 1458983,
+  "assets": [
+    {
+      "source": "/portfolio/abhicares/login-signup-img.png",
+      "output": "/portfolio/abhicares/login-signup-img.webp",
+      "sourceBytes": 87938,
+      "outputBytes": 50116,
+      "savedBytes": 37822
+    },
+    {
+      "source": "/portfolio/abhicares/Pixel 7 Pro Mockup.png",
+      "output": "/portfolio/abhicares/Pixel 7 Pro Mockup.webp",
+      "sourceBytes": 52663,
+      "outputBytes": 33654,
+      "savedBytes": 19009
+    },
+    {
+      "source": "/portfolio/abhicares/project-view-bottom.png",
+      "output": "/portfolio/abhicares/project-view-bottom.webp",
+      "sourceBytes": 3747,
+      "outputBytes": 1664,
+      "savedBytes": 2083
+    },
+    {
+      "source": "/portfolio/abhicares/service-screen-img.jpg",
+      "output": "/portfolio/abhicares/service-screen-img.webp",
+      "sourceBytes": 274474,
+      "outputBytes": 143356,
+      "savedBytes": 131118
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/about-left.png",
+      "output": "/portfolio/bhoomie-reality/about-left.webp",
+      "sourceBytes": 63141,
+      "outputBytes": 29320,
+      "savedBytes": 33821
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/mobile-screen-bg.png",
+      "output": "/portfolio/bhoomie-reality/mobile-screen-bg.webp",
+      "sourceBytes": 148074,
+      "outputBytes": 70746,
+      "savedBytes": 77328
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/tablets-bg.png",
+      "output": "/portfolio/bhoomie-reality/tablets-bg.webp",
+      "sourceBytes": 148804,
+      "outputBytes": 62038,
+      "savedBytes": 86766
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/test1-img.png",
+      "output": "/portfolio/bhoomie-reality/test1-img.webp",
+      "sourceBytes": 6665,
+      "outputBytes": 2654,
+      "savedBytes": 4011
+    },
+    {
+      "source": "/portfolio/chaperone/color-1.png",
+      "output": "/portfolio/chaperone/color-1.webp",
+      "sourceBytes": 40400,
+      "outputBytes": 14972,
+      "savedBytes": 25428
+    },
+    {
+      "source": "/portfolio/chaperone/color-2.png",
+      "output": "/portfolio/chaperone/color-2.webp",
+      "sourceBytes": 42827,
+      "outputBytes": 15194,
+      "savedBytes": 27633
+    },
+    {
+      "source": "/portfolio/chaperone/easesmith-logo.png",
+      "output": "/portfolio/chaperone/easesmith-logo.webp",
+      "sourceBytes": 5315,
+      "outputBytes": 1960,
+      "savedBytes": 3355
+    },
+    {
+      "source": "/portfolio/chaperone/Group (10).png",
+      "output": "/portfolio/chaperone/Group (10).webp",
+      "sourceBytes": 6465,
+      "outputBytes": 2298,
+      "savedBytes": 4167
+    },
+    {
+      "source": "/portfolio/chaperone/Group (11).png",
+      "output": "/portfolio/chaperone/Group (11).webp",
+      "sourceBytes": 5747,
+      "outputBytes": 2062,
+      "savedBytes": 3685
+    },
+    {
+      "source": "/portfolio/chaperone/Group (4).png",
+      "output": "/portfolio/chaperone/Group (4).webp",
+      "sourceBytes": 5807,
+      "outputBytes": 2100,
+      "savedBytes": 3707
+    },
+    {
+      "source": "/portfolio/chaperone/Group (5).png",
+      "output": "/portfolio/chaperone/Group (5).webp",
+      "sourceBytes": 6533,
+      "outputBytes": 2276,
+      "savedBytes": 4257
+    },
+    {
+      "source": "/portfolio/chaperone/Group (6).png",
+      "output": "/portfolio/chaperone/Group (6).webp",
+      "sourceBytes": 6180,
+      "outputBytes": 2232,
+      "savedBytes": 3948
+    },
+    {
+      "source": "/portfolio/chaperone/Group (7).png",
+      "output": "/portfolio/chaperone/Group (7).webp",
+      "sourceBytes": 5846,
+      "outputBytes": 2120,
+      "savedBytes": 3726
+    },
+    {
+      "source": "/portfolio/chaperone/Group (8).png",
+      "output": "/portfolio/chaperone/Group (8).webp",
+      "sourceBytes": 6486,
+      "outputBytes": 2318,
+      "savedBytes": 4168
+    },
+    {
+      "source": "/portfolio/chaperone/Group (9).png",
+      "output": "/portfolio/chaperone/Group (9).webp",
+      "sourceBytes": 6382,
+      "outputBytes": 2206,
+      "savedBytes": 4176
+    },
+    {
+      "source": "/portfolio/crc/business-solution.png",
+      "output": "/portfolio/crc/business-solution.webp",
+      "sourceBytes": 15432,
+      "outputBytes": 7666,
+      "savedBytes": 7766
+    },
+    {
+      "source": "/portfolio/crc/crc-logo.png",
+      "output": "/portfolio/crc/crc-logo.webp",
+      "sourceBytes": 6841,
+      "outputBytes": 5622,
+      "savedBytes": 1219
+    },
+    {
+      "source": "/portfolio/crc/home-back.png",
+      "output": "/portfolio/crc/home-back.webp",
+      "sourceBytes": 64520,
+      "outputBytes": 26662,
+      "savedBytes": 37858
+    },
+    {
+      "source": "/portfolio/crc/overview-img.png",
+      "output": "/portfolio/crc/overview-img.webp",
+      "sourceBytes": 16206,
+      "outputBytes": 9046,
+      "savedBytes": 7160
+    },
+    {
+      "source": "/portfolio/crc/problem-solving.png",
+      "output": "/portfolio/crc/problem-solving.webp",
+      "sourceBytes": 25627,
+      "outputBytes": 10738,
+      "savedBytes": 14889
+    },
+    {
+      "source": "/portfolio/crc-dashboard/category-screen.jpg",
+      "output": "/portfolio/crc-dashboard/category-screen.webp",
+      "sourceBytes": 359071,
+      "outputBytes": 221962,
+      "savedBytes": 137109
+    },
+    {
+      "source": "/portfolio/crc-dashboard/color-codes.png",
+      "output": "/portfolio/crc-dashboard/color-codes.webp",
+      "sourceBytes": 28792,
+      "outputBytes": 11970,
+      "savedBytes": 16822
+    },
+    {
+      "source": "/portfolio/crc-dashboard/easesmith-white.png",
+      "output": "/portfolio/crc-dashboard/easesmith-white.webp",
+      "sourceBytes": 4137,
+      "outputBytes": 1730,
+      "savedBytes": 2407
+    },
+    {
+      "source": "/portfolio/crc-dashboard/heding-underline.png",
+      "output": "/portfolio/crc-dashboard/heding-underline.webp",
+      "sourceBytes": 5447,
+      "outputBytes": 1966,
+      "savedBytes": 3481
+    },
+    {
+      "source": "/portfolio/crc-dashboard/Login.jpg",
+      "output": "/portfolio/crc-dashboard/Login.webp",
+      "sourceBytes": 98775,
+      "outputBytes": 52326,
+      "savedBytes": 46449
+    },
+    {
+      "source": "/portfolio/crc-dashboard/request-img.jpg",
+      "output": "/portfolio/crc-dashboard/request-img.webp",
+      "sourceBytes": 222041,
+      "outputBytes": 117634,
+      "savedBytes": 104407
+    },
+    {
+      "source": "/portfolio/crc-dashboard/typography-bg.png",
+      "output": "/portfolio/crc-dashboard/typography-bg.webp",
+      "sourceBytes": 14657,
+      "outputBytes": 200,
+      "savedBytes": 14457
+    },
+    {
+      "source": "/portfolio/sportx/colors-img.png",
+      "output": "/portfolio/sportx/colors-img.webp",
+      "sourceBytes": 75247,
+      "outputBytes": 30636,
+      "savedBytes": 44611
+    },
+    {
+      "source": "/portfolio/sportx/hero-img1.png",
+      "output": "/portfolio/sportx/hero-img1.webp",
+      "sourceBytes": 4399,
+      "outputBytes": 1150,
+      "savedBytes": 3249
+    },
+    {
+      "source": "/portfolio/sportx/hero-img3.png",
+      "output": "/portfolio/sportx/hero-img3.webp",
+      "sourceBytes": 6048,
+      "outputBytes": 1244,
+      "savedBytes": 4804
+    },
+    {
+      "source": "/portfolio/sportx/hero-img4.png",
+      "output": "/portfolio/sportx/hero-img4.webp",
+      "sourceBytes": 6290,
+      "outputBytes": 1404,
+      "savedBytes": 4886
+    },
+    {
+      "source": "/portfolio/sportx/hero-img5.png",
+      "output": "/portfolio/sportx/hero-img5.webp",
+      "sourceBytes": 2021,
+      "outputBytes": 546,
+      "savedBytes": 1475
+    },
+    {
+      "source": "/portfolio/sportx/hero-img6.png",
+      "output": "/portfolio/sportx/hero-img6.webp",
+      "sourceBytes": 2560,
+      "outputBytes": 590,
+      "savedBytes": 1970
+    },
+    {
+      "source": "/portfolio/sportx/heroimg.png",
+      "output": "/portfolio/sportx/heroimg.webp",
+      "sourceBytes": 4489,
+      "outputBytes": 986,
+      "savedBytes": 3503
+    },
+    {
+      "source": "/portfolio/sportx/home-blob.png",
+      "output": "/portfolio/sportx/home-blob.webp",
+      "sourceBytes": 18217,
+      "outputBytes": 5314,
+      "savedBytes": 12903
+    },
+    {
+      "source": "/portfolio/sportx/other-blob.png",
+      "output": "/portfolio/sportx/other-blob.webp",
+      "sourceBytes": 27138,
+      "outputBytes": 8000,
+      "savedBytes": 19138
+    },
+    {
+      "source": "/portfolio/sportx/typography.png",
+      "output": "/portfolio/sportx/typography.webp",
+      "sourceBytes": 13779,
+      "outputBytes": 5024,
+      "savedBytes": 8755
+    },
+    {
+      "source": "/portfolio/tech-tutor/about-bg.png",
+      "output": "/portfolio/tech-tutor/about-bg.webp",
+      "sourceBytes": 296852,
+      "outputBytes": 88576,
+      "savedBytes": 208276
+    },
+    {
+      "source": "/portfolio/tech-tutor/blob-1.png",
+      "output": "/portfolio/tech-tutor/blob-1.webp",
+      "sourceBytes": 22260,
+      "outputBytes": 5402,
+      "savedBytes": 16858
+    },
+    {
+      "source": "/portfolio/tech-tutor/blob.png",
+      "output": "/portfolio/tech-tutor/blob.webp",
+      "sourceBytes": 14270,
+      "outputBytes": 3174,
+      "savedBytes": 11096
+    },
+    {
+      "source": "/portfolio/tech-tutor/hero-right.png",
+      "output": "/portfolio/tech-tutor/hero-right.webp",
+      "sourceBytes": 163614,
+      "outputBytes": 47842,
+      "savedBytes": 115772
+    },
+    {
+      "source": "/portfolio/tech-tutor/maths-learning-1.png",
+      "output": "/portfolio/tech-tutor/maths-learning-1.webp",
+      "sourceBytes": 23433,
+      "outputBytes": 10154,
+      "savedBytes": 13279
+    },
+    {
+      "source": "/portfolio/tech-tutor/maths-learning.png",
+      "output": "/portfolio/tech-tutor/maths-learning.webp",
+      "sourceBytes": 23470,
+      "outputBytes": 10272,
+      "savedBytes": 13198
+    },
+    {
+      "source": "/portfolio/tech-tutor/other-bg.png",
+      "output": "/portfolio/tech-tutor/other-bg.webp",
+      "sourceBytes": 187100,
+      "outputBytes": 86122,
+      "savedBytes": 100978
+    }
+  ],
+  "rejectedAssets": [
+    {
+      "source": "/portfolio/abhicares/abhicares-card.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/abhicares/abhicares-logo.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/abhicares/Frame 1618873367.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/abhicares/hero-back1.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/abhicares/hero-back2.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/abhicares/home-screen-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/abhicares/mobile-screens-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/abhicares/mobile-wireframes-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/abhicares/website-wireframes-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/about-right.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/comma-left.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/comma-right.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/hero-left.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/hero-right.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/hero.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/home-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/mobile-screen-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/tablets.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/test-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/bhoomie-reality/wireframe.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/about-left.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/about-right.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/chaperone-card.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/chaperone-logo.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/desktop.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/plant-left.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/plant-right.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/tablet.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/chaperone/wireframe-left.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc/crc-card.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc/dashboard-screens-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc/design-screens-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc/hero-1.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc/wireframs-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc-dashboard/about-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc-dashboard/crc-dashboard-card.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc-dashboard/hero-1.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc-dashboard/hero-img-2.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc-dashboard/hero-laptop.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc-dashboard/problem-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/crc-dashboard/wireframes-img.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/sportx/mobile.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/sportx/phone1.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/sportx/phone2.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/sportx/user.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/tech-tutor/ellipse.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/tech-tutor/hero-left.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/tech-tutor/mobiles.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/tech-tutor/tech-tutor-card.png",
+      "reason": "pixel-mismatch"
+    },
+    {
+      "source": "/portfolio/tech-tutor/tech-tutor-logo.png",
+      "reason": "pixel-mismatch"
+    }
+  ]
+}

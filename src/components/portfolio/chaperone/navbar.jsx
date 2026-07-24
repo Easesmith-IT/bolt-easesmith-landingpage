@@ -25,21 +25,6 @@ export default function Navbar() {
         />
       </motion.div>
 
-      {/* RIGHT LOGO */}
-      <motion.div
-        initial={{ opacity: 0, x: 60 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        whileHover={{ scale: 1.05 }}
-      >
-        <Image
-          src="/portfolio/chaperone/easesmith-logo.png"
-          alt="Easesmith Logo"
-          width={240}
-          height={320}
-          className="object-contain -mr-10"
-        />
-      </motion.div>
     </motion.header>
   );
 }

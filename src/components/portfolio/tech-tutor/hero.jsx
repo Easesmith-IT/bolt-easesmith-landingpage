@@ -25,21 +25,6 @@ const Hero = () => {
           </h1>
         </motion.div>
 
-        {/* LOGO */}
-        <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          whileHover={{ scale: 1.05 }}
-        >
-          <Image
-            src="/portfolio/chaperone/easesmith-logo.png"
-            alt="Easesmith Logo"
-            width={240}
-            height={320}
-            className="object-contain -mr-10"
-          />
-        </motion.div>
       </header>
 
       <div className="flex gap-5 flex-col lg:flex-row lg:justify-between">
@@ -113,7 +98,7 @@ const Hero = () => {
               className="bg-blue-600 z-2 hover:bg-blue-700 text-white rounded-md px-5"
             >
               <a target="_blank" href="#">
-                Live Link â†’
+                Live Link →
               </a>
             </Button>
           </motion.div>
@@ -126,7 +111,7 @@ const Hero = () => {
             className="absolute top-0 right-0 -z-1"
           >
             <Image
-              src="/portfolio/tech-tutor/hero-right.png"
+              src="/portfolio/tech-tutor/hero-right.webp"
               alt="bg image"
               width={800}
               height={400}
@@ -182,7 +167,7 @@ const Hero = () => {
           className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5"
         >
           <a target="_blank" href="#">
-            Live Link â†’
+            Live Link →
           </a>
         </Button>
       </motion.div>

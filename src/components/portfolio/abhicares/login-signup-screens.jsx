@@ -25,7 +25,7 @@ const LoginSignupScreens = () => {
         whileHover={{ scale: 1.02 }}
       >
         <Image
-          src="/portfolio/abhicares/login-signup-img.png"
+          src="/portfolio/abhicares/login-signup-img.webp"
           alt="image"
           width={440}
           height={320}

@@ -12,7 +12,7 @@ const About = () => {
         transition={{ duration: 1 }}
       >
         <Image
-          src="/portfolio/tech-tutor/about-bg.png"
+          src="/portfolio/tech-tutor/about-bg.webp"
           alt="bg image"
           width={900}
           height={400}

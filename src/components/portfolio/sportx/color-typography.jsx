@@ -59,7 +59,7 @@ const ColorTypography = () => {
           viewport={{ once: true }}
         >
           <Image
-            src="/portfolio/sportx/colors-img.png"
+            src="/portfolio/sportx/colors-img.webp"
             alt="colors-img"
             width={900}
             height={320}
@@ -180,7 +180,7 @@ const ColorTypography = () => {
           }}
         >
           <Image
-            src="/portfolio/sportx/typography.png"
+            src="/portfolio/sportx/typography.webp"
             alt="typography"
             width={210}
             height={300}

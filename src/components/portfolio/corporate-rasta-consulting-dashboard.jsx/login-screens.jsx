@@ -24,7 +24,7 @@ const LoginScreens = () => {
           className="origin-left"
         >
           <Image
-            src="/portfolio/crc-dashboard/heding-underline.png"
+            src="/portfolio/crc-dashboard/heding-underline.webp"
             alt="image"
             width={170}
             height={60}

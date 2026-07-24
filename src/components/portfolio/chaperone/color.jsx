@@ -51,7 +51,7 @@ const Color = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/portfolio/chaperone/Group (4).png"
+              src="/portfolio/chaperone/Group (4).webp"
               alt=""
               width={200}
               height={220}
@@ -78,7 +78,7 @@ const Color = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/portfolio/chaperone/Group (5).png"
+              src="/portfolio/chaperone/Group (5).webp"
               alt=""
               width={200}
               height={220}
@@ -105,7 +105,7 @@ const Color = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/portfolio/chaperone/Group (6).png"
+              src="/portfolio/chaperone/Group (6).webp"
               alt=""
               width={200}
               height={220}
@@ -132,7 +132,7 @@ const Color = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/portfolio/chaperone/Group (7).png"
+              src="/portfolio/chaperone/Group (7).webp"
               alt=""
               width={200}
               height={220}
@@ -159,7 +159,7 @@ const Color = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/portfolio/chaperone/Group (8).png"
+              src="/portfolio/chaperone/Group (8).webp"
               alt=""
               width={200}
               height={220}
@@ -186,7 +186,7 @@ const Color = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/portfolio/chaperone/Group (9).png"
+              src="/portfolio/chaperone/Group (9).webp"
               alt=""
               width={200}
               height={220}
@@ -213,7 +213,7 @@ const Color = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/portfolio/chaperone/Group (10).png"
+              src="/portfolio/chaperone/Group (10).webp"
               alt=""
               width={200}
               height={220}
@@ -240,7 +240,7 @@ const Color = () => {
             viewport={{ once: true }}
           >
             <Image
-              src="/portfolio/chaperone/Group (11).png"
+              src="/portfolio/chaperone/Group (11).webp"
               alt=""
               width={200}
               height={220}

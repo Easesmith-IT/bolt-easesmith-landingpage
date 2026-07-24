@@ -23,14 +23,14 @@ const OtherScreens = () => {
         />
       </div>
       <Image
-        src="/portfolio/tech-tutor/blob.png"
+        src="/portfolio/tech-tutor/blob.webp"
         alt="logo"
         width={900}
         height={100}
         className="hidden xl:inline absolute -bottom-50 left-0 right-0 w-full -z-1"
       />
       <Image
-        src="/portfolio/tech-tutor/other-bg.png"
+        src="/portfolio/tech-tutor/other-bg.webp"
         alt="logo"
         width={500}
         height={100}

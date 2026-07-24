@@ -45,7 +45,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link â†’
+          Live Link →
         </Button>
       </motion.div>
 
@@ -103,7 +103,7 @@ export default function Hero() {
         className="flex sm:hidden justify-end container mx-auto mt-10 px-5"
       >
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link â†’
+          Live Link →
         </Button>
       </motion.div>
     </section>

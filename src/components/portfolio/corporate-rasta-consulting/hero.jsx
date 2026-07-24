@@ -20,7 +20,7 @@ const Hero = () => {
             className="bg-[#CDD3E44D] p-2.5 rounded-2xl flex gap-2 items-center"
           >
             <Image
-              src="/portfolio/crc/crc-logo.png"
+              src="/portfolio/crc/crc-logo.webp"
               alt="Crc Logo"
               width={50}
               height={50}
@@ -43,7 +43,7 @@ const Hero = () => {
               className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5"
             >
               <a target="_blank" href="https://corporateraastaconsulting.com">
-                Live Link â†’
+                Live Link →
               </a>
             </Button>
           </motion.div>
@@ -76,7 +76,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <Image
-              src="/portfolio/crc/home-back.png"
+              src="/portfolio/crc/home-back.webp"
               alt="Hero Background"
               width={500}
               height={500}

@@ -72,7 +72,7 @@ const UIScreens = () => {
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           >
             <Image
-              src="/portfolio/sportx/other-blob.png"
+              src="/portfolio/sportx/other-blob.webp"
               alt="blob"
               width={1200}
               height={600}
@@ -189,7 +189,7 @@ const UIScreens = () => {
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           >
             <Image
-              src="/portfolio/sportx/other-blob.png"
+              src="/portfolio/sportx/other-blob.webp"
               alt="blob"
               width={1200}
               height={600}
@@ -238,7 +238,7 @@ const UIScreens = () => {
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           >
             <Image
-              src="/portfolio/sportx/other-blob.png"
+              src="/portfolio/sportx/other-blob.webp"
               alt="blob"
               width={1200}
               height={600}

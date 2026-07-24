@@ -53,7 +53,7 @@ const HomeScreen = () => {
         className="absolute hidden md:inline -top-120 left-0 right-0 w-full -z-1"
       >
         <Image
-          src="/portfolio/tech-tutor/blob-1.png"
+          src="/portfolio/tech-tutor/blob-1.webp"
           alt="blob"
           width={900}
           height={100}

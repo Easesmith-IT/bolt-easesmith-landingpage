@@ -65,7 +65,7 @@ const StyleGuide = () => {
             whileHover={{ scale: 1.03 }}
           >
             <Image
-              src="/portfolio/tech-tutor/maths-learning.png"
+              src="/portfolio/tech-tutor/maths-learning.webp"
               alt="logo"
               width={800}
               height={400}
@@ -97,7 +97,7 @@ const StyleGuide = () => {
             whileHover={{ scale: 1.03 }}
           >
             <Image
-              src="/portfolio/tech-tutor/maths-learning-1.png"
+              src="/portfolio/tech-tutor/maths-learning-1.webp"
               alt="logo"
               width={800}
               height={400}

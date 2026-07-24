@@ -24,7 +24,7 @@ const CategoryScreens = () => {
           className="origin-left"
         >
           <Image
-            src="/portfolio/crc-dashboard/heding-underline.png"
+            src="/portfolio/crc-dashboard/heding-underline.webp"
             alt="image"
             width={170}
             height={60}
@@ -42,7 +42,7 @@ const CategoryScreens = () => {
         whileHover={{ scale: 1.02 }}
       >
         <Image
-          src="/portfolio/crc-dashboard/category-screen.jpg"
+          src="/portfolio/crc-dashboard/category-screen.webp"
           alt="category-screens"
           width={400}
           height={400}

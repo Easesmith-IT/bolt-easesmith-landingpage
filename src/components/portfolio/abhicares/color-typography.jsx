@@ -97,7 +97,7 @@ const ColorTypography = () => {
         className="flex justify-end mt-0 md:mt-10"
       >
         <Image
-          src="/portfolio/abhicares/project-view-bottom.png"
+          src="/portfolio/abhicares/project-view-bottom.webp"
           alt="image"
           width={440}
           height={320}

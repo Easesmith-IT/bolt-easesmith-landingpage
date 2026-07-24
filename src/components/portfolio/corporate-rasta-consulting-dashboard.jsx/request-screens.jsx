@@ -24,7 +24,7 @@ const RequestScreens = () => {
           className="origin-left"
         >
           <Image
-            src="/portfolio/crc-dashboard/heding-underline.png"
+            src="/portfolio/crc-dashboard/heding-underline.webp"
             alt="image"
             width={170}
             height={60}
@@ -42,7 +42,7 @@ const RequestScreens = () => {
         whileHover={{ scale: 1.02, y: -4 }}
       >
         <Image
-          src="/portfolio/crc-dashboard/request-img.jpg"
+          src="/portfolio/crc-dashboard/request-img.webp"
           alt="request-screens"
           width={400}
           height={400}

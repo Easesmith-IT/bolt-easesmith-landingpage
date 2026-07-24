@@ -41,7 +41,7 @@ const Screens = () => {
           transition={{ duration: 1 }}
         >
           <Image
-            src="/portfolio/bhoomie-reality/mobile-screen-bg.png"
+            src="/portfolio/bhoomie-reality/mobile-screen-bg.webp"
             alt="Mobile Screens"
             width={800}
             height={300}
@@ -118,7 +118,7 @@ const Screens = () => {
           viewport={{ once: true }}
         >
           <Image
-            src="/portfolio/bhoomie-reality/tablets-bg.png"
+            src="/portfolio/bhoomie-reality/tablets-bg.webp"
             alt="Desktop Design Screens1"
             width={800}
             height={300}

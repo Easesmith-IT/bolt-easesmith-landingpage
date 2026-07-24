@@ -23,7 +23,7 @@ const Hero = () => {
       >
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
           <a target="_blank" href="https://abhicares.com">
-            Live Link â†’
+            Live Link →
           </a>
         </Button>
       </motion.div>
@@ -38,7 +38,7 @@ const Hero = () => {
           whileHover={{ scale: 1.05 }}
         >
           <Image
-            src="/portfolio/abhicares/Pixel 7 Pro Mockup.png"
+            src="/portfolio/abhicares/Pixel 7 Pro Mockup.webp"
             alt="image"
             width={240}
             height={240}
@@ -120,7 +120,7 @@ const Hero = () => {
         className="flex sm:hidden justify-center container mx-auto mt-10 px-5"
       >
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link â†’
+          Live Link →
         </Button>
       </motion.div>
     </div>

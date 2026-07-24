@@ -24,7 +24,7 @@ const WelcomeScreens = () => {
           className="origin-left"
         >
           <Image
-            src="/portfolio/crc-dashboard/heding-underline.png"
+            src="/portfolio/crc-dashboard/heding-underline.webp"
             alt="image"
             width={170}
             height={60}
@@ -43,7 +43,7 @@ const WelcomeScreens = () => {
         className="flex justify-center"
       >
         <Image
-          src="/portfolio/crc-dashboard/Login.jpg"
+          src="/portfolio/crc-dashboard/Login.webp"
           alt="login"
           width={400}
           height={400}

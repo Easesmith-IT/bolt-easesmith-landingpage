@@ -13,25 +13,11 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <Image
-            src="/portfolio/chaperone/easesmith-logo.png"
-            alt="Easesmith Logo"
-            width={240}
-            height={320}
-            className="object-contain -mr-10"
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Button className="bg-blue-600 z-2 font-inter hover:bg-blue-700 text-white rounded-md px-5">
             <a target="_blank" href="#">
-              Live Link â†’
+              Live Link →
             </a>
           </Button>
         </motion.div>

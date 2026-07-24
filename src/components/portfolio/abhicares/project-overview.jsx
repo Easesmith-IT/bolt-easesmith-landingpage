@@ -121,7 +121,7 @@ const ProjectOverview = () => {
         whileHover={{ scale: 1.03 }}
       >
         <Image
-          src="/portfolio/abhicares/project-view-bottom.png"
+          src="/portfolio/abhicares/project-view-bottom.webp"
           alt="image"
           width={440}
           height={320}

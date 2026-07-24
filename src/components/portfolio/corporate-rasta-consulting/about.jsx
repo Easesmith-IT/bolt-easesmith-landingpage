@@ -73,7 +73,7 @@ const About = () => {
           className="shrink-0"
         >
           <Image
-            src="/portfolio/crc/overview-img.png"
+            src="/portfolio/crc/overview-img.webp"
             alt="overview-img"
             width={300}
             height={300}
@@ -99,7 +99,7 @@ const About = () => {
           className="shrink-0"
         >
           <Image
-            src="/portfolio/crc/problem-solving.png"
+            src="/portfolio/crc/problem-solving.webp"
             alt="problem-solving"
             width={300}
             height={300}
@@ -185,7 +185,7 @@ const About = () => {
           className="shrink-0"
         >
           <Image
-            src="/portfolio/crc/business-solution.png"
+            src="/portfolio/crc/business-solution.webp"
             alt="business-solution"
             width={300}
             height={300}

@@ -53,7 +53,7 @@ const Typography = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Image
-            src="/portfolio/bhoomie-reality/test1-img.png"
+            src="/portfolio/bhoomie-reality/test1-img.webp"
             alt="color palette"
             width={500}
             height={300}

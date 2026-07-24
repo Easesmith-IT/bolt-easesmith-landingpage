@@ -40,7 +40,7 @@ const Typograph = () => {
             className="origin-left"
           >
             <Image
-              src="/portfolio/crc-dashboard/heding-underline.png"
+              src="/portfolio/crc-dashboard/heding-underline.webp"
               alt="image"
               width={170}
               height={60}
@@ -115,7 +115,7 @@ const Typograph = () => {
             className="origin-left"
           >
             <Image
-              src="/portfolio/crc-dashboard/heding-underline.png"
+              src="/portfolio/crc-dashboard/heding-underline.webp"
               alt="image"
               width={170}
               height={60}
@@ -133,7 +133,7 @@ const Typograph = () => {
           whileHover={{ scale: 1.02 }}
         >
           <Image
-            src="/portfolio/crc-dashboard/color-codes.png"
+            src="/portfolio/crc-dashboard/color-codes.webp"
             alt="image"
             width={800}
             height={150}
@@ -149,7 +149,7 @@ const Typograph = () => {
         transition={{ duration: 1 }}
       >
         <Image
-          src="/portfolio/crc-dashboard/typography-bg.png"
+          src="/portfolio/crc-dashboard/typography-bg.webp"
           alt="image"
           width={1000}
           height={600}

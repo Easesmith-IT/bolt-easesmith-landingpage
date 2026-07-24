@@ -14,7 +14,7 @@ const Hero = () => {
         className="flex justify-end pt-5"
       >
         <Image
-          src="/portfolio/crc-dashboard/easesmith-white.png"
+          src="/portfolio/crc-dashboard/easesmith-white.webp"
           alt="image"
           width={300}
           height={60}
@@ -69,7 +69,7 @@ const Hero = () => {
               variant="outline"
               className="bg-transparent hidden lg:inline absolute right-10 bottom-0 sm:bottom-10 text-white hover:text-black"
             >
-              Live Link â†’
+              Live Link →
             </Button>
           </motion.div>
 
@@ -84,7 +84,7 @@ const Hero = () => {
               variant="outline"
               className="bg-transparent text-white hover:text-black"
             >
-              Live Link â†’
+              Live Link →
             </Button>
           </motion.div>
         </div>

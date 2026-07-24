@@ -86,7 +86,7 @@ const Hero = () => {
         className="flex justify-center mt-8 sm:mt-0 mb-5"
       >
         <Button className="bg-blue-600 md:hidden inline hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link â†’
+          Live Link →
         </Button>
       </motion.div>
     </div>

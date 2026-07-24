@@ -12,25 +12,11 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <Image
-            src="/portfolio/chaperone/easesmith-logo.png"
-            alt="Easesmith Logo"
-            width={240}
-            height={320}
-            className="object-contain -mr-10"
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
             <a target="_blank" href="#">
-              Live Link â†’
+              Live Link →
             </a>
           </Button>
         </motion.div>
@@ -39,27 +25,27 @@ const Hero = () => {
       {/* BACKGROUND FLOATING IMAGES */}
       {[
         {
-          src: "/portfolio/sportx/hero-img1.png",
+          src: "/portfolio/sportx/hero-img1.webp",
           className: "absolute -top-1 left-0 -z-1",
         },
         {
-          src: "/portfolio/sportx/hero-img3.png",
+          src: "/portfolio/sportx/hero-img3.webp",
           className: "absolute bottom-0 left-0 -z-1",
         },
         {
-          src: "/portfolio/sportx/hero-img4.png",
+          src: "/portfolio/sportx/hero-img4.webp",
           className: "absolute bottom-0 left-30 -z-1",
         },
         {
-          src: "/portfolio/sportx/hero-img5.png",
+          src: "/portfolio/sportx/hero-img5.webp",
           className: "absolute bottom-0 right-0 -z-1",
         },
         {
-          src: "/portfolio/sportx/hero-img6.png",
+          src: "/portfolio/sportx/hero-img6.webp",
           className: "absolute bottom-0 right-[20%] -z-1",
         },
         {
-          src: "/portfolio/sportx/heroimg.png",
+          src: "/portfolio/sportx/heroimg.webp",
           className: "absolute top-0 left-30 -z-1",
         },
       ].map((img, i) => (

@@ -58,7 +58,7 @@ const About = () => {
           whileHover={{ scale: 1.05 }}
         >
           <Image
-            src="/portfolio/bhoomie-reality/about-left.png"
+            src="/portfolio/bhoomie-reality/about-left.webp"
             alt="hero"
             width={400}
             height={300}

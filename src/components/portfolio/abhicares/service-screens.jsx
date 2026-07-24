@@ -25,7 +25,7 @@ const ServiceScreens = () => {
         whileHover={{ scale: 1.02 }}
       >
         <Image
-          src="/portfolio/abhicares/service-screen-img.jpg"
+          src="/portfolio/abhicares/service-screen-img.webp"
           alt="image"
           width={580}
           height={320}

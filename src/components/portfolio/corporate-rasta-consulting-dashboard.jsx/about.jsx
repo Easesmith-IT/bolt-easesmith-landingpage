@@ -26,7 +26,7 @@ const About = () => {
               className="origin-left"
             >
               <Image
-                src="/portfolio/crc-dashboard/heding-underline.png"
+                src="/portfolio/crc-dashboard/heding-underline.webp"
                 alt="image"
                 width={170}
                 height={60}
@@ -87,7 +87,7 @@ const About = () => {
               className="origin-right"
             >
               <Image
-                src="/portfolio/crc-dashboard/heding-underline.png"
+                src="/portfolio/crc-dashboard/heding-underline.webp"
                 alt="image"
                 width={170}
                 height={60}
@@ -150,7 +150,7 @@ const About = () => {
               className="origin-right"
             >
               <Image
-                src="/portfolio/crc-dashboard/heding-underline.png"
+                src="/portfolio/crc-dashboard/heding-underline.webp"
                 alt="image"
                 width={170}
                 height={60}
