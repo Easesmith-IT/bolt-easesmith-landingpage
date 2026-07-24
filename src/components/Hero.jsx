@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -16,20 +16,20 @@ export default function Hero() {
         <div className="text-center space-y-8 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-sky-50 rounded-full text-sm font-medium text-sky-700 border border-sky-100">
             <Sparkles size={16} className="text-sky-500" />
-            <span>Elite Technology Engineering</span>
+            <span>Revenue-Focused Technology</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black tracking-tight leading-tight">
-            AI Automation, Software
+            We Build What
             <br />
             <span className="bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-              & Shopify Development
+              Drives Revenue.
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed tracking-luxury">
-            Custom Shopify experiences, intelligent software, and
-            high-performance apps engineered for serious growth.
+            We design and engineer revenue-focused technology that helps
+            businesses convert more, move faster, and scale with control.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -85,7 +85,7 @@ export default function Hero() {
                   </div>
                   <div className="space-y-2">
                     <div className="text-3xl md:text-4xl font-bold text-white">
-                      15+
+                      5+
                     </div>
                     <div className="text-sm text-gray-400 tracking-luxury">
                       Years Combined
