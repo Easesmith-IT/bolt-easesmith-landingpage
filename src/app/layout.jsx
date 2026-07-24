@@ -67,12 +67,12 @@ export const metadata = {
   metadataBase: new URL("https://www.easesmith.com"),
 
   title: {
-    default: "Easesmith",
+    default: "AI Automation, Software & Shopify Development | Easesmith",
     template: "%s | Easesmith",
   },
 
   description:
-    "Easesmith helps businesses streamline operations with smart digital solutions, automation, and modern web technologies.",
+    "Easesmith delivers AI automation, custom software development, and high-performance Shopify solutions that streamline operations and accelerate business growth.",
 
   keywords: [
     "Easesmith",
@@ -92,9 +92,9 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Easesmith",
+    title: "AI Automation, Software & Shopify Development | Easesmith",
     description:
-      "Easesmith helps businesses streamline operations with smart digital solutions and automation.",
+      "Easesmith delivers AI automation, custom software development, and high-performance Shopify solutions that streamline operations and accelerate business growth.",
     url: "https://www.easesmith.com",
     siteName: "Easesmith",
     images: [
