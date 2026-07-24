@@ -19,11 +19,12 @@ export default function Hero() {
             <span>Revenue-Focused Technology</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black tracking-tight leading-tight">
-            We Build What
-            <br />
-            <span className="bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-              Drives Revenue.
+          <h1 className="mx-auto max-w-6xl font-black leading-[0.92] tracking-[-0.05em] text-black text-balance">
+            <span className="block text-[clamp(3.6rem,7vw,6.8rem)]">
+              We Build
+            </span>
+            <span className="mt-2 block bg-gradient-to-r from-sky-600 via-sky-500 to-cyan-400 bg-clip-text text-[clamp(4.4rem,9.5vw,8.8rem)] text-transparent">
+              What Drives Revenue.
             </span>
           </h1>
 
