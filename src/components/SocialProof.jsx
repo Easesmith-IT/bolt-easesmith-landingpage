@@ -64,16 +64,16 @@ export default function SocialProof() {
         <div className="mx-auto mb-7 max-w-7xl px-6 text-center lg:px-8">
           <div className="mb-2 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.17em] text-sky-700">
             <span className="h-1.5 w-1.5 rounded-full bg-sky-500" />
-            Proven partnerships
+            Client Partners
           </div>
           <h2
             id="client-logos-heading"
             className="text-xl font-semibold tracking-tight text-slate-950 sm:text-2xl"
           >
-            Trusted by 50+ ambitious businesses
+            Teams we have helped build for
           </h2>
           <p className="mt-2 text-sm leading-6 text-slate-500">
-            Building smarter systems across AI, software, and Shopify.
+            Selected brands across commerce, healthcare, education, and software.
           </p>
         </div>
 
