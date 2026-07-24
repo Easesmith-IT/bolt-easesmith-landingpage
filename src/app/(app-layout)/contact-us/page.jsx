@@ -3,7 +3,7 @@ import { ContactUsClient } from "@/components/contact-us/contact-us-client";
 export const metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Easesmith to discuss your project, request a consultation, or explore how our web development and digital solutions can help grow your business.",
+    "Contact Easesmith to discuss a software, Shopify, mobile app, website, or AI automation project and book a strategy consultation.",
   keywords: [
     "contact Easesmith",
     "Easesmith contact",
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: "Contact Easesmith",
     description:
-      "Reach out to Easesmith for web development, automation, and software engineering solutions. Book a strategy call or contact our team today.",
+      "Discuss your software, Shopify, mobile app, website, or AI automation project with Easesmith.",
     url: "https://www.easesmith.com/contact-us",
     siteName: "Easesmith",
     type: "website",
@@ -43,7 +43,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contact Easesmith",
     description:
-      "Need help with a project or want to collaborate? Contact Easesmith and schedule a consultation today.",
+      "Contact Easesmith to discuss your project and book a strategy consultation.",
     images: ["/og/easesmith-social.png"],
   },
 

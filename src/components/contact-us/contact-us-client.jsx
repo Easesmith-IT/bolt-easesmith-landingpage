@@ -75,10 +75,10 @@ export const ContactUsClient = () => {
             </span>
             </h1> */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black tracking-tight leading-tight mb-6">
-            Let’s Start
+            Contact Easesmith
             <br />
             <span className="bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-              A Conversation
+              About Your Project
             </span>
           </h1>
 

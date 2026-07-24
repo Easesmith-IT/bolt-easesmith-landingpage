@@ -6,10 +6,10 @@ import { caseStudies } from "@/data/portfolio";
 
 const serviceSeo = {
   "shopify-development": {
-    title: "Shopify Development Services for High-Converting Stores",
+    title: "Shopify Development Services",
     description:
-      "Custom Shopify and Shopify Plus development covering conversion-focused UX, theme development, integrations, checkout improvements, and store performance.",
-    headline: "Shopify Development Services for High-Converting Stores",
+      "Custom Shopify and Shopify Plus development covering themes, integrations, conversion-focused UX, checkout optimization, and store performance.",
+    headline: "Shopify Development Services",
   },
   "custom-software": {
     title: "Custom Software Development Services for Businesses",

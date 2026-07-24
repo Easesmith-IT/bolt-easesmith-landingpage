@@ -65,10 +65,10 @@ export default function PortfolioClient() {
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black tracking-tight leading-tight mb-6">
-            Web, App &amp; UI/UX
+            Easesmith Portfolio
             <br />
             <span className="bg-gradient-to-r from-sky-600 to-sky-400 bg-clip-text text-transparent">
-              Design Case Studies
+              Web, App &amp; UI/UX Case Studies
             </span>
           </h1>
 

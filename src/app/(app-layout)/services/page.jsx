@@ -3,16 +3,16 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Software, Shopify, App & AI Automation Services",
+  title: "Software Development Services",
   description:
-    "Explore Easesmith services for Shopify development, custom software, mobile apps, high-performance websites, and AI-powered business automation.",
+    "Explore Easesmith services for custom software, Shopify development, mobile and web apps, and AI automation built to improve operations and growth.",
   alternates: {
     canonical: "/services",
   },
   openGraph: {
-    title: "Software, Shopify, App & AI Automation Services | Easesmith",
+    title: "Software Development Services | Easesmith",
     description:
-      "Development and automation services designed to improve operations, customer experience, and scalable business growth.",
+      "Custom software, Shopify development, mobile and web apps, and AI automation services from Easesmith.",
     url: "https://www.easesmith.com/services",
     siteName: "Easesmith",
     type: "website",
@@ -30,7 +30,7 @@ export default function ServicesPage() {
               Easesmith services
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-black sm:text-6xl">
-              Software, Shopify, App and AI Automation Services
+              Software Development Services
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Choose the service that matches your current bottleneck. Each

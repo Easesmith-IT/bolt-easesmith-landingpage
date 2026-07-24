@@ -113,7 +113,7 @@ export default function SiteNavbar() {
     { label: "Portfolio", href: "/portfolio", icon: BriefcaseBusiness },
     {
       label: "Shopify Development",
-      href: "/shopify-dev-page",
+      href: "/services/shopify-development",
       icon: ShoppingBag,
     },
     { label: "Contact Us", href: "/contact-us", icon: MessageCircle },
@@ -180,7 +180,7 @@ export default function SiteNavbar() {
               Portfolio
             </Link>
             <Link
-              href="/shopify-dev-page"
+              href="/services/shopify-development"
               onClick={() => setMobileOpen(false)}
               className={cn(
                 "text-gray-700 hover:text-black transition-colors font-medium",

@@ -1,9 +1,9 @@
 import PortfolioClient from "@/components/portfolio/portfolio-client";
 
 export const metadata = {
-  title: "Web, Mobile App & UI/UX Design Case Studies",
+  title: "Portfolio & Case Studies",
   description:
-    "Explore Easesmith case studies for responsive websites, mobile apps, dashboards, service platforms, and UI/UX design projects.",
+    "Explore the Easesmith portfolio of websites, mobile apps, dashboards, service platforms, and UI/UX case studies.",
   keywords: [
     "Easesmith portfolio",
     "Easesmith projects",
@@ -21,9 +21,9 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Web, Mobile App & UI/UX Design Case Studies",
+    title: "Portfolio & Case Studies | Easesmith",
     description:
-      "Explore real-world projects and case studies built by Easesmith. Discover modern web development, automation, and software engineering solutions.",
+      "Explore websites, mobile apps, dashboards, service platforms, and UI/UX case studies created by Easesmith.",
     url: "https://www.easesmith.com/portfolio",
     siteName: "Easesmith",
     type: "website",
@@ -40,9 +40,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio",
+    title: "Portfolio & Case Studies | Easesmith",
     description:
-      "Explore the Easesmith portfolio of modern web development and software engineering projects.",
+      "Explore the Easesmith portfolio of websites, mobile apps, dashboards, and UI/UX case studies.",
     images: ["/og/easesmith-social.png"],
   },
 
