@@ -1,5 +1,5 @@
-import { H2 } from "@/components/shared/typography";
-import Image from "next/image";
+﻿import { H2 } from "@/components/shared/typography";
+import Image from "../PortfolioImage";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 

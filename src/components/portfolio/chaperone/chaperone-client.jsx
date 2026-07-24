@@ -9,7 +9,7 @@ import Wireframes from './wire-frames'
 
 const ChaperoneClient = () => {
   return (
-    <div className='overflow-hidden'>
+    <div className='portfolio-case-study overflow-hidden'>
       <Hero />
       <About />
       <Color />

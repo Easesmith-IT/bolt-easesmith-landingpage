@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "../PortfolioImage";
 import Navbar from "./navbar";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
@@ -45,7 +45,7 @@ export default function Hero() {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link →
+          Live Link â†’
         </Button>
       </motion.div>
 
@@ -63,6 +63,8 @@ export default function Hero() {
             alt="desktop"
             width={600}
             height={450}
+            priority
+            sizes="(max-width: 768px) 200px, 450px"
             className="w-full h-auto"
           />
         </motion.div>
@@ -101,7 +103,7 @@ export default function Hero() {
         className="flex sm:hidden justify-end container mx-auto mt-10 px-5"
       >
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link →
+          Live Link â†’
         </Button>
       </motion.div>
     </section>

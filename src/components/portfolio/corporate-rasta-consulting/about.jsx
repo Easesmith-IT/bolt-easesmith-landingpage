@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -54,13 +54,13 @@ const About = () => {
             variants={itemVariants}
             className="font-poppins text-sm md:text-lg lg:text-xl mt-5"
           >
-            The design of this legal counseling firm’s website is meticulously
+            The design of this legal counseling firmâ€™s website is meticulously
             developed to simplify the journey of individuals in search of
             reliable legal advice. Grounded in extensive user research, our team
             has gained deep insights into the unique needs and preferences of
             our clientele. This understanding has been pivotal in shaping a
             platform that is not only intuitive but also deeply aligned with the
-            user’s experience.
+            userâ€™s experience.
           </motion.p>
         </motion.div>
 
@@ -123,7 +123,7 @@ const About = () => {
             variants={itemVariants}
             className="font-poppins text-sm md:text-lg lg:text-xl mt-5"
           >
-            “Despite the critical need for accessible legal guidance, many
+            â€œDespite the critical need for accessible legal guidance, many
             individuals find themselves overwhelmed by the complexity of
             navigating legal websites. The current digital landscape often
             presents a daunting array of information that can be difficult to
@@ -133,7 +133,7 @@ const About = () => {
             legal counsel. Our challenge is to design a platform that not only
             simplifies the search for legal advice but also instills confidence
             and clarity, transforming the way users interact with legal services
-            online.”
+            online.â€
           </motion.p>
         </motion.div>
       </motion.div>

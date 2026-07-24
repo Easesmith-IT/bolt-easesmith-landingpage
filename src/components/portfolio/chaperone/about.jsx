@@ -1,5 +1,5 @@
-import { H1, H2 } from "@/components/shared/typography";
-import Image from "next/image";
+﻿import { H1, H2 } from "@/components/shared/typography";
+import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "motion/react";
 
@@ -31,10 +31,10 @@ const About = () => {
           {/* Description */}
           <p className="mt-4 text-gray-600 leading-relaxed text-sm md:text-lg">
             This is a website for an Plant selling website company, aiming to
-            create a modern, user-friendly platform showcasing the client’s
+            create a modern, user-friendly platform showcasing the clientâ€™s
             services and expertise. The website was designed using modern UI/UX
             design tools and technologies to ensure compatibility across devices
-            and browsers, ultimately enhancing the client’s online presence and
+            and browsers, ultimately enhancing the clientâ€™s online presence and
             driving engagement and lead generation.
           </p>
         </motion.div>
@@ -85,7 +85,7 @@ const About = () => {
 
           {/* Description */}
           <p className="mt-4 text-gray-600 leading-relaxed w-full text-sm md:text-lg">
-            The client’s existing website was outdated, difficult to navigate,
+            The clientâ€™s existing website was outdated, difficult to navigate,
             and did not effectively showcase their expertise in plant design.
             They needed a redesign that would modernize the site, improve user
             experience, and highlight their services and projects.
@@ -109,9 +109,9 @@ const About = () => {
         <p className="mt-4 text-gray-600 leading-relaxed text-sm md:text-lg">
           For Chapter one Plants- website redesign, our UI/UX design solution
           focused on creating a modern, user-friendly experience that reflects
-          the company’s expertise in plant sales. We revamped the site’s
+          the companyâ€™s expertise in plant sales. We revamped the siteâ€™s
           information architecture, ensuring intuitive navigation and clear
-          pathways to key content. The visual design incorporated Chapter one’s
+          pathways to key content. The visual design incorporated Chapter oneâ€™s
           brand identity, with a clean layout, professional typography, and
           high-quality imagery showcasing their projects. Interactive elements
           such as hover effects were used to engage users and highlight

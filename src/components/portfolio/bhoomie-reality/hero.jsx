@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "./navbar";
-import Image from "next/image";
+import Image from "../PortfolioImage";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 
@@ -23,6 +23,8 @@ const Hero = () => {
             alt="hero"
             width={700}
             height={300}
+            priority
+            sizes="(max-width: 640px) 360px, (max-width: 1024px) 520px, 660px"
             className="mx-auto w-90 sm:w-130 lg:w-165 mt-30"
           />
         </motion.div>
@@ -84,7 +86,7 @@ const Hero = () => {
         className="flex justify-center mt-8 sm:mt-0 mb-5"
       >
         <Button className="bg-blue-600 md:hidden inline hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link →
+          Live Link â†’
         </Button>
       </motion.div>
     </div>

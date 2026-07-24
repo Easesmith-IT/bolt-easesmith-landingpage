@@ -24,43 +24,57 @@ const geistMono = Geist_Mono({
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800"],
+  preload: false,
+  display: "swap",
 });
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800"],
+  preload: false,
+  display: "swap",
 });
 
 const josefin_sans = Josefin_Sans({
   subsets: ["latin"],
   variable: "--font-josefin_sans",
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
+  preload: false,
+  display: "swap",
 });
 
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
+  preload: false,
+  display: "swap",
 });
 
 const aclonica = Aclonica({
   subsets: ["latin"],
   variable: "--font-aclonica",
   weight: ["400"],
+  preload: false,
+  display: "swap",
 });
 
 const open_sans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open_sans",
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800"],
+  preload: false,
+  display: "swap",
 });
 
 const epilogue = Epilogue({
   subsets: ["latin"],
   variable: "--font-epilogue",
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800"],
+  preload: false,
+  display: "swap",
 });
 
 export const metadata = {
@@ -115,7 +129,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${inter.variable} ${josefin_sans.variable} ${outfit.variable} ${aclonica.variable} ${open_sans.variable} ${epilogue.variable} antialiased`}
       >

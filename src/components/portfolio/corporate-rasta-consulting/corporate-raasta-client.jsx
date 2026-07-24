@@ -10,7 +10,7 @@ import DashboardScreens from './dashboard-screens';
 
 const CorporateRaastaClient = () => {
   return (
-    <div className='overflow-hidden'>
+    <div className='portfolio-case-study overflow-hidden'>
       <Hero />
       <About />
       <StyleGuide />

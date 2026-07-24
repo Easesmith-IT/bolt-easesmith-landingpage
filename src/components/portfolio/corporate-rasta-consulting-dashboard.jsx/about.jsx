@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "motion/react";
 
@@ -37,7 +37,7 @@ const About = () => {
 
           <p className="font-medium text-xs md:text-base lg:text-xl max-w-3xl">
             In the dynamic world of legal services, the ability to swiftly
-            navigate and manage case information is paramount. Our legal firm’s
+            navigate and manage case information is paramount. Our legal firmâ€™s
             dashboard design is a testament to this necessity, offering a
             centralized and intuitive interface that caters to the fast-paced
             demands of legal professionals. This case study delves into the
@@ -106,7 +106,7 @@ const About = () => {
             challenges that impede productivity and client satisfaction. This
             case study explores the implementation of a legal dashboard designed
             to overcome these obstacles, streamline operations, and transform
-            the firm’s approach to case management.
+            the firmâ€™s approach to case management.
           </p>
         </motion.div>
 

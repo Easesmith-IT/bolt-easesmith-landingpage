@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "motion/react";
 
@@ -104,7 +104,7 @@ const ProjectOverview = () => {
             <p className="text-[#1B1515] text-xs md:text-xl font-poppins">
               AbhiCares has successfully established itself as a one-stop
               platform for expert services in Darbhanga, Bihar, leading to
-              increased customer satisfaction and loyalty. The website’s design
+              increased customer satisfaction and loyalty. The websiteâ€™s design
               has been commended for its ease of use and the quality of service
               it facilitates.
             </p>

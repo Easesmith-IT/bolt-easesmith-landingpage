@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "./navbar";
-import Image from "next/image";
+import Image from "../PortfolioImage";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 
@@ -43,7 +43,7 @@ const Hero = () => {
               className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5"
             >
               <a target="_blank" href="https://corporateraastaconsulting.com">
-                Live Link →
+                Live Link â†’
               </a>
             </Button>
           </motion.div>
@@ -63,6 +63,8 @@ const Hero = () => {
               alt="Hero"
               width={800}
               height={400}
+              priority
+              sizes="(max-width: 768px) 320px, (max-width: 1024px) 500px, 800px"
               className="object-contain md:w-[500px] lg:w-[800px] -mt-10 sm:-mt-20"
             />
           </motion.div>

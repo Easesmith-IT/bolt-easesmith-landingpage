@@ -1,7 +1,7 @@
-"use client";
+﻿"use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -31,7 +31,7 @@ const Hero = () => {
         >
           <Button className="bg-blue-600 z-2 font-inter hover:bg-blue-700 text-white rounded-md px-5">
             <a target="_blank" href="#">
-              Live Link →
+              Live Link â†’
             </a>
           </Button>
         </motion.div>
@@ -83,8 +83,10 @@ const Hero = () => {
               alt="mobile"
               width={400}
               height={275}
+              priority
+              quality={90}
+              sizes="(max-width: 640px) 45vw, 400px"
               className="mx-auto"
-              unoptimized
             />
           </motion.div>
         </div>
@@ -101,8 +103,10 @@ const Hero = () => {
               alt="hero-right"
               width={900}
               height={675}
+              priority
+              quality={90}
+              sizes="(max-width: 640px) 1px, 50vw"
               className="mx-auto hidden sm:inline sm:-mt-15"
-              unoptimized
             />
           </motion.div>
 

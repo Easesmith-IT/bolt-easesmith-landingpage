@@ -12,7 +12,7 @@ import Wireframe from "./wireframe";
 
 const TechTutorClient = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="portfolio-case-study overflow-hidden">
       <Hero />
       <About />
       <StyleGuide />

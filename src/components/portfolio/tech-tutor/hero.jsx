@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+﻿import { Button } from "@/components/ui/button";
+import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "motion/react";
 
@@ -113,7 +113,7 @@ const Hero = () => {
               className="bg-blue-600 z-2 hover:bg-blue-700 text-white rounded-md px-5"
             >
               <a target="_blank" href="#">
-                Live Link →
+                Live Link â†’
               </a>
             </Button>
           </motion.div>
@@ -147,6 +147,8 @@ const Hero = () => {
               alt="mobiles"
               width={600}
               height={400}
+              priority
+              sizes="(max-width: 640px) 100vw, 600px"
               className="-ml-[15%] sm:ml-0"
             />
 
@@ -180,7 +182,7 @@ const Hero = () => {
           className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5"
         >
           <a target="_blank" href="#">
-            Live Link →
+            Live Link â†’
           </a>
         </Button>
       </motion.div>

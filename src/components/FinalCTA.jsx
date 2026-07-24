@@ -4,7 +4,7 @@ export default function FinalCTA() {
   return (
     <section
       id="cta"
-      className="py-24 lg:py-32 bg-black text-white relative overflow-hidden"
+      className="deferred-section py-24 lg:py-32 bg-black text-white relative overflow-hidden"
     >
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-sky-600/20 rounded-full blur-3xl animate-glow"></div>

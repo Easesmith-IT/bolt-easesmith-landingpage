@@ -1,6 +1,6 @@
-
+﻿
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "motion/react";
 
@@ -30,7 +30,7 @@ const Hero = () => {
         >
           <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
             <a target="_blank" href="#">
-              Live Link →
+              Live Link â†’
             </a>
           </Button>
         </motion.div>
@@ -114,6 +114,8 @@ const Hero = () => {
             alt="mobile"
             width={350}
             height={120}
+            priority
+            sizes="(max-width: 640px) 45vw, 350px"
             className="lg:mr-[10%]"
           />
         </motion.div>

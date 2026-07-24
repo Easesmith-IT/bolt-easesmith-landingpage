@@ -22,6 +22,10 @@ const clients = [
     logo: "/images/client logos/CSA-logo.png",
   },
   {
+    name: "Crop to Cloth",
+    logo: "/images/client logos/crop-to-cloth.svg",
+  },
+  {
     name: "De9to",
     logo: "/images/client logos/de9to logo square.png",
   },
@@ -49,71 +53,68 @@ export default function SocialProof() {
   return (
     <section
       aria-labelledby="client-logos-heading"
-      className="relative overflow-hidden border-y border-slate-200/70 bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_48%,#f5f9ff_100%)] py-20 sm:py-24"
+      className="relative overflow-hidden border-y border-slate-200/70 bg-white py-12 sm:py-14"
     >
       <div
         aria-hidden="true"
-        className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-sky-200/25 blur-3xl"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-blue-200/20 blur-3xl"
+        className="absolute left-1/2 top-0 h-32 w-[36rem] -translate-x-1/2 rounded-full bg-sky-100/60 blur-3xl"
       />
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mb-10 flex flex-col gap-6 sm:mb-12 lg:flex-row lg:items-end lg:justify-between">
-          <div className="max-w-2xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-200/80 bg-sky-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-sky-700">
-              <span className="h-1.5 w-1.5 rounded-full bg-sky-500" />
-              Selected partnerships
-            </div>
-            <h2
-              id="client-logos-heading"
-              className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl"
-            >
-              Trusted by teams building what&apos;s next.
-            </h2>
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-600">
-              From growing startups to established businesses, we help ambitious
-              teams turn complex ideas into dependable digital products.
-            </p>
+      <div className="relative">
+        <div className="mx-auto mb-7 max-w-7xl px-6 text-center lg:px-8">
+          <div className="mb-2 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.17em] text-sky-700">
+            <span className="h-1.5 w-1.5 rounded-full bg-sky-500" />
+            Proven partnerships
           </div>
-
-          <div className="flex w-fit items-center gap-3 rounded-2xl border border-slate-200/80 bg-white/80 px-4 py-3 shadow-sm backdrop-blur">
-            <span className="text-2xl font-bold tracking-tight text-slate-950">
-              50+
-            </span>
-            <span className="max-w-24 text-xs font-medium leading-4 text-slate-500">
-              client partnerships
-            </span>
-          </div>
+          <h2
+            id="client-logos-heading"
+            className="text-xl font-semibold tracking-tight text-slate-950 sm:text-2xl"
+          >
+            Trusted by 50+ ambitious businesses
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-slate-500">
+            Building smarter systems across AI, software, and Shopify.
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 items-stretch gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
-          {clients.map((client) => (
-            <div
-              key={client.name}
-              className="group relative flex min-h-28 items-center justify-center overflow-hidden rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-[0_14px_35px_-24px_rgba(15,23,42,0.35)] transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_20px_45px_-22px_rgba(14,165,233,0.3)] sm:min-h-32 sm:p-6"
-            >
+        <div className="relative mx-auto max-w-[90rem] overflow-hidden">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white to-transparent sm:w-28"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white to-transparent sm:w-28"
+          />
+
+          <div className="logo-marquee flex w-max">
+            {[false, true].map((duplicate) => (
               <div
-                aria-hidden="true"
-                className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-sky-300/70 to-transparent"
-              />
-              <div className="relative h-14 w-full sm:h-16">
-                <Image
-                  src={client.logo}
-                  alt={`${client.name} logo`}
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                  className={`object-contain transition-transform duration-300 group-hover:scale-[1.04] ${
-                    client.monochrome
-                      ? "brightness-0 opacity-80"
-                      : ""
-                  }`}
-                />
+                key={duplicate ? "duplicate" : "primary"}
+                aria-hidden={duplicate}
+                className="flex shrink-0 items-center gap-3 pr-3"
+              >
+                {clients.map((client) => (
+                  <div
+                    key={`${duplicate ? "duplicate-" : ""}${client.name}`}
+                    className="group flex h-20 w-40 shrink-0 items-center justify-center rounded-2xl border border-slate-200/80 bg-white px-5 shadow-[0_10px_30px_-22px_rgba(15,23,42,0.45)] transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-200 hover:shadow-[0_14px_30px_-20px_rgba(14,165,233,0.35)] sm:h-24 sm:w-48 sm:px-7"
+                  >
+                    <div className="relative h-11 w-full sm:h-13">
+                      <Image
+                        src={client.logo}
+                        alt={duplicate ? "" : `${client.name} logo`}
+                        fill
+                        sizes="192px"
+                        className={`object-contain transition-transform duration-300 group-hover:scale-[1.03] ${
+                          client.monochrome ? "brightness-0 opacity-75" : ""
+                        }`}
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

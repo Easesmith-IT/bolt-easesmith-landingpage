@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+﻿import { Button } from "@/components/ui/button";
+import Image from "../PortfolioImage";
 import { motion } from "motion/react";
 
 export default function Navbar() {
@@ -43,7 +43,7 @@ export default function Navbar() {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <Button className="bg-blue-600 hidden md:inline hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link →
+          Live Link â†’
         </Button>
       </motion.div>
     </header>

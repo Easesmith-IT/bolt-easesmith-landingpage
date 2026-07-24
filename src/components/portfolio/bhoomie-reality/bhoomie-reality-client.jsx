@@ -8,7 +8,7 @@ import Screens from './screens'
 
 const BhoomieRealityClient = () => {
   return (
-    <div className='overflow-hidden'>
+    <div className='portfolio-case-study overflow-hidden'>
         <Hero />
         <About />
         <Typography />

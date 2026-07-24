@@ -11,7 +11,7 @@ import UIScreens from "./ui-screens";
 
 const SportxClient = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="portfolio-case-study overflow-hidden">
       <Hero />
       <ProjectOverview />
       <ColorTypography />

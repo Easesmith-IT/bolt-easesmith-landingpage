@@ -1,107 +1,265 @@
 import { allServices } from "@/data/services";
-import { Linkedin, Twitter, Github, Mail } from "lucide-react";
-import Image from "next/image";
+import {
+  ArrowUpRight,
+  CalendarDays,
+  ChevronDown,
+  Mail,
+  Phone,
+} from "lucide-react";
 import Link from "next/link";
+
+const companyLinks = [
+  { label: "Home", href: "/" },
+  { label: "Our Process", href: "/#process" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Contact Us", href: "/contact-us" },
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
-          <div className="space-y-3">
-            <Image
-              className="h-16 sm:h-20 w-40 sm:w-56 object-contain"
-              src="/logo-easesmith.png"
-              alt="Easesmith"
-              width={224}
-              height={80}
-            />
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Elite technology engineering for businesses that demand
-              excellence.
-            </p>
+    <footer className="relative overflow-hidden border-t border-white/10 bg-[#070b12] text-white">
+      <div
+        aria-hidden="true"
+        className="absolute -left-32 top-0 h-80 w-80 rounded-full bg-sky-500/10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-blue-500/10 blur-3xl"
+      />
+
+      <div className="relative mx-auto max-w-7xl px-6 pt-10 lg:px-8 lg:pt-20">
+        <div className="border-b border-white/10 pb-8 lg:hidden">
+          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-3 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-sky-300">
+            <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
+            Engineering growth
           </div>
-          <div>
-            <h3 className="font-bold text-black mb-3 text-sm">Services</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              {allServices.map((s) => (
-                <li key={s.slug}>
+
+          <h2 className="max-w-sm text-2xl font-bold tracking-[-0.035em] text-white">
+            Technology built around your business.
+          </h2>
+          <p className="mt-3 max-w-md text-sm leading-6 text-slate-400">
+            AI automation, custom software, and Shopify experiences built for
+            measurable growth.
+          </p>
+
+          <a
+            href="https://calendly.com/mavyakunal/business-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 flex w-full items-center justify-center gap-3 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-50"
+          >
+            <CalendarDays size={17} />
+            Book a strategy call
+            <ArrowUpRight size={16} />
+          </a>
+
+          <div className="mt-7 divide-y divide-white/10 border-y border-white/10">
+            <details className="group">
+              <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between py-3 text-sm font-semibold text-white [&::-webkit-details-marker]:hidden">
+                Services
+                <ChevronDown
+                  size={17}
+                  className="text-slate-500 transition-transform group-open:rotate-180"
+                />
+              </summary>
+              <ul className="space-y-3 pb-5">
+                {allServices.map((service) => (
+                  <li key={service.slug}>
+                    <Link
+                      href={`/services/${service.slug}`}
+                      className="block py-0.5 text-sm leading-6 text-slate-400 transition-colors hover:text-sky-300"
+                    >
+                      {service.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+
+            <details className="group">
+              <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between py-3 text-sm font-semibold text-white [&::-webkit-details-marker]:hidden">
+                Company
+                <ChevronDown
+                  size={17}
+                  className="text-slate-500 transition-transform group-open:rotate-180"
+                />
+              </summary>
+              <ul className="space-y-3 pb-5">
+                {companyLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="block py-0.5 text-sm text-slate-400 transition-colors hover:text-sky-300"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </div>
+
+          <div className="mt-7">
+            <h3 className="mb-3 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-slate-500">
+              Contact
+            </h3>
+            <div className="grid gap-2 sm:grid-cols-2">
+              <a
+                href="mailto:info@easemith.com"
+                className="flex min-h-12 items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-3.5 text-sm text-slate-300 transition-colors hover:border-sky-400/30 hover:text-sky-300"
+              >
+                <Mail size={17} className="shrink-0 text-sky-300" />
+                info@easemith.com
+              </a>
+              <a
+                href="tel:+91892568788"
+                className="flex min-h-12 items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-3.5 text-sm text-slate-300 transition-colors hover:border-sky-400/30 hover:text-sky-300"
+              >
+                <Phone size={17} className="shrink-0 text-sky-300" />
+                +91 892568788
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="hidden grid-cols-[1.35fr_1fr_0.75fr_1fr] gap-10 border-b border-white/10 pb-16 lg:grid">
+          <div className="max-w-md">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-400/20 bg-sky-400/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-sky-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
+              Engineering growth
+            </div>
+
+            <h2 className="text-3xl font-bold tracking-[-0.035em] text-white sm:text-4xl">
+              Technology built around your business.
+            </h2>
+            <p className="mt-5 max-w-sm text-sm leading-7 text-slate-400 sm:text-base">
+              AI automation, custom software, and Shopify experiences designed
+              to remove bottlenecks and create measurable growth.
+            </p>
+
+            <a
+              href="https://calendly.com/mavyakunal/business-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group mt-7 inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-sky-50"
+            >
+              <CalendarDays size={17} />
+              Book a strategy call
+              <ArrowUpRight
+                size={16}
+                className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </a>
+          </div>
+
+          <nav aria-label="Footer services">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+              Services
+            </h3>
+            <ul className="space-y-3">
+              {allServices.map((service) => (
+                <li key={service.slug}>
                   <Link
-                    href={`/services/${s.slug}`}
-                    className="hover:text-black transition-colors"
+                    href={`/services/${service.slug}`}
+                    className="text-sm leading-6 text-slate-300 transition-colors hover:text-sky-300"
                   >
-                    {s.title}
+                    {service.title}
                   </Link>
                 </li>
               ))}
             </ul>
-          </div>
-          <div>
-            <h3 className="font-bold text-black mb-3 text-sm">Company</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li>
-                <Link
-                  href="/#process"
-                  className="hover:text-black transition-colors"
-                >
-                  Our Process
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/portfolio"
-                  className="hover:text-black transition-colors"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact-us"
-                  className="hover:text-black transition-colors"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold text-black mb-3 text-sm">Contact</h3>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li>
-                <a
-                  href="mailto:hello@easesmith.com"
-                  className="hover:text-black transition-colors"
-                >
-                  hello@easesmith.com
-                </a>
-              </li>
-            </ul>
-            <div className="flex gap-3 mt-4">
-              {[Linkedin, Twitter, Github, Mail].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center text-gray-600 hover:bg-sky-100 hover:text-sky-600 transition-all"
-                >
-                  <Icon size={15} />
-                </a>
+          </nav>
+
+          <nav aria-label="Footer company links">
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+              Company
+            </h3>
+            <ul className="space-y-3">
+              {companyLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-slate-300 transition-colors hover:text-sky-300"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
               ))}
-            </div>
+            </ul>
+          </nav>
+
+          <div>
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+              Start a conversation
+            </h3>
+            <a
+              href="mailto:info@easemith.com"
+              className="group flex items-center gap-3 text-sm text-slate-300 transition-colors hover:text-sky-300"
+            >
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/[0.05] text-sky-300">
+                <Mail size={16} />
+              </span>
+              info@easemith.com
+            </a>
+            <a
+              href="tel:+91892568788"
+              className="group mt-3 flex items-center gap-3 text-sm text-slate-300 transition-colors hover:text-sky-300"
+            >
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/[0.05] text-sky-300">
+                <Phone size={16} />
+              </span>
+              +91 892568788
+            </a>
+            <p className="mt-5 text-sm leading-6 text-slate-500">
+              Tell us what you are building. We usually respond within one
+              business day.
+            </p>
+            <Link
+              href="/contact-us"
+              className="group mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-sky-300"
+            >
+              Start a project
+              <ArrowUpRight
+                size={15}
+                className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              />
+            </Link>
           </div>
         </div>
-        <div className="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Easesmith. All rights reserved.
-          </p>
-          <div className="flex gap-5 text-sm text-gray-500">
-            <a href="#" className="hover:text-black transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-black transition-colors">
-              Terms of Service
-            </a>
+
+        <dl className="grid gap-3 border-b border-white/10 py-4 text-xs sm:grid-cols-2 lg:gap-4 lg:py-5">
+          <div className="flex flex-wrap gap-x-2 gap-y-1">
+            <dt className="font-semibold uppercase tracking-[0.12em] text-slate-500">
+              GST Number
+            </dt>
+            <dd className="font-medium tracking-wide text-slate-300">
+              09AAQCM9052K1ZP
+            </dd>
           </div>
+          <div className="flex flex-wrap gap-x-2 gap-y-1 sm:justify-end">
+            <dt className="font-semibold uppercase tracking-[0.12em] text-slate-500">
+              CIN
+            </dt>
+            <dd className="font-medium tracking-wide text-slate-300">
+              U85499UP2023PTC182763
+            </dd>
+          </div>
+        </dl>
+
+        <div className="flex flex-col gap-2 border-b border-white/10 py-4 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:gap-3 lg:py-6">
+          <p>© {new Date().getFullYear()} Easesmith. All rights reserved.</p>
+          <p>AI automation · Custom software · Shopify</p>
+        </div>
+      </div>
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none relative select-none overflow-x-clip px-5 pb-0 pt-4 sm:px-8 sm:pt-6 lg:pt-10"
+      >
+        <div className="flex justify-center">
+          <span className="whitespace-nowrap text-[clamp(4.1rem,17.5vw,16rem)] font-extrabold leading-none tracking-[0.015em] text-white/[0.08]">
+            Easesmith
+          </span>
         </div>
       </div>
     </footer>

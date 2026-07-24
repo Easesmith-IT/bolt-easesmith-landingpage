@@ -12,7 +12,7 @@ const UiScreens = dynamic(() => import("./ui-screens"));
 
 const EasemartClient = () => {
   return (
-    <div>
+    <div className="portfolio-case-study">
         <Hero />
         <ProjectOverview />
         <ColorTypography />

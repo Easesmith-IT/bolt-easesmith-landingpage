@@ -1,6 +1,6 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "./navbar";
-import Image from "next/image";
+import Image from "../PortfolioImage";
 import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "motion/react";
 
@@ -23,7 +23,7 @@ const Hero = () => {
       >
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
           <a target="_blank" href="https://abhicares.com">
-            Live Link →
+            Live Link â†’
           </a>
         </Button>
       </motion.div>
@@ -43,6 +43,7 @@ const Hero = () => {
             width={240}
             height={240}
             priority
+            sizes="(max-width: 640px) 80px, 240px"
             className="object-contain w-20 sm:w-60"
           />
         </motion.div>
@@ -59,6 +60,8 @@ const Hero = () => {
             alt="image"
             width={800}
             height={500}
+            priority
+            sizes="(max-width: 640px) 200px, 800px"
             className="object-contain w-50 sm:w-[800px]"
           />
         </motion.div>
@@ -117,7 +120,7 @@ const Hero = () => {
         className="flex sm:hidden justify-center container mx-auto mt-10 px-5"
       >
         <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-5">
-          Live Link →
+          Live Link â†’
         </Button>
       </motion.div>
     </div>

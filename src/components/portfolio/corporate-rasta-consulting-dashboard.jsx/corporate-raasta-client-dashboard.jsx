@@ -14,7 +14,7 @@ import Wireframes from "./wireframes";
 
 const CorporateRaastaClientDashboard = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="portfolio-case-study overflow-hidden">
       <Hero />
       <About />
       <Typograph />

@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+﻿import { Button } from "@/components/ui/button";
+import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -35,6 +35,8 @@ const Hero = () => {
             alt="image"
             width={900}
             height={500}
+            priority
+            sizes="(max-width: 640px) 576px, 896px"
             className="w-xl sm:w-4xl"
           />
         </motion.div>
@@ -67,7 +69,7 @@ const Hero = () => {
               variant="outline"
               className="bg-transparent hidden lg:inline absolute right-10 bottom-0 sm:bottom-10 text-white hover:text-black"
             >
-              Live Link →
+              Live Link â†’
             </Button>
           </motion.div>
 
@@ -82,7 +84,7 @@ const Hero = () => {
               variant="outline"
               className="bg-transparent text-white hover:text-black"
             >
-              Live Link →
+              Live Link â†’
             </Button>
           </motion.div>
         </div>

@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "../PortfolioImage";
 import React from "react";
 import { motion } from "motion/react";
 
@@ -83,7 +83,7 @@ const UserPersona = () => {
                     "Age: 32",
                     "Location: Bengaluru, India",
                     "Occupation: Software Engineer",
-                    "Education: Master’s in Computer Science",
+                    "Education: Masterâ€™s in Computer Science",
                     "Family Status: Married with one child",
                   ].map((item, i) => (
                     <motion.li

@@ -13,7 +13,7 @@ import WebsiteWireframes from "./website-wireframes";
 
 const AbhicaresClient = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="portfolio-case-study overflow-hidden">
       <Hero />
       <ProjectOverview />
       <ColorTypography />

@@ -1,5 +1,5 @@
-import { motion } from "motion/react";
-import Image from "next/image";
+﻿import { motion } from "motion/react";
+import Image from "../PortfolioImage";
 
 export default function Navbar() {
   return (

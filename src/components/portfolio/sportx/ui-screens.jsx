@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "../PortfolioImage";
 import { motion } from "motion/react";
 
 const UIScreens = () => {

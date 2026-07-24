@@ -39,8 +39,7 @@ export const caseStudies = [
     id: 5,
     name: "Bhoomie Reality",
     type: "Wordpress Website",
-    // img: "/portfolio/bhoomie-reality/bhoomie-reality-card.png",
-    img: "",
+    img: "/portfolio/bhoomie-reality/hero.png",
     tagline:
       "In the dynamic world of legal services, the ability to swiftly navigate and manage case information is paramount.",
     url: "/portfolio/bhoomie-reality",
