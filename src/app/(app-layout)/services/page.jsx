@@ -1,4 +1,4 @@
-import { allServices } from "@/data/services";
+import { allServices, getServicePath } from "@/data/services";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -42,6 +42,7 @@ export default function ServicesPage() {
           <div className="mt-16 grid gap-6 md:grid-cols-2">
             {allServices.map((service) => {
               const ServiceIcon = service.icon;
+              const servicePath = getServicePath(service.slug);
 
               return (
                 <article
@@ -68,7 +69,7 @@ export default function ServicesPage() {
                     ))}
                   </ul>
                   <Link
-                    href={`/services/${service.slug}`}
+                    href={servicePath}
                     className="mt-6 inline-flex items-center gap-2 font-semibold text-sky-700 hover:text-sky-900"
                   >
                     Explore {service.title}

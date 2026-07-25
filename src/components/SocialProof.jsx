@@ -36,6 +36,10 @@ const clients = [
     monochrome: true,
   },
   {
+    name: "Hure",
+    logo: "/images/client logos/hure.png",
+  },
+  {
     name: "Bhoomie Realty",
     logo: "/images/client logos/image-removebg-preview.png",
   },

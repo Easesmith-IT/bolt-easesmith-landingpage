@@ -124,7 +124,7 @@ export async function generateMetadata({ params }) {
     },
 
     robots: {
-      index: true,
+      index: slug !== "shopify-development",
       follow: true,
     },
   };

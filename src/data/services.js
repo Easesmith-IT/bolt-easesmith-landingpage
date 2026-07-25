@@ -1245,3 +1245,11 @@ export const allServices = [
 export const servicesBySlug = Object.fromEntries(
   allServices.map((s) => [s.slug, s]),
 );
+
+export const SHOPIFY_SERVICE_PATH = "/services/shopify-conversion-optimization";
+
+export function getServicePath(slug) {
+  return slug === "shopify-development"
+    ? SHOPIFY_SERVICE_PATH
+    : `/services/${slug}`;
+}

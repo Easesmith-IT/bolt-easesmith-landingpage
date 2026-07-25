@@ -1,4 +1,4 @@
-import { allServices } from "@/data/services";
+import { allServices, getServicePath } from "@/data/services";
 import { caseStudies } from "@/data/portfolio";
 import {
   ArrowUpRight,
@@ -88,7 +88,7 @@ export default function Footer() {
                 {allServices.map((service) => (
                   <li key={service.slug}>
                     <Link
-                      href={`/services/${service.slug}`}
+                      href={getServicePath(service.slug)}
                       className="block py-0.5 text-sm leading-6 text-slate-400 transition-colors hover:text-sky-300"
                     >
                       {service.title}
@@ -225,7 +225,7 @@ export default function Footer() {
               {allServices.map((service) => (
                 <li key={service.slug}>
                   <Link
-                    href={`/services/${service.slug}`}
+                    href={getServicePath(service.slug)}
                     className="text-sm leading-6 text-slate-300 transition-colors hover:text-sky-300"
                   >
                     {service.title}

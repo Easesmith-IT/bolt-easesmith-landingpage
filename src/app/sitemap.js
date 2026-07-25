@@ -1,10 +1,10 @@
 const SITE_URL = "https://www.easesmith.com";
-const LAST_SIGNIFICANT_UPDATE = "2026-07-24";
+const LAST_SIGNIFICANT_UPDATE = "2026-07-25";
 
 const INDEXABLE_ROUTES = [
   "/",
   "/services",
-  "/services/shopify-development",
+  "/services/shopify-conversion-optimization",
   "/services/custom-software",
   "/services/app-development",
   "/services/automation",
@@ -19,7 +19,6 @@ const INDEXABLE_ROUTES = [
   "/portfolio/sportx",
   "/portfolio/tech-tutor",
   "/contact-us",
-  "/shopify-dev-page",
 ];
 
 export default function sitemap() {

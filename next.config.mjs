@@ -41,17 +41,22 @@ const nextConfig = {
       },
       {
         source: "/services/E-commerce-development",
-        destination: "/services/shopify-development",
+        destination: "/services/shopify-conversion-optimization",
         statusCode: 301,
       },
       {
         source: "/services/E-commerce%20development",
-        destination: "/services/shopify-development",
+        destination: "/services/shopify-conversion-optimization",
         statusCode: 301,
       },
       {
         source: "/services/custom-software-development",
         destination: "/services/custom-software",
+        statusCode: 301,
+      },
+      {
+        source: "/shopify-dev-page",
+        destination: "/services/shopify-conversion-optimization",
         statusCode: 301,
       },
     ];

@@ -17,6 +17,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import { SHOPIFY_SERVICE_PATH } from "@/data/services";
 import { cn } from "@/lib/utils";
 
 /**
@@ -113,7 +114,7 @@ export default function SiteNavbar() {
     { label: "Portfolio", href: "/portfolio", icon: BriefcaseBusiness },
     {
       label: "Shopify Development",
-      href: "/services/shopify-development",
+      href: SHOPIFY_SERVICE_PATH,
       icon: ShoppingBag,
     },
     { label: "Contact Us", href: "/contact-us", icon: MessageCircle },
@@ -180,7 +181,7 @@ export default function SiteNavbar() {
               Portfolio
             </Link>
             <Link
-              href="/services/shopify-development"
+              href={SHOPIFY_SERVICE_PATH}
               onClick={() => setMobileOpen(false)}
               className={cn(
                 "text-gray-700 hover:text-black transition-colors font-medium",

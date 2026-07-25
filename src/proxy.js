@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 const LEGACY_SECTION_DESTINATIONS = new Map([
   ["/custom-portfolio-posts", "/portfolio"],
   ["/services-page", "/services"],
+  ["/shopify-dev-page", "/services/shopify-conversion-optimization"],
 ]);
 
 const INDEXABLE_PATHS = new Set([
@@ -19,10 +20,9 @@ const INDEXABLE_PATHS = new Set([
   "/services",
   "/services/app-development",
   "/services/automation",
+  "/services/shopify-conversion-optimization",
   "/services/custom-software",
   "/services/mobile-web-development",
-  "/services/shopify-development",
-  "/shopify-dev-page",
 ]);
 
 export function proxy(request) {

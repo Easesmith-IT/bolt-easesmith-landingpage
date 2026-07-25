@@ -1,5 +1,5 @@
 import { TrendingUp, ArrowRight } from "lucide-react";
-import { allServices } from "@/data/services";
+import { allServices, getServicePath } from "@/data/services";
 import Link from "next/link";
 
 export default function Services() {
@@ -19,6 +19,7 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {allServices?.map((service) => {
             const ServiceIcon = service.icon;
+            const servicePath = getServicePath(service.slug);
             return (
               <div
                 key={service.slug}
@@ -32,7 +33,7 @@ export default function Services() {
                   </div>
 
                   <div className="space-y-3">
-                    <Link href={`/services/${service.slug}`}>
+                    <Link href={servicePath}>
                       <h3 className="text-2xl font-bold text-black group-hover:text-sky-600 transition-colors">
                         {service.title}
                       </h3>
@@ -61,7 +62,7 @@ export default function Services() {
                       ))}
                     </ul>
                     <Link
-                      href={`/services/${service.slug}`}
+                      href={servicePath}
                       className="inline-flex items-center gap-2 text-sm font-semibold text-sky-600 hover:text-sky-800 transition-colors group/link"
                     >
                       Learn More

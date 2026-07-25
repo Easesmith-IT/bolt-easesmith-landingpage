@@ -26,6 +26,7 @@ import {
   Monitor,
 } from "lucide-react";
 import Link from "next/link";
+import { getServicePath } from "@/data/services";
 
 const serviceIcons = {
   "shopify-development": ShoppingBag,
@@ -794,7 +795,7 @@ export default function ServiceDetailClient({
                 return (
                   <Link
                     key={s.slug}
-                    href={`/services/${s.slug}`}
+                    href={getServicePath(s.slug)}
                     className="group flex items-start gap-4 p-5 bg-white border border-gray-200 rounded-2xl hover:border-sky-200 hover:shadow-md transition-all duration-300"
                   >
                     <div className="w-10 h-10 bg-sky-100 group-hover:bg-sky-200 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors">
