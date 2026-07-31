@@ -16,6 +16,7 @@ const companyLinks = [
   { label: "Home", href: "/" },
   { label: "Our Process", href: "/#process" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "NiWa", href: "/products/niwa" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import {
   ArrowUpRight,
+  Bot,
   BriefcaseBusiness,
   ChevronRight,
   Home,
@@ -103,6 +104,7 @@ export default function SiteNavbar() {
 
   const navLinks = [
     { label: "Services", href: "/services" },
+    { label: "NiWa", href: "/products/niwa" },
     // { label: "Process", section: "process" },
     // { label: "Work", section: "case-studies" },
     // { label: "Clients", section: "testimonials" },
@@ -111,6 +113,7 @@ export default function SiteNavbar() {
   const mobileLinks = [
     { label: "Home", href: "/", icon: Home },
     { label: "Services", href: "/services", icon: Layers3 },
+    { label: "NiWa", href: "/products/niwa", icon: Bot },
     { label: "Portfolio", href: "/portfolio", icon: BriefcaseBusiness },
     {
       label: "Shopify Development",
@@ -164,8 +167,10 @@ export default function SiteNavbar() {
                 href={href}
                 className={cn(
                   "text-gray-700 hover:text-black transition-colors font-medium",
-                  pathname.startsWith("/services") &&
-                    "text-sky-600 underline",
+                  (href === "/services" && pathname.startsWith("/services")) ||
+                    pathname === href
+                    ? "text-sky-600 underline"
+                    : "",
                 )}
               >
                 {label}

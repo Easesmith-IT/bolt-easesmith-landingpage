@@ -18,6 +18,7 @@ const INDEXABLE_ROUTES = [
   "/portfolio/easemart",
   "/portfolio/sportx",
   "/portfolio/tech-tutor",
+  "/products/niwa",
   "/contact-us",
 ];
 
