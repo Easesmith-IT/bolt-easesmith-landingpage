@@ -33,11 +33,105 @@ import {
 } from "lucide-react";
 
 const trustStrip = [
-  "Official WhatsApp Business API",
+  "Official WhatsApp Business Platform",
   "API First",
   "Enterprise Ready",
   "Cloud Hosted",
   "Secure Infrastructure",
+];
+
+const heroTrustBadges = [
+  "Official WhatsApp Business Platform",
+  "Enterprise Ready",
+  "Secure APIs",
+  "AI Powered",
+  "Cloud Hosted",
+];
+
+const niwaCapabilities = [
+  {
+    title: "Payment Reminders",
+    description: "Automatically remind customers before due dates.",
+    icon: CreditCard,
+  },
+  {
+    title: "Appointment Reminders",
+    description: "Reduce missed appointments with automated confirmations and reminders.",
+    icon: CalendarClock,
+  },
+  {
+    title: "Service Reminders",
+    description: "Notify customers about upcoming vehicle services, maintenance schedules, and renewals.",
+    icon: Wrench,
+  },
+  {
+    title: "Student Fee Reminders",
+    description: "Automatically send fee reminders, attendance notifications, and important school updates.",
+    icon: GraduationCap,
+  },
+  {
+    title: "AI Customer Support",
+    description: "Answer customer questions instantly using AI-powered conversations.",
+    icon: Bot,
+  },
+  {
+    title: "Broadcast Campaigns",
+    description: "Send official WhatsApp campaigns to opted-in customers.",
+    icon: RadioTower,
+  },
+  {
+    title: "Customer Notifications",
+    description: "Deliver invoices, order updates, payment confirmations, OTPs, and alerts automatically.",
+    icon: BellRing,
+  },
+  {
+    title: "Workflow Automation",
+    description: "Create automated business workflows without writing code.",
+    icon: Workflow,
+  },
+];
+
+const workflowSteps = [
+  {
+    title: "Create Your Account",
+    description: "Sign up and access your NiWa dashboard.",
+    icon: LayoutDashboard,
+  },
+  {
+    title: "Connect WhatsApp Business",
+    description:
+      "Securely connect your official WhatsApp Business Account using Meta's official onboarding.",
+    icon: MessageSquare,
+  },
+  {
+    title: "Connect Your Business Software",
+    description:
+      "Integrate your CRM, ERP, School ERP, Hospital Software, DMS, APIs, or Webhooks.",
+    icon: Link2,
+  },
+  {
+    title: "Create Automation",
+    description:
+      "Build no-code workflows for reminders, notifications, AI support, and customer engagement.",
+    icon: Workflow,
+  },
+  {
+    title: "NiWa Automates Everything",
+    description:
+      "Messages are automatically delivered to your customers while analytics, conversations, and workflows stay synchronized.",
+    icon: SparkWorkflowIcon,
+  },
+];
+
+const enterpriseTrustCards = [
+  "Official WhatsApp Business Platform",
+  "Secure Cloud Infrastructure",
+  "Role-Based Access",
+  "API First Architecture",
+  "Webhooks",
+  "End-to-End Encryption Support",
+  "Enterprise Analytics",
+  "Scalable Infrastructure",
 ];
 
 const manualProblems = [
@@ -237,13 +331,55 @@ const futureIntegrations = [
 ];
 
 const securityItems = [
-  "Secure APIs",
-  "Encrypted communication",
-  "Role based access",
-  "Cloud infrastructure",
-  "Audit logs",
-  "Data privacy",
-  "Scalable architecture",
+  {
+    title: "Official WhatsApp Business Platform",
+    description: "Use Meta's official business messaging infrastructure.",
+    icon: MessageSquare,
+  },
+  {
+    title: "Secure API Access",
+    description: "Protect integrations using authenticated API requests.",
+    icon: Link2,
+  },
+  {
+    title: "Encrypted Communication",
+    description: "Data is transmitted securely using industry-standard encryption.",
+    icon: LockKeyhole,
+  },
+  {
+    title: "Role-Based Access",
+    description: "Control who can access different areas of your workspace.",
+    icon: Users,
+  },
+  {
+    title: "Audit Logs",
+    description: "Track important activities for transparency and accountability.",
+    icon: LayoutDashboard,
+  },
+  {
+    title: "Privacy by Design",
+    description: "Protect customer information with privacy-focused architecture.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Secure Cloud Infrastructure",
+    description: "Reliable cloud infrastructure built for performance and availability.",
+    icon: Building2,
+  },
+  {
+    title: "Enterprise Scalability",
+    description: "Scale from a small business to enterprise operations without changing platforms.",
+    icon: BarChart3,
+  },
+];
+
+const securityTrustBadges = [
+  "Official WhatsApp Business Platform",
+  "Enterprise APIs",
+  "Cloud Hosted",
+  "Secure Authentication",
+  "Privacy Focused",
+  "High Availability",
 ];
 
 const faqs = [
@@ -358,6 +494,26 @@ function FeatureCard({ feature, index }) {
   );
 }
 
+function CapabilityCard({ item, index }) {
+  const Icon = item.icon;
+
+  return (
+    <Reveal delay={index * 0.03}>
+      <div className="group h-full rounded-[1.85rem] border border-[#E5E7EB] bg-white p-6 shadow-[0_22px_60px_-42px_rgba(8,20,38,0.14)] transition-all duration-300 hover:-translate-y-1 hover:border-[#C7D7FF] hover:shadow-[0_34px_80px_-46px_rgba(41,92,255,0.18)]">
+        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F0F5FF] text-[#295CFF]">
+          <Icon size={22} />
+        </div>
+        <h3 className="mt-5 text-xl font-semibold tracking-tight text-[#081426]">
+          {item.title}
+        </h3>
+        <p className="mt-3 text-sm leading-7 text-[#64748B] sm:text-base">
+          {item.description}
+        </p>
+      </div>
+    </Reveal>
+  );
+}
+
 export default function NiwaLandingClient() {
   const [showStickyCta, setShowStickyCta] = useState(false);
 
@@ -378,168 +534,324 @@ export default function NiwaLandingClient() {
         </div>
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(24rem,1.02fr)]">
-            <Reveal className="max-w-3xl">
-              <div className="inline-flex items-center gap-3 rounded-full border border-[#D7E2F5] bg-white/92 px-4 py-2 text-sm font-semibold text-[#081426] shadow-[0_18px_40px_-30px_rgba(8,20,38,0.18)]">
-                <Image
-                  src="/products/niwa/niwa-logo.png"
-                  alt="NiWa"
-                  width={64}
-                  height={36}
-                  className="h-7 w-auto"
-                />
-                <span className="h-1.5 w-1.5 rounded-full bg-[#295CFF]" />
-                Built by Easesmith
-              </div>
+          <div>
+            <Reveal className="max-w-none">
+              <div className="px-1 py-2 sm:px-4 lg:py-8">
+                <div className="mx-auto max-w-5xl text-center">
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  <div className="inline-flex items-center gap-3 rounded-full border border-[#D7E2F5] bg-white px-4 py-2 text-sm font-semibold text-[#081426]">
+                    <Image
+                      src="/products/niwa/niwa-logo.png"
+                      alt="NiWa"
+                      width={64}
+                      height={36}
+                      className="h-7 w-auto"
+                    />
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#295CFF]" />
+                    Official WhatsApp Business Platform
+                  </div>
+                  <div className="inline-flex items-center gap-2 rounded-full border border-[#DCE6F7] bg-transparent px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#64748B]">
+                    Built by Easesmith
+                  </div>
+                </div>
 
-              <h1 className="mt-8 max-w-4xl text-balance text-[clamp(3rem,6vw,6rem)] font-black leading-[0.92] tracking-[-0.058em] text-[#081426]">
-                Automate Customer Communication.
-                <span className="mt-2 block text-[#295CFF]">
-                  Without Changing Your Existing Software.
-                </span>
-              </h1>
+                <div className="mt-8 mx-auto max-w-4xl sm:mt-10">
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#295CFF] sm:text-sm">
+                    Enterprise Communication Automation
+                  </p>
+                  <h1 className="mt-4 mx-auto max-w-[24ch] text-balance text-[clamp(2.2rem,10vw,5rem)] font-black leading-[0.96] tracking-[-0.058em] text-[#081426] sm:mt-5">
+                    Official WhatsApp Business Platform{" "}
+                    <span className="whitespace-nowrap text-[#295CFF]">for Growing Businesses</span>
+                  </h1>
+                </div>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#475569] sm:text-xl">
-                Connect WhatsApp Business, CRM, ERP, School Software, Hospital
-                Software, DMS, and APIs to automate reminders, notifications,
-                customer support, follow-ups, and business conversations using
-                AI.
-              </p>
+                <div className="mt-6 mx-auto max-w-3xl space-y-4 sm:mt-7">
+                  <p className="text-base leading-8 text-[#475569] sm:text-[1.18rem]">
+                    Connect your WhatsApp Business Account and automate reminders,
+                    notifications, customer support, and business workflows using
+                    AI.
+                  </p>
+                  <p className="text-sm leading-7 text-[#64748B] sm:text-lg sm:leading-8">
+                    Integrate seamlessly with your CRM, ERP, School Software,
+                    Hospital Software, DMS, or any existing business software
+                    without changing your current workflow.
+                  </p>
+                </div>
 
-              <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="https://calendly.com/mavyakunal/business-call"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-[#295CFF] px-8 py-4 font-semibold text-white shadow-[0_24px_50px_-28px_rgba(41,92,255,0.48)] transition-all hover:-translate-y-0.5 hover:bg-[#234fe0]"
-                >
-                  Book Demo
-                  <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-                </a>
-                <a
-                  href="https://calendly.com/mavyakunal/business-call"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-2xl border border-[#D7E2F5] bg-white px-8 py-4 font-semibold text-[#081426] shadow-[0_18px_40px_-28px_rgba(8,20,38,0.14)] transition-all hover:-translate-y-0.5 hover:border-[#BFD1FF]"
-                >
-                  Watch Product Demo
-                </a>
-              </div>
-
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
-                {proofPoints.map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-2xl border border-[#E5E7EB] bg-white/92 px-5 py-4 shadow-[0_16px_40px_-32px_rgba(8,20,38,0.14)]"
+                <div className="mx-auto mt-8 grid max-w-md grid-cols-2 gap-3 sm:mt-9 sm:flex sm:max-w-none sm:flex-row sm:items-center sm:justify-center sm:gap-4">
+                  <a
+                    href="https://calendly.com/mavyakunal/business-call"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex w-full min-w-0 items-center justify-center gap-2 rounded-2xl bg-[#295CFF] px-4 py-3.5 text-sm font-semibold text-white shadow-[0_24px_50px_-28px_rgba(41,92,255,0.48)] transition-all hover:-translate-y-0.5 hover:bg-[#234fe0] sm:px-8 sm:py-4 sm:text-base"
                   >
-                    <div className="text-lg font-bold text-[#295CFF]">{item.value}</div>
-                    <div className="mt-1 text-sm leading-6 text-[#64748B]">{item.label}</div>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
+                    Book Demo
+                    <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+                  </a>
+                  <a
+                    href="https://calendly.com/mavyakunal/business-call"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex w-full min-w-0 items-center justify-center rounded-2xl border border-[#D7E2F5] bg-white px-4 py-3.5 text-sm font-semibold text-[#081426] shadow-[0_18px_40px_-28px_rgba(8,20,38,0.12)] transition-all hover:-translate-y-0.5 hover:border-[#BFD1FF] sm:px-8 sm:py-4 sm:text-base"
+                  >
+                    Watch Product Demo
+                  </a>
+                </div>
 
-            <Reveal delay={0.08}>
-              <div className="relative rounded-[2rem] border border-[#D9E4F4] bg-white p-5 shadow-[0_32px_80px_-44px_rgba(8,20,38,0.24)] sm:p-7">
-                <div className="rounded-[1.75rem] border border-[#DCE6F7] bg-[linear-gradient(180deg,#081426_0%,#10213C_100%)] p-6 text-white">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9CC0FF]">
-                        Business communication architecture
-                      </p>
-                      <h2 className="mt-2 text-2xl font-bold tracking-tight text-white">
-                        What your team sees in 10 seconds
-                      </h2>
-                    </div>
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
-                      <Image
-                        src="/products/niwa/niwa-logo.png"
-                        alt="NiWa logo"
-                        width={96}
-                        height={56}
-                        className="h-11 w-auto"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="mt-6 grid gap-4 sm:grid-cols-[1fr_auto_1fr] sm:items-center">
-                    <div className="space-y-3">
-                      {[
-                        { label: "CRM", icon: BriefcaseBusiness },
-                        { label: "ERP", icon: Building2 },
-                        { label: "School Software", icon: GraduationCap },
-                        { label: "Accounting", icon: CreditCard },
-                      ].map((node) => {
-                        const Icon = node.icon;
-                        return (
-                          <div
-                            key={node.label}
-                            className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.06] px-4 py-3"
-                          >
-                            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-[#9CC0FF]">
-                              <Icon size={18} />
-                            </div>
-                            <span className="text-sm font-medium text-slate-100">{node.label}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
-
-                    <div className="relative mx-auto h-full w-full max-w-[6rem]">
-                      <div className="absolute left-1/2 top-4 h-[calc(100%-2rem)] w-px -translate-x-1/2 bg-[linear-gradient(180deg,#295CFF,#06B6D4,#18C37D)]" />
-                      {[0, 1, 2, 3].map((item) => (
-                        <motion.span
-                          key={item}
-                          className="absolute left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-white shadow-[0_0_0_6px_rgba(255,255,255,0.08)]"
-                          style={{ top: `${10 + item * 24}%` }}
-                          animate={{ scale: [1, 1.35, 1], opacity: [0.75, 1, 0.75] }}
-                          transition={{ duration: 2.6, repeat: Infinity, delay: item * 0.45 }}
-                        />
-                      ))}
-                    </div>
-
-                    <div className="space-y-3">
-                      {[
-                        { label: "NiWa", icon: BellRing },
-                        { label: "AI Engine", icon: Bot },
-                        { label: "Workflow Execution", icon: Workflow },
-                        { label: "WhatsApp Delivery", icon: MessageSquare },
-                        { label: "Customer", icon: Users },
-                      ].map((node) => {
-                        const Icon = node.icon;
-                        return (
-                          <div
-                            key={node.label}
-                            className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.06] px-4 py-3"
-                          >
-                            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-[#18C37D]">
-                              <Icon size={18} />
-                            </div>
-                            <span className="text-sm font-medium text-slate-100">{node.label}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  <div className="mt-6 grid gap-3 md:grid-cols-2">
-                    {[
-                      "Payment reminder sent on invoice due date",
-                      "Typing indicator and AI reply for support",
-                      "Delivery ticks and read status",
-                      "Workflow execution updates back to CRM",
-                    ].map((item) => (
+                <div className="mt-8 space-y-5 sm:mt-10 sm:space-y-6">
+                  <div className="mx-auto flex max-w-md flex-wrap justify-center gap-3 md:max-w-none md:flex-nowrap md:overflow-x-auto">
+                    {heroTrustBadges.map((item) => (
                       <div
                         key={item}
-                        className="rounded-2xl border border-white/10 bg-white/[0.05] px-4 py-3 text-sm leading-6 text-slate-300"
+                        className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-[#DCE6F7] bg-white/80 px-4 py-2 text-sm font-medium text-[#334155] md:shrink-0"
                       >
+                        <CheckCircle2 size={16} className="text-[#18C37D]" />
                         {item}
                       </div>
                     ))}
                   </div>
+
+                  <div className="mx-auto grid max-w-md gap-3 sm:max-w-3xl sm:grid-cols-3">
+                    {proofPoints.map((item) => (
+                      <div
+                        key={item.label}
+                        className="rounded-2xl border border-[#E5E7EB] bg-white/72 px-4 py-4"
+                      >
+                        <div className="text-lg font-bold text-[#295CFF]">{item.value}</div>
+                        <div className="mt-1 text-sm leading-6 text-[#64748B]">{item.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
                 </div>
               </div>
             </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="What is NiWa?"
+              title="One Platform for Every Business Conversation"
+              description="NiWa is an enterprise communication automation platform that enables businesses to connect their official WhatsApp Business Account and automate customer communication across every stage of the customer journey."
+              align="center"
+            />
+          </Reveal>
+
+          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {niwaCapabilities.map((item, index) => (
+              <CapabilityCard key={item.title} item={item} index={index} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="How NiWa Works"
+              title="How NiWa Works"
+              description="Get started in minutes by connecting your existing business systems and letting NiWa automate customer communication."
+              align="center"
+            />
+          </Reveal>
+
+          <div className="mt-12 rounded-[2.2rem] border border-[#E5E7EB] bg-white p-6 shadow-[0_24px_60px_-42px_rgba(8,20,38,0.14)] sm:p-8">
+            <div className="grid gap-6 lg:grid-cols-5">
+              {workflowSteps.map((step, index) => {
+                const Icon = step.icon;
+
+                return (
+                  <Reveal key={step.title} delay={index * 0.05}>
+                    <div className="relative h-full">
+                      <div className="h-full rounded-[1.6rem] border border-[#E5E7EB] bg-[#F8FAFC] p-5">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#295CFF] shadow-[0_14px_30px_-22px_rgba(41,92,255,0.18)]">
+                          <Icon size={22} />
+                        </div>
+                        <div className="mt-5 text-sm font-semibold uppercase tracking-[0.18em] text-[#94A3B8]">
+                          Step {index + 1}
+                        </div>
+                        <h3 className="mt-2 text-lg font-semibold tracking-tight text-[#081426]">
+                          {step.title}
+                        </h3>
+                        <p className="mt-3 text-sm leading-7 text-[#64748B]">
+                          {step.description}
+                        </p>
+                      </div>
+                      {index < workflowSteps.length - 1 ? (
+                        <div className="hidden lg:block">
+                          <motion.div
+                            className="absolute left-[calc(100%-0.5rem)] top-1/2 h-px w-8 bg-[linear-gradient(90deg,#295CFF,#06B6D4,#18C37D)]"
+                            animate={{ opacity: [0.35, 1, 0.35] }}
+                            transition={{ duration: 2.4, repeat: Infinity, delay: index * 0.15 }}
+                          />
+                        </div>
+                      ) : null}
+                    </div>
+                  </Reveal>
+                );
+              })}
+            </div>
+
+            <div className="mt-10 rounded-[1.8rem] border border-[#DCE6F7] bg-[linear-gradient(180deg,#081426_0%,#10213C_100%)] p-6 text-white sm:p-7">
+              <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                <div className="max-w-xl">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#9CC0FF]">
+                    Integration architecture
+                  </p>
+                  <h3 className="mt-3 text-2xl font-bold tracking-tight text-white">
+                    Connect your software stack to NiWa and deliver on WhatsApp automatically
+                  </h3>
+                </div>
+                <div className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200">
+                  Official WhatsApp Business Account supported
+                </div>
+              </div>
+
+              <div className="mt-8 grid gap-4 lg:grid-cols-[1fr_auto_1fr_auto_1fr] lg:items-center">
+                <div className="space-y-3">
+                  {[
+                    { label: "CRM", icon: BriefcaseBusiness },
+                    { label: "ERP", icon: Building2 },
+                    { label: "School ERP", icon: GraduationCap },
+                    { label: "Hospital", icon: HeartPulse },
+                    { label: "Accounting", icon: CreditCard },
+                    { label: "DMS", icon: Wrench },
+                    { label: "REST API", icon: Link2 },
+                    { label: "Webhooks", icon: Webhook },
+                  ].map((node) => {
+                    const Icon = node.icon;
+
+                    return (
+                      <div
+                        key={node.label}
+                        className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.06] px-4 py-3"
+                      >
+                        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-[#9CC0FF]">
+                          <Icon size={18} />
+                        </div>
+                        <span className="text-sm font-medium text-slate-100">{node.label}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className="hidden lg:block">
+                  <motion.div
+                    className="h-px w-14 bg-[linear-gradient(90deg,#295CFF,#06B6D4,#18C37D)]"
+                    animate={{ opacity: [0.35, 1, 0.35] }}
+                    transition={{ duration: 2.4, repeat: Infinity }}
+                  />
+                </div>
+
+                <div className="rounded-[1.7rem] border border-white/10 bg-white/[0.06] p-5">
+                  <div className="flex items-center gap-3">
+                    <Image
+                      src="/products/niwa/niwa-logo.png"
+                      alt="NiWa"
+                      width={96}
+                      height={56}
+                      className="h-10 w-auto"
+                    />
+                    <div>
+                      <div className="text-lg font-semibold text-white">NiWa AI Platform</div>
+                      <div className="text-sm text-[#9CC0FF]">
+                        Automation, orchestration, analytics
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-5 rounded-[1.2rem] border border-white/10 bg-white/[0.04] px-4 py-3 text-sm leading-6 text-slate-200">
+                    Messages, workflows, analytics, and customer conversations remain synchronized in one platform.
+                  </div>
+                </div>
+
+                <div className="hidden lg:block">
+                  <motion.div
+                    className="h-px w-14 bg-[linear-gradient(90deg,#295CFF,#06B6D4,#18C37D)]"
+                    animate={{ opacity: [0.35, 1, 0.35] }}
+                    transition={{ duration: 2.4, repeat: Infinity, delay: 0.2 }}
+                  />
+                </div>
+
+                <div className="space-y-3">
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#18C37D]/18 text-[#7AF0B4]">
+                        <MessageSquare size={18} />
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-white">
+                          WhatsApp Business
+                        </div>
+                        <div className="text-xs text-slate-300">
+                          Official account messaging
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-[#9CC0FF]">
+                        <Users size={18} />
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-white">Customer</div>
+                        <div className="text-xs text-slate-300">
+                          Reminders, alerts, support, and replies
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="text-sm text-slate-200">
+                        Message delivery animation
+                      </div>
+                      <motion.div
+                        className="flex items-center gap-2 rounded-full bg-white/8 px-3 py-1.5 text-xs text-[#89F0BF]"
+                        animate={{ opacity: [0.6, 1, 0.6] }}
+                        transition={{ duration: 1.8, repeat: Infinity }}
+                      >
+                        Delivered
+                        <CheckCircle2 size={14} />
+                      </motion.div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Enterprise Trust"
+              title="Built for Enterprise Communication"
+              description="Use your existing WhatsApp Business Account, connect the systems you already run, and automate customer communication with the controls businesses expect."
+              align="center"
+            />
+          </Reveal>
+
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {enterpriseTrustCards.map((item, index) => (
+              <Reveal key={item} delay={index * 0.03}>
+                <div className="rounded-[1.6rem] border border-[#E5E7EB] bg-white px-5 py-5 shadow-[0_20px_50px_-40px_rgba(8,20,38,0.12)]">
+                  <div className="flex items-start gap-3">
+                    <ShieldCheck size={18} className="mt-1 shrink-0 text-[#295CFF]" />
+                    <span className="text-sm font-medium leading-6 text-[#334155]">
+                      {item}
+                    </span>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
@@ -687,7 +999,7 @@ export default function NiwaLandingClient() {
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(20rem,1fr)] lg:items-start">
+          <div className="space-y-12">
             <Reveal>
               <SectionHeading
                 eyebrow="Product Screens"
@@ -901,13 +1213,23 @@ export default function NiwaLandingClient() {
 
       <section id="security" className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(20rem,1fr)] lg:items-center">
+          <div className="space-y-12">
             <Reveal>
-              <SectionHeading
-                eyebrow="Enterprise Grade Security"
-                title="Is it secure? The page should answer that without sounding technical."
-                description="NiWa presents a clean trust posture: secure APIs, encrypted communication, controlled access, auditability, cloud hosting, and scalable architecture."
-              />
+              <div className="max-w-3xl">
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#D8E4F6] bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#295CFF] shadow-[0_10px_30px_-24px_rgba(41,92,255,0.24)]">
+                  <ShieldCheck size={14} className="text-[#295CFF]" />
+                  Enterprise-Grade Security
+                </div>
+                <h2 className="mt-6 text-balance text-3xl font-black tracking-[-0.04em] text-[#081426] sm:text-4xl lg:text-5xl">
+                  Enterprise Security Built Into Every Conversation
+                </h2>
+                <p className="mt-5 text-base leading-8 text-[#64748B] sm:text-lg">
+                  NiWa is built with enterprise-grade security to help businesses automate customer communication with confidence. From secure APIs and encrypted communication to role-based access and cloud infrastructure, every part of the platform is designed to protect your business and customer data.
+                </p>
+                <p className="mt-5 text-sm font-medium leading-7 text-[#475569] sm:text-base">
+                  Built using the official WhatsApp Business Platform and modern cloud infrastructure.
+                </p>
+              </div>
             </Reveal>
 
             <Reveal delay={0.08}>
@@ -915,19 +1237,43 @@ export default function NiwaLandingClient() {
                 <div className="flex items-center gap-3 text-[#295CFF]">
                   <ShieldCheck size={22} />
                   <span className="text-sm font-semibold uppercase tracking-[0.18em]">
-                    Security posture
+                    Enterprise Security Features
                   </span>
                 </div>
                 <div className="mt-6 grid gap-3 sm:grid-cols-2">
                   {securityItems.map((item) => (
                     <div
-                      key={item}
-                      className="flex items-start gap-3 rounded-2xl border border-[#E5E7EB] bg-[#F8FAFC] px-4 py-4"
+                      key={item.title}
+                      className="group rounded-2xl border border-[#E5E7EB] bg-[#F8FAFC] px-4 py-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#C9D7F7] hover:bg-white hover:shadow-[0_18px_40px_-34px_rgba(8,20,38,0.16)]"
                     >
-                      <LockKeyhole size={16} className="mt-1 shrink-0 text-[#295CFF]" />
-                      <span className="text-sm leading-6 text-[#334155]">{item}</span>
+                      <div className="flex items-start gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#DCE6F7] bg-white text-[#295CFF]">
+                          <item.icon size={18} />
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-semibold leading-6 text-[#081426]">
+                            {item.title}
+                          </h3>
+                          <p className="mt-1 text-sm leading-6 text-[#64748B]">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   ))}
+                </div>
+                <div className="mt-6 border-t border-[#E5E7EB] pt-5">
+                  <div className="flex flex-wrap gap-3">
+                    {securityTrustBadges.map((item) => (
+                      <div
+                        key={item}
+                        className="inline-flex items-center gap-2 rounded-full border border-[#E5E7EB] bg-white px-4 py-2 text-sm font-medium text-[#334155]"
+                      >
+                        <CheckCircle2 size={15} className="text-[#18C37D]" />
+                        {item}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </Reveal>
@@ -1058,5 +1404,30 @@ export default function NiwaLandingClient() {
         </div>
       </motion.div>
     </div>
+  );
+}
+
+function SparkWorkflowIcon(props) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M5 12h4" />
+      <path d="M15 12h4" />
+      <path d="M12 5v4" />
+      <path d="M12 15v4" />
+      <circle cx="12" cy="12" r="2.5" />
+      <path d="m17.5 6.5 1 1" />
+      <path d="m5.5 18.5 1 1" />
+      <path d="m6.5 6.5-1 1" />
+      <path d="m18.5 18.5-1 1" />
+    </svg>
   );
 }

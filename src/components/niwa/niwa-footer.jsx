@@ -12,8 +12,8 @@ const productLinks = [
 
 const companyLinks = [
   { label: "Built by Easesmith", href: "/" },
-  { label: "Privacy Policy", href: "/contact-us" },
-  { label: "Terms", href: "/contact-us" },
+  { label: "Privacy Policy", href: "/products/niwa/privacy-policy" },
+  { label: "Terms", href: "/products/niwa/terms-and-conditions" },
   { label: "Contact", href: "/contact-us" },
   { label: "Support", href: "/contact-us" },
 ];
