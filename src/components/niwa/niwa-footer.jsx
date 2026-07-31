@@ -43,11 +43,11 @@ export default function NiwaFooter() {
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.1fr)_0.8fr_0.8fr_1fr]">
           <div>
             <Image
-              src="/products/niwa/niwa-logo.png"
+              src="/products/niwa/niwa-logo-wordmark.png"
               alt="NiWa"
-              width={128}
-              height={72}
-              className="h-14 w-auto"
+              width={320}
+              height={88}
+              className="h-12 w-auto sm:h-14"
             />
             <p className="mt-4 text-sm font-semibold uppercase tracking-[0.18em] text-[#64748B]">
               Built by Easesmith

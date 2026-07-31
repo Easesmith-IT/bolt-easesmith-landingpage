@@ -559,9 +559,9 @@ export default function NiwaLandingClient() {
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#295CFF] sm:text-sm">
                     Enterprise Communication Automation
                   </p>
-                  <h1 className="mt-4 mx-auto max-w-[24ch] text-balance text-[clamp(2.2rem,10vw,5rem)] font-black leading-[0.96] tracking-[-0.058em] text-[#081426] sm:mt-5">
+                  <h1 className="mt-4 mx-auto max-w-[24ch] text-balance text-[clamp(2.2rem,9vw,5rem)] font-black leading-[0.96] tracking-[-0.058em] text-[#081426] sm:mt-5">
                     Official WhatsApp Business Platform{" "}
-                    <span className="whitespace-nowrap text-[#295CFF]">for Growing Businesses</span>
+                    <span className="text-[#295CFF] sm:whitespace-nowrap">for Growing Businesses</span>
                   </h1>
                 </div>
 

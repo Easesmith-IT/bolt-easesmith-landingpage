@@ -45,20 +45,15 @@ export default function NiwaNavbar() {
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
           <Link href="/products/niwa" className="flex items-center gap-3">
             <Image
-              src="/products/niwa/niwa-logo.png"
+              src="/products/niwa/niwa-logo-wordmark.png"
               alt="NiWa"
-              width={128}
-              height={72}
-              className="h-11 w-auto"
+              width={320}
+              height={88}
+              className="h-9 w-auto sm:h-10"
               priority
             />
-            <div className="hidden sm:block">
-              <div className="text-sm font-semibold tracking-tight text-[#081426]">
-                NiWa
-              </div>
-              <div className="text-xs uppercase tracking-[0.18em] text-[#64748B]">
-                Built by Easesmith
-              </div>
+            <div className="hidden sm:block text-xs uppercase tracking-[0.18em] text-[#64748B]">
+              Built by Easesmith
             </div>
           </Link>
 
